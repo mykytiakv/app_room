@@ -1,0 +1,77 @@
+.table-warranty-program-section,
+.table-warranty-insurance-section {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .table-warranty-program-section .section-title,
+  .table-warranty-insurance-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #0c0c0d;
+    font-weight: 600; }
+  .table-warranty-program-section .table-wrapper,
+  .table-warranty-insurance-section .table-wrapper {
+    margin-top: 60px; }
+    .table-warranty-program-section .table-wrapper table,
+    .table-warranty-insurance-section .table-wrapper table {
+      width: 100%; }
+      .table-warranty-program-section .table-wrapper table thead th,
+      .table-warranty-insurance-section .table-wrapper table thead th {
+        text-align: left;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #0c0c0d;
+        font-weight: 600; }
+      .table-warranty-program-section .table-wrapper table thead th:nth-child(2),
+      .table-warranty-insurance-section .table-wrapper table thead th:nth-child(2) {
+        text-align: center; }
+      .table-warranty-program-section .table-wrapper table thead th:nth-child(3),
+      .table-warranty-insurance-section .table-wrapper table thead th:nth-child(3) {
+        text-align: right; }
+      .table-warranty-program-section .table-wrapper table tbody th,
+      .table-warranty-insurance-section .table-wrapper table tbody th {
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #fe8732;
+        font-weight: 600; }
+      .table-warranty-program-section .table-wrapper table tbody td,
+      .table-warranty-insurance-section .table-wrapper table tbody td {
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #0c0c0d;
+        font-weight: normal; }
+      .table-warranty-program-section .table-wrapper table tbody th,
+      .table-warranty-insurance-section .table-wrapper table tbody th {
+        text-align: left; }
+      .table-warranty-program-section .table-wrapper table tbody td:nth-child(2),
+      .table-warranty-insurance-section .table-wrapper table tbody td:nth-child(2) {
+        text-align: center; }
+      .table-warranty-program-section .table-wrapper table tbody td:nth-child(3),
+      .table-warranty-insurance-section .table-wrapper table tbody td:nth-child(3) {
+        text-align: right; }
+      .table-warranty-program-section .table-wrapper table th,
+      .table-warranty-program-section .table-wrapper table td,
+      .table-warranty-insurance-section .table-wrapper table th,
+      .table-warranty-insurance-section .table-wrapper table td {
+        padding: 24px 0;
+        border-bottom: 1px solid rgba(12, 12, 13, 0.5);
+        word-wrap: break-word; }
+      .table-warranty-program-section .table-wrapper table.warranty-insurance-table thead th:nth-child(2),
+      .table-warranty-insurance-section .table-wrapper table.warranty-insurance-table thead th:nth-child(2) {
+        text-align: right; }
+      .table-warranty-program-section .table-wrapper table.warranty-insurance-table tbody td,
+      .table-warranty-insurance-section .table-wrapper table.warranty-insurance-table tbody td {
+        text-align: right; }
+
+.banner-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .banner-wrapper.warranty-program-banner {
+    background-image: url("../images/img_4229 1.png");
+    height: 533px; }
+  .banner-wrapper.warranty-insurance-banner {
+    background-image: url("../images/care-1 1.png");
+    height: 520px; }
+
+/*# sourceMappingURL=guarantee.css.map */

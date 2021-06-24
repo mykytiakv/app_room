@@ -1,0 +1,77 @@
+@import "./mixin/mixins";
+
+.table-warranty-program-section,
+.table-warranty-insurance-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .table-wrapper {
+    margin-top: 60px;
+    table {
+      width: 100%;
+      thead {
+        th {
+          text-align: left;
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
+        }
+        th:nth-child(2) {
+          text-align: center;
+        }
+        th:nth-child(3) {
+          text-align: right;
+        }
+      }
+      tbody th {
+        @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+      }
+      tbody {
+        td {
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+        }
+        th {
+          text-align: left;
+        }
+        td:nth-child(2) {
+          text-align: center;
+        }
+        td:nth-child(3) {
+          text-align: right;
+        }
+      }
+      th,
+      td {
+        padding: 24px 0;
+        border-bottom: 1px solid rgba(12, 12, 13, 0.5);
+        word-wrap: break-word;
+      }
+      &.warranty-insurance-table {
+        thead {
+          th:nth-child(2) {
+            text-align: right;
+          }
+        }
+        tbody {
+          td {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &.warranty-program-banner {
+    background-image: url("../images/img_4229 1.png");
+    height: 533px;
+  }
+  &.warranty-insurance-banner {
+    background-image: url("../images/care-1\ 1.png");
+    height: 520px;
+  }
+}
