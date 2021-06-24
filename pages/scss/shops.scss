@@ -1,0 +1,82 @@
+@import "./mixin/mixins";
+
+.shops-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .shops-wrapper {
+    margin-top: 60px;
+    .shop-item-wrapper {
+      padding-bottom: 50px;
+      border-bottom: 1px solid #c4c4c4;
+      &:nth-child(2n + 2) {
+        padding: 50px 0;
+      }
+      .container {
+        display: flex;
+
+        .left-block {
+          width: 100%;
+          max-width: 400px;
+        }
+        .right-block {
+          margin-left: 30px;
+          .shop-info-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .shop-adress {
+              width: 100%;
+              @include fontStyle("SF Pro Display", 30px, #0c0c0d, 600);
+            }
+            .shop-feedbacks,
+            .shop-phones {
+              width: 50%;
+            }
+            .shop-feedbacks {
+              margin-top: 25px;
+              display: flex;
+              align-items: center;
+              .stars-wrapper {
+                display: flex;
+              }
+              .description {
+                margin-left: 10px;
+                .text {
+                  margin-top: 5px;
+                  @include fontStyle(
+                    "SF Pro Display",
+                    16px,
+                    rgba(3, 9, 20, 0.5),
+                    normal
+                  );
+                }
+              }
+            }
+            .shop-phones {
+              margin-top: 25px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-end;
+              .shop-phone-item-wrapper {
+                @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+              }
+            }
+            .shop-adress-description {
+              width: 100%;
+              margin-top: 25px;
+              @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+            }
+            .shop-time-table {
+              width: 100%;
+              margin-top: 22px;
+              @include fontStyle("SF Pro Display", 16px, #0c0c0d, bold);
+            }
+          }
+        }
+      }
+    }
+  }
+}

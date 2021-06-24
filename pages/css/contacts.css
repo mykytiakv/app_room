@@ -1,0 +1,60 @@
+.contacts-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px); }
+  .contacts-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #0c0c0d;
+    font-weight: 600; }
+
+.shops-section {
+  background: #000000; }
+  .shops-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 600; }
+  .shops-section .shops-wrapper {
+    margin-top: 60px;
+    display: flex; }
+    .shops-section .shops-wrapper .shop-item-wrapper {
+      position: relative; }
+      .shops-section .shops-wrapper .shop-item-wrapper:first-child {
+        margin-right: 15px; }
+      .shops-section .shops-wrapper .shop-item-wrapper:nth-child(n + 2) {
+        margin: 0 15px; }
+      .shops-section .shops-wrapper .shop-item-wrapper:last-child {
+        margin-right: 0; }
+      .shops-section .shops-wrapper .shop-item-wrapper:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(22, 22, 25, 0.68); }
+      .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper {
+        position: absolute;
+        z-index: 2;
+        text-align: center; }
+        .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper.center-label {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: "SF Pro Display";
+          font-size: 30px;
+          color: #ffffff;
+          font-weight: 600; }
+        .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper.bottom-label {
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          padding: 25px 10px;
+          background: rgba(101, 101, 121, 0.17);
+          backdrop-filter: blur(200px);
+          font-family: "SF Pro Display";
+          font-size: 17px;
+          color: #ffffff;
+          font-weight: 600; }
+
+/*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,89 @@
+.delivery-methods-section {
+  background: #000000; }
+  .delivery-methods-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 600; }
+  .delivery-methods-section .delivery-methods-wrapper {
+    margin-top: 60px; }
+    .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(196, 196, 196, 0.81); }
+      .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-img-wapper {
+        margin-right: 20px; }
+        .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-img-wapper img {
+          min-width: 40px; }
+      .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-description-wapper .delivery-methods-item-description-title {
+        font-family: "SF Pro Display";
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 600; }
+      .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-description-wapper .delivery-methods-item-description-text {
+        margin-top: 12px;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: normal; }
+
+.form-section {
+  background: #000000;
+  position: relative; }
+  .form-section .mask-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  .form-section .iPhone-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3; }
+  .form-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 600; }
+  .form-section .section-sub-title {
+    margin-top: 60px;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600; }
+  .form-section .container {
+    z-index: 4;
+    position: relative; }
+  .form-section .input-wrapper {
+    margin-top: 40px; }
+    .form-section .input-wrapper input {
+      padding: 19px 30px;
+      border: 1px solid #ffffff;
+      background: none;
+      font-family: "SF Pro Display";
+      font-size: 17px;
+      color: #ffffff;
+      font-weight: 600;
+      width: 100%;
+      max-width: 500px;
+      outline: none;
+      min-height: 60px; }
+    .form-section .input-wrapper button {
+      padding: 19px 10px;
+      background: #fe8732;
+      border: 1px solid #fe8732;
+      font-family: "SF Pro Display";
+      font-size: 17px;
+      color: #ffffff;
+      font-weight: 600;
+      border: none;
+      width: 100%;
+      max-width: 356px;
+      right: 7px;
+      position: relative;
+      min-height: 60px; }
+
+/*# sourceMappingURL=payment-and-delivery.css.map */

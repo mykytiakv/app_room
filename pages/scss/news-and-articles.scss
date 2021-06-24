@@ -1,0 +1,52 @@
+@import "./mixin/mixins";
+
+.news-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .news-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    .news-item-wrapper {
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .news-item-img-wapper {
+        position: relative;
+        img {
+          width: 100%;
+        }
+      }
+      .news-item-label-wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 52px 60px;
+        width: 100%;
+        background: rgba(101, 101, 121, 0.17);
+        backdrop-filter: blur(200px);
+        @include fontStyle("SF Pro Display", 30px, #ffffff, 600);
+      }
+      &:nth-child(n + 3) {
+        margin-top: 30px;
+      }
+
+      &:nth-child(odd) {
+        padding-right: 15px;
+        @media screen and (max-width: 768px) {
+          padding-right: 0;
+        }
+      }
+      &:nth-child(even) {
+        padding-left: 15px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
