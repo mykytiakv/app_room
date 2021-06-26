@@ -1,77 +1,68 @@
-.table-warranty-program-section,
-.table-warranty-insurance-section {
-  background: #ffffff;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px); }
-  .table-warranty-program-section .section-title,
-  .table-warranty-insurance-section .section-title {
-    font-family: "SF Pro Display";
-    font-size: 45px;
-    color: #0c0c0d;
-    font-weight: 600; }
-  .table-warranty-program-section .table-wrapper,
-  .table-warranty-insurance-section .table-wrapper {
-    margin-top: 60px; }
-    .table-warranty-program-section .table-wrapper table,
-    .table-warranty-insurance-section .table-wrapper table {
-      width: 100%; }
-      .table-warranty-program-section .table-wrapper table thead th,
-      .table-warranty-insurance-section .table-wrapper table thead th {
-        text-align: left;
-        font-family: "SF Pro Display";
-        font-size: 16px;
-        color: #0c0c0d;
-        font-weight: 600; }
-      .table-warranty-program-section .table-wrapper table thead th:nth-child(2),
-      .table-warranty-insurance-section .table-wrapper table thead th:nth-child(2) {
-        text-align: center; }
-      .table-warranty-program-section .table-wrapper table thead th:nth-child(3),
-      .table-warranty-insurance-section .table-wrapper table thead th:nth-child(3) {
-        text-align: right; }
-      .table-warranty-program-section .table-wrapper table tbody th,
-      .table-warranty-insurance-section .table-wrapper table tbody th {
-        font-family: "SF Pro Display";
-        font-size: 16px;
-        color: #fe8732;
-        font-weight: 600; }
-      .table-warranty-program-section .table-wrapper table tbody td,
-      .table-warranty-insurance-section .table-wrapper table tbody td {
-        font-family: "SF Pro Display";
-        font-size: 16px;
-        color: #0c0c0d;
-        font-weight: normal; }
-      .table-warranty-program-section .table-wrapper table tbody th,
-      .table-warranty-insurance-section .table-wrapper table tbody th {
-        text-align: left; }
-      .table-warranty-program-section .table-wrapper table tbody td:nth-child(2),
-      .table-warranty-insurance-section .table-wrapper table tbody td:nth-child(2) {
-        text-align: center; }
-      .table-warranty-program-section .table-wrapper table tbody td:nth-child(3),
-      .table-warranty-insurance-section .table-wrapper table tbody td:nth-child(3) {
-        text-align: right; }
-      .table-warranty-program-section .table-wrapper table th,
-      .table-warranty-program-section .table-wrapper table td,
-      .table-warranty-insurance-section .table-wrapper table th,
-      .table-warranty-insurance-section .table-wrapper table td {
-        padding: 24px 0;
-        border-bottom: 1px solid rgba(12, 12, 13, 0.5);
-        word-wrap: break-word; }
-      .table-warranty-program-section .table-wrapper table.warranty-insurance-table thead th:nth-child(2),
-      .table-warranty-insurance-section .table-wrapper table.warranty-insurance-table thead th:nth-child(2) {
-        text-align: right; }
-      .table-warranty-program-section .table-wrapper table.warranty-insurance-table tbody td,
-      .table-warranty-insurance-section .table-wrapper table.warranty-insurance-table tbody td {
-        text-align: right; }
+/*
+Error: Invalid CSS after "...kScrollBar() { ": expected "}", was "{"
+        on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss
+        from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\guarantee.scss
 
-.banner-wrapper {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-  .banner-wrapper.warranty-program-banner {
-    background-image: url("../images/img_4229 1.png");
-    height: 533px; }
-  .banner-wrapper.warranty-insurance-banner {
-    background-image: url("../images/care-1 1.png");
-    height: 520px; }
+35:   ::-webkit-scrollbar-thumb:hover {
+36:     background: #666666;
+37:   }
+38: }
+39: 
+40: @mixin blockScrollBar() { {
+41:   scroll-lin
+42: }
 
-/*# sourceMappingURL=guarantee.css.map */
+Backtrace:
+C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss:40
+C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\guarantee.scss:1
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:246:in `mixin_directive'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/Koala/bin/sass:22:in `load'
+D:/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...kScrollBar() { \": expected \"}\", was \"{\"\A         on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss\A         from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\guarantee.scss\A \A 35:   ::-webkit-scrollbar-thumb:hover {\A 36:     background: #666666;\A 37:   }\A 38: }\A 39: \A 40: @mixin blockScrollBar() { {\A 41:   scroll-lin\A 42: }"; }

@@ -1,7 +1,7 @@
 /*
 Error: Invalid CSS after "...kScrollBar() { ": expected "}", was "{"
         on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss
-        from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\payment-and-delivery.scss
+        from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\shops.scss
 
 35:   ::-webkit-scrollbar-thumb:hover {
 36:     background: #666666;
@@ -14,7 +14,7 @@ Error: Invalid CSS after "...kScrollBar() { ": expected "}", was "{"
 
 Backtrace:
 C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss:40
-C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\payment-and-delivery.scss:1
+C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\shops.scss:1
 D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -65,4 +65,4 @@ D:/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...kScrollBar() { \": expected \"}\", was \"{\"\A         on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss\A         from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\payment-and-delivery.scss\A \A 35:   ::-webkit-scrollbar-thumb:hover {\A 36:     background: #666666;\A 37:   }\A 38: }\A 39: \A 40: @mixin blockScrollBar() { {\A 41:   scroll-lin\A 42: }"; }
+  content: "Error: Invalid CSS after \"...kScrollBar() { \": expected \"}\", was \"{\"\A         on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss\A         from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\shops.scss\A \A 35:   ::-webkit-scrollbar-thumb:hover {\A 36:     background: #666666;\A 37:   }\A 38: }\A 39: \A 40: @mixin blockScrollBar() { {\A 41:   scroll-lin\A 42: }"; }

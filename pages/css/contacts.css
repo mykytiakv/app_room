@@ -1,120 +1,68 @@
-.shop-info-section {
-  background: #ffffff;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px); }
-  .shop-info-section .section-title {
-    font-family: "SF Pro Display";
-    font-size: 45px;
-    color: #0c0c0d;
-    font-weight: 600; }
-  .shop-info-section .description {
-    display: grid;
-    grid-template-areas: " online-shop-info shop-img-wrapper" "service-center-info shop-img-wrapper";
-    grid-template-columns: 50% 50% 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .shop-info-section .description .online-shop-info {
-      grid-area: online-shop-info;
-      margin-right: 65px; }
-    .shop-info-section .description .service-center-info {
-      grid-area: service-center-info;
-      margin-right: 65px;
-      margin-top: 120px; }
-    .shop-info-section .description .shop-img-wrapper {
-      grid-area: shop-img-wrapper; }
-    .shop-info-section .description .info-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin-top: 60px; }
-      .shop-info-section .description .info-wrapper .title {
-        min-height: 20px;
-        white-space: nowrap;
-        font-family: "SF Pro Display";
-        font-size: 16px;
-        color: rgba(12, 12, 13, 0.5);
-        font-weight: normal; }
-      .shop-info-section .description .info-wrapper .email-block {
-        padding: 0 10px; }
-      .shop-info-section .description .info-wrapper .info-item {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .shop-info-section .description .info-wrapper .info-item:nth-child(2) {
-          margin-top: 20px; }
-        .shop-info-section .description .info-wrapper .info-item:nth-child(n + 3) {
-          margin-top: 30px; }
-        .shop-info-section .description .info-wrapper .info-item .icon-wrapper {
-          margin-right: 15px; }
-          .shop-info-section .description .info-wrapper .info-item .icon-wrapper img {
-            min-width: 26px; }
-        .shop-info-section .description .info-wrapper .info-item .text {
-          font-family: "SF Pro Display";
-          font-size: 16px;
-          color: #0c0c0d;
-          font-weight: normal; }
-          .shop-info-section .description .info-wrapper .info-item .text.timetable .timetable-item:nth-child(n + 2) {
-            margin-top: 12px; }
+/*
+Error: Invalid CSS after "...kScrollBar() { ": expected "}", was "{"
+        on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss
+        from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\contacts.scss
 
-.shops-section {
-  background: #000000; }
-  .shops-section .section-title {
-    font-family: "SF Pro Display";
-    font-size: 45px;
-    color: #ffffff;
-    font-weight: 600; }
-  .shops-section .shops-wrapper {
-    margin-top: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .shops-section .shops-wrapper .shop-item-wrapper {
-      position: relative; }
-      .shops-section .shops-wrapper .shop-item-wrapper:first-child {
-        margin-right: 15px; }
-      .shops-section .shops-wrapper .shop-item-wrapper:nth-child(n + 2) {
-        margin: 0 15px; }
-      .shops-section .shops-wrapper .shop-item-wrapper:last-child {
-        margin-right: 0; }
-      .shops-section .shops-wrapper .shop-item-wrapper:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(22, 22, 25, 0.68); }
-      .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper {
-        position: absolute;
-        z-index: 2;
-        text-align: center; }
-        .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper.center-label {
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
-          font-family: "SF Pro Display";
-          font-size: 30px;
-          color: #ffffff;
-          font-weight: 600; }
-        .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper.bottom-label {
-          width: 100%;
-          left: 0;
-          bottom: 0;
-          padding: 25px 10px;
-          background: rgba(101, 101, 121, 0.17);
-          -webkit-backdrop-filter: blur(200px);
-                  backdrop-filter: blur(200px);
-          font-family: "SF Pro Display";
-          font-size: 17px;
-          color: #ffffff;
-          font-weight: 600; }
+35:   ::-webkit-scrollbar-thumb:hover {
+36:     background: #666666;
+37:   }
+38: }
+39: 
+40: @mixin blockScrollBar() { {
+41:   scroll-lin
+42: }
 
-/*# sourceMappingURL=contacts.css.map */
+Backtrace:
+C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss:40
+C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\contacts.scss:1
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:246:in `mixin_directive'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/Koala/bin/sass:22:in `load'
+D:/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...kScrollBar() { \": expected \"}\", was \"{\"\A         on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss\A         from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\contacts.scss\A \A 35:   ::-webkit-scrollbar-thumb:hover {\A 36:     background: #666666;\A 37:   }\A 38: }\A 39: \A 40: @mixin blockScrollBar() { {\A 41:   scroll-lin\A 42: }"; }

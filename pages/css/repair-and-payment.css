@@ -1,0 +1,85 @@
+.repair-section {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .repair-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .repair-section .container .left-block,
+    .repair-section .container .right-block {
+      width: 50%; }
+    .repair-section .container .left-block {
+      max-height: 390px;
+      position: relative;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .repair-section .container .left-block ::-webkit-scrollbar {
+        width: 8px;
+        background: transparent; }
+      .repair-section .container .left-block ::-webkit-scrollbar-track {
+        width: 1px; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb {
+        background: #666666; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
+        background: #666666; }
+      .repair-section .container .left-block .scroll-line {
+        position: absolute;
+        top: 0;
+        left: 3.4px;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.42);
+        height: 100%; }
+
+.info-wrapper {
+  overflow: auto;
+  direction: rtl;
+  max-height: 390px;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 43px; }
+  .info-wrapper .info-item:nth-child(n + 2) {
+    margin-top: 50px; }
+  .info-wrapper .info-item .title {
+    text-align: left;
+    font-family: "SF Pro Display";
+    font-size: 24px;
+    color: #0c0c0d;
+    font-weight: 600; }
+  .info-wrapper .info-item .main-text {
+    text-align: left;
+    margin-top: 30px;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    color: #0c0c0d;
+    font-weight: normal; }
+
+.questions-section {
+  background: #000000; }
+  .questions-section .question-item {
+    padding: 45px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.38); }
+    .questions-section .question-item:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+    .questions-section .question-item .question-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .questions-section .question-item .question-header .question {
+        font-family: "SF Pro Display";
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold; }
+    .questions-section .question-item .answer {
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal;
+      margin-top: 20px; }
+
+/*# sourceMappingURL=repair-and-payment.css.map */

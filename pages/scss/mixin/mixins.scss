@@ -13,3 +13,32 @@ $maxWidth: 1280;
   color: $color;
   font-weight: $weight;
 }
+
+@mixin blockScrollBar() {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    width: 1px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666666;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+  }
+}
+
+@mixin fakeScrollBarLine() {
+  position: absolute;
+  top: 0;
+  left: 3.4px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.42);
+  height: 100%;
+}
