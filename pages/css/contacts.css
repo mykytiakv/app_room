@@ -1,11 +1,67 @@
-.contacts-section {
+.shop-info-section {
   background: #ffffff;
-  backdrop-filter: blur(200px); }
-  .contacts-section .section-title {
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .shop-info-section .section-title {
     font-family: "SF Pro Display";
     font-size: 45px;
     color: #0c0c0d;
     font-weight: 600; }
+  .shop-info-section .description {
+    display: grid;
+    grid-template-areas: " online-shop-info shop-img-wrapper" "service-center-info shop-img-wrapper";
+    grid-template-columns: 50% 50% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .shop-info-section .description .online-shop-info {
+      grid-area: online-shop-info;
+      margin-right: 65px; }
+    .shop-info-section .description .service-center-info {
+      grid-area: service-center-info;
+      margin-right: 65px;
+      margin-top: 120px; }
+    .shop-info-section .description .shop-img-wrapper {
+      grid-area: shop-img-wrapper; }
+    .shop-info-section .description .info-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 60px; }
+      .shop-info-section .description .info-wrapper .title {
+        min-height: 20px;
+        white-space: nowrap;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: rgba(12, 12, 13, 0.5);
+        font-weight: normal; }
+      .shop-info-section .description .info-wrapper .email-block {
+        padding: 0 10px; }
+      .shop-info-section .description .info-wrapper .info-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .shop-info-section .description .info-wrapper .info-item:nth-child(2) {
+          margin-top: 20px; }
+        .shop-info-section .description .info-wrapper .info-item:nth-child(n + 3) {
+          margin-top: 30px; }
+        .shop-info-section .description .info-wrapper .info-item .icon-wrapper {
+          margin-right: 15px; }
+          .shop-info-section .description .info-wrapper .info-item .icon-wrapper img {
+            min-width: 26px; }
+        .shop-info-section .description .info-wrapper .info-item .text {
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #0c0c0d;
+          font-weight: normal; }
+          .shop-info-section .description .info-wrapper .info-item .text.timetable .timetable-item:nth-child(n + 2) {
+            margin-top: 12px; }
 
 .shops-section {
   background: #000000; }
@@ -16,6 +72,8 @@
     font-weight: 600; }
   .shops-section .shops-wrapper {
     margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .shops-section .shops-wrapper .shop-item-wrapper {
       position: relative; }
@@ -40,7 +98,8 @@
         .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper.center-label {
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
           font-family: "SF Pro Display";
           font-size: 30px;
           color: #ffffff;
@@ -51,7 +110,8 @@
           bottom: 0;
           padding: 25px 10px;
           background: rgba(101, 101, 121, 0.17);
-          backdrop-filter: blur(200px);
+          -webkit-backdrop-filter: blur(200px);
+                  backdrop-filter: blur(200px);
           font-family: "SF Pro Display";
           font-size: 17px;
           color: #ffffff;
