@@ -74,3 +74,97 @@
     }
   }
 }
+
+.products-section {
+  padding: 60px 0;
+  background: #f6f6f6;
+  backdrop-filter: blur(200px);
+  .products-tabs-wrapper {
+  }
+  .tab-bths-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .tab-bth {
+      border: 1px solid #0c0c0d;
+      max-width: 249px;
+      width: 100%;
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
+      &:nth-child(2) {
+        margin: 0 20px;
+      }
+      &:nth-child(3) {
+        margin-left: 20px;
+      }
+      a {
+        padding: 18px;
+        display: block;
+        text-align: center;
+        @include fontStyle("SF Pro Display", 18px, #0c0c0d, bold);
+      }
+      &.ui-tabs-active {
+        border: 1px solid #fe8732;
+        a {
+          color: #fe8732;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin-top: 60px;
+    .list-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &.iPhone-item {
+          width: 20%;
+          &:nth-child(n + 6) {
+            margin-top: 50px;
+          }
+        }
+        &.iPad-item {
+          width: 25%;
+          &:nth-child(n + 5) {
+            margin-top: 50px;
+          }
+        }
+        &.apple-watch-item {
+          &:nth-child(1) {
+            margin-right: 20px;
+          }
+          &:nth-child(2) {
+            margin: 0 20px;
+          }
+          &:nth-child(3) {
+            margin-left: 20px;
+          }
+          &:nth-child(n + 4) {
+            margin-top: 50px;
+          }
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          .photo-wrapper {
+            flex: 1;
+            img {
+              height: 100%;
+            }
+          }
+          .title {
+            margin-top: 20px;
+            text-align: center;
+            @include fontStyle("SF Pro Display", 20px, #0c0c0d, normal);
+          }
+        }
+      }
+    }
+  }
+}

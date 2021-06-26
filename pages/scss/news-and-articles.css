@@ -1,68 +1,47 @@
-/*
-Error: Invalid CSS after "...kScrollBar() { ": expected "}", was "{"
-        on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss
-        from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\news-and-articles.scss
+.news-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px); }
+  .news-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #0c0c0d;
+    font-weight: 600; }
+  .news-section .news-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap; }
+    .news-section .news-wrapper .news-item-wrapper {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .news-section .news-wrapper .news-item-wrapper {
+          width: 100%; } }
+      .news-section .news-wrapper .news-item-wrapper .news-item-img-wapper {
+        position: relative; }
+        .news-section .news-wrapper .news-item-wrapper .news-item-img-wapper img {
+          width: 100%; }
+      .news-section .news-wrapper .news-item-wrapper .news-item-label-wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 52px 60px;
+        width: 100%;
+        background: rgba(101, 101, 121, 0.17);
+        backdrop-filter: blur(200px);
+        font-family: "SF Pro Display";
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 600; }
+      .news-section .news-wrapper .news-item-wrapper:nth-child(n + 3) {
+        margin-top: 30px; }
+      .news-section .news-wrapper .news-item-wrapper:nth-child(odd) {
+        padding-right: 15px; }
+        @media screen and (max-width: 768px) {
+          .news-section .news-wrapper .news-item-wrapper:nth-child(odd) {
+            padding-right: 0; } }
+      .news-section .news-wrapper .news-item-wrapper:nth-child(even) {
+        padding-left: 15px; }
+        @media screen and (max-width: 768px) {
+          .news-section .news-wrapper .news-item-wrapper:nth-child(even) {
+            padding-left: 0; } }
 
-35:   ::-webkit-scrollbar-thumb:hover {
-36:     background: #666666;
-37:   }
-38: }
-39: 
-40: @mixin blockScrollBar() { {
-41:   scroll-lin
-42: }
-
-Backtrace:
-C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss:40
-C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\news-and-articles.scss:1
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:679:in `block'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:246:in `mixin_directive'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/Koala/bin/sass:22:in `load'
-D:/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...kScrollBar() { \": expected \"}\", was \"{\"\A         on line 40 of C:/Users/Taras/Desktop/APPLE ROOM/appleRoomMyPart/pages/scss/mixin/mixins.scss\A         from line 1 of C:\Users\Taras\Desktop\APPLE ROOM\appleRoomMyPart\pages\scss\news-and-articles.scss\A \A 35:   ::-webkit-scrollbar-thumb:hover {\A 36:     background: #666666;\A 37:   }\A 38: }\A 39: \A 40: @mixin blockScrollBar() { {\A 41:   scroll-lin\A 42: }"; }
+/*# sourceMappingURL=news-and-articles.css.map */

@@ -6,4 +6,5 @@ $(document).ready(function () {
       .children($(".answer"))
       .toggleClass("open");
   });
+  $("#products-tabs-wrapper").tabs();
 });
