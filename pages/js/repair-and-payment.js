@@ -6,5 +6,6 @@ $(document).ready(function () {
       .children($(".answer"))
       .toggleClass("open");
   });
+  // products tabs init
   $("#products-tabs-wrapper").tabs();
 });

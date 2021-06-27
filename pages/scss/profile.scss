@@ -1,0 +1,101 @@
+@import "./mixin/mixins";
+
+.registration-section {
+  padding: 0;
+}
+.tabs-header-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/Rectangle 6.png");
+  height: 462px;
+  .tab-content {
+    .section-title {
+      @include fontStyle("SF Pro Display", 82px, #ffffff, 600);
+      text-align: center;
+    }
+  }
+}
+
+#profile-tabs-wrapper {
+  .tab-bths-list {
+    display: flex;
+    .profile-tab-bth {
+      flex: 1;
+      text-align: center;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      a {
+        cursor: pointer;
+        padding-bottom: 30px;
+        display: block;
+        height: 100%;
+        @include fontStyle("SF Pro Display", 40px, #ffffff, 600);
+        &:nth-child(1) {
+          padding-right: 10px;
+        }
+        &:nth-child(2) {
+          padding: 0 10px;
+        }
+        &:nth-child(3) {
+          padding-left: 10px;
+        }
+      }
+      &.tab-active {
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+}
+
+.profile-info-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .info-wrapper {
+    width: 100%;
+    max-width: 820px;
+    margin: auto;
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0 25px 0;
+      border-bottom: 1px solid rgba(12, 12, 13, 0.5);
+      .label {
+        @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+      }
+      .value {
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+      }
+    }
+  }
+  .bth-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    .bth {
+      @include formBthDefault(400px);
+    }
+  }
+}
+
+.bonus-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .section-title {
+    text-align: center;
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .bonus-sum {
+    @include fontStyle("SF Pro Display", 64px, #fe8732, 600);
+    margin-top: 20px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .info-block {
+    border-top: 1px solid rgba(12, 12, 13, 0.5);
+    .description {
+      margin-top: 40px;
+      text-align: center;
+      @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+    }
+  }
+}
