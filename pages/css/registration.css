@@ -1,0 +1,68 @@
+.registration-section {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  padding-top: 180px;
+  padding-bottom: 150px; }
+  .registration-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .registration-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 82px;
+    color: #0c0c0d;
+    font-weight: 600; }
+  .registration-section .login-form {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .registration-section .login-form fieldset,
+    .registration-section .login-form .bth-wrapper {
+      width: 48%; }
+    .registration-section .login-form :nth-child(odd) {
+      text-align: right;
+      padding-right: 15px; }
+    .registration-section .login-form :nth-child(even) {
+      padding-left: 15px; }
+    .registration-section .login-form :nth-child(n + 3) {
+      margin-top: 30px; }
+    .registration-section .login-form .input {
+      text-align: left;
+      width: 100%;
+      max-width: 400px;
+      padding: 18px;
+      border: 1px solid rgba(12, 12, 13, 0.5);
+      cursor: pointer;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: rgba(12, 12, 13, 0.5);
+      font-weight: normal; }
+    .registration-section .login-form .bth {
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      padding: 18px;
+      border: 1px solid #fe8732;
+      background: #fe8732;
+      cursor: pointer;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 600; }
+
+/*# sourceMappingURL=registration.css.map */
