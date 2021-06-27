@@ -1,0 +1,120 @@
+.credit-programs-section,
+.requirements-crediting-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px); }
+  .credit-programs-section .section-title,
+  .requirements-crediting-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #0c0c0d;
+    font-weight: 600; }
+
+.requirements-crediting-section .section-title {
+  padding-bottom: 60px; }
+
+.requirements-crediting-section .requirements-content {
+  border-top: 1px solid rgba(12, 12, 13, 0.5); }
+  .requirements-crediting-section .requirements-content .title {
+    margin-top: 35px;
+    font-family: "SF Pro Display";
+    font-size: 30px;
+    color: #0c0c0d;
+    font-weight: 600; }
+  .requirements-crediting-section .requirements-content .sub-title {
+    margin-top: 30px;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    color: #0c0c0d;
+    font-weight: normal; }
+
+.lists-wrapper {
+  margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap; }
+  .lists-wrapper .list-wrapper {
+    padding-right: 30px; }
+
+.requirements-lists .list-title {
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  color: #fe8732;
+  font-weight: bold; }
+.requirements-lists .list-wrapper {
+  width: 50%; }
+  .requirements-lists .list-wrapper:nth-child(1), .requirements-lists .list-wrapper:nth-child(2) {
+    margin-top: 30px; }
+  .requirements-lists .list-wrapper:nth-child(n + 3) {
+    margin-top: 60px; }
+  .requirements-lists .list-wrapper ul.requirements-list li {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    color: #0c0c0d;
+    font-weight: normal; }
+    .requirements-lists .list-wrapper ul.requirements-list li .circle {
+      width: 10px;
+      min-width: 10px;
+      height: 10px;
+      min-height: 10px;
+      border-radius: 50%;
+      background: #636372;
+      content: "";
+      display: block;
+      margin-right: 18px; }
+
+.credit-programs-lists .list-title {
+  font-family: "SF Pro Display";
+  font-size: 28px;
+  color: #fe8732;
+  font-weight: bold; }
+.credit-programs-lists .list-wrapper {
+  width: 33%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column; }
+  .credit-programs-lists .list-wrapper.program-description {
+    padding-bottom: 50px;
+    font-family: "SF Pro Display";
+    font-size: 18px;
+    color: #0c0c0d;
+    font-weight: normal; }
+    .credit-programs-lists .list-wrapper.program-description p:nth-child(n + 2) {
+      margin-top: 40px; }
+  .credit-programs-lists .list-wrapper ul.requirements-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    .credit-programs-lists .list-wrapper ul.requirements-list li {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #0c0c0d;
+      font-weight: normal; }
+      .credit-programs-lists .list-wrapper ul.requirements-list li.commision-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex: 1; }
+        .credit-programs-lists .list-wrapper ul.requirements-list li.commision-item .grey-text {
+          color: rgba(12, 12, 13, 0.5); }
+      .credit-programs-lists .list-wrapper ul.requirements-list li:nth-child(1) {
+        margin-top: 28px; }
+      .credit-programs-lists .list-wrapper ul.requirements-list li:nth-child(n + 2) {
+        margin-top: 20px; }
+      .credit-programs-lists .list-wrapper ul.requirements-list li .circle {
+        width: 10px;
+        min-width: 10px;
+        height: 10px;
+        min-height: 10px;
+        border-radius: 50%;
+        background: #636372;
+        content: "";
+        display: block;
+        margin-right: 18px; }
+
+/*# sourceMappingURL=credit.css.map */

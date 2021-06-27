@@ -1,0 +1,127 @@
+@import "./mixin/mixins";
+
+@mixin circle {
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  background: #636372;
+  content: "";
+  display: block;
+  margin-right: 18px;
+}
+
+.credit-programs-section,
+.requirements-crediting-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+}
+
+.requirements-crediting-section {
+  .section-title {
+    padding-bottom: 60px;
+  }
+}
+
+.requirements-crediting-section {
+  .requirements-content {
+    border-top: 1px solid rgba(12, 12, 13, 0.5);
+    .title {
+      margin-top: 35px;
+      @include fontStyle("SF Pro Display", 30px, #0c0c0d, 600);
+    }
+    .sub-title {
+      margin-top: 30px;
+      @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+    }
+  }
+}
+
+.lists-wrapper {
+  margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  .list-wrapper {
+    padding-right: 30px;
+  }
+}
+
+.requirements-lists {
+  .list-title {
+    @include fontStyle("SF Pro Display", 20px, #fe8732, bold);
+  }
+  .list-wrapper {
+    width: 50%;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
+    &:nth-child(n + 3) {
+      margin-top: 60px;
+    }
+    ul.requirements-list {
+      li {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+        .circle {
+          @include circle();
+        }
+      }
+    }
+  }
+}
+
+.credit-programs-lists {
+  .list-title {
+    @include fontStyle("SF Pro Display", 28px, #fe8732, bold);
+  }
+  .list-wrapper {
+    width: 33%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    &.program-description {
+      padding-bottom: 50px;
+      @include fontStyle("SF Pro Display", 18px, #0c0c0d, normal);
+      p:nth-child(n + 2) {
+        margin-top: 40px;
+      }
+    }
+    ul.requirements-list {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      li {
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+        &.commision-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+          flex: 1;
+          .grey-text {
+            color: rgba(12, 12, 13, 0.5);
+          }
+        }
+        &:nth-child(1) {
+          margin-top: 28px;
+        }
+        &:nth-child(n + 2) {
+          margin-top: 20px;
+        }
+        .circle {
+          @include circle();
+        }
+      }
+    }
+  }
+}
