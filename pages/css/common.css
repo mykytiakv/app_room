@@ -26,4 +26,7 @@ a {
 li {
   list-style: none; }
 
+fieldset {
+  border: none; }
+
 /*# sourceMappingURL=common.css.map */
