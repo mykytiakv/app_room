@@ -1,0 +1,193 @@
+.repair-section {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .repair-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .repair-section .container .left-block,
+    .repair-section .container .right-block {
+      width: 50%; }
+    .repair-section .container .left-block {
+      max-height: 390px;
+      position: relative;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .repair-section .container .left-block ::-webkit-scrollbar {
+        width: 8px;
+        background: transparent; }
+      .repair-section .container .left-block ::-webkit-scrollbar-track {
+        width: 1px; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb {
+        background: #666666; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
+        background: #666666; }
+      .repair-section .container .left-block .scroll-line {
+        position: absolute;
+        top: 0;
+        left: 3.4px;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.42);
+        height: 100%; }
+
+.info-wrapper {
+  overflow: auto;
+  direction: rtl;
+  max-height: 390px;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 43px; }
+  .info-wrapper .info-item:nth-child(n + 2) {
+    margin-top: 50px; }
+  .info-wrapper .info-item .title {
+    text-align: left;
+    font-family: "SF Pro Display";
+    font-size: 24px;
+    color: #0c0c0d;
+    font-weight: 600; }
+  .info-wrapper .info-item .main-text {
+    text-align: left;
+    margin-top: 30px;
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    color: #0c0c0d;
+    font-weight: normal; }
+
+.questions-section {
+  background: #000000; }
+  .questions-section .question-item {
+    padding: 45px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.38); }
+    .questions-section .question-item:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+    .questions-section .question-item .question-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .questions-section .question-item .question-header .question {
+        font-family: "SF Pro Display";
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold; }
+      .questions-section .question-item .question-header .plus-icon-wrapper {
+        cursor: pointer; }
+    .questions-section .question-item .answer {
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal;
+      max-height: 0;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      overflow: hidden; }
+      .questions-section .question-item .answer.open {
+        margin-top: 20px;
+        max-height: 1000px;
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease; }
+
+.products-section {
+  padding: 60px 0;
+  background: #f6f6f6;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .products-section .tab-bths-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .products-section .tab-bths-list .tab-bth {
+      border: 1px solid #0c0c0d;
+      max-width: 249px;
+      width: 100%; }
+      .products-section .tab-bths-list .tab-bth:nth-child(1) {
+        margin-right: 20px; }
+      .products-section .tab-bths-list .tab-bth:nth-child(2) {
+        margin: 0 20px; }
+      .products-section .tab-bths-list .tab-bth:nth-child(3) {
+        margin-left: 20px; }
+      .products-section .tab-bths-list .tab-bth a {
+        padding: 18px;
+        display: block;
+        text-align: center;
+        font-family: "SF Pro Display";
+        font-size: 18px;
+        color: #0c0c0d;
+        font-weight: bold; }
+      .products-section .tab-bths-list .tab-bth.ui-tabs-active {
+        border: 1px solid #fe8732; }
+        .products-section .tab-bths-list .tab-bth.ui-tabs-active a {
+          color: #fe8732; }
+  .products-section .tab-content {
+    margin-top: 60px; }
+    .products-section .tab-content .list-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .products-section .tab-content .list-wrapper .list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .products-section .tab-content .list-wrapper .list-item.iPhone-item {
+          width: 20%; }
+          .products-section .tab-content .list-wrapper .list-item.iPhone-item:nth-child(n + 6) {
+            margin-top: 50px; }
+        .products-section .tab-content .list-wrapper .list-item.iPad-item {
+          width: 25%; }
+          .products-section .tab-content .list-wrapper .list-item.iPad-item:nth-child(n + 5) {
+            margin-top: 50px; }
+        .products-section .tab-content .list-wrapper .list-item.apple-watch-item:nth-child(1) {
+          margin-right: 20px; }
+        .products-section .tab-content .list-wrapper .list-item.apple-watch-item:nth-child(2) {
+          margin: 0 20px; }
+        .products-section .tab-content .list-wrapper .list-item.apple-watch-item:nth-child(3) {
+          margin-left: 20px; }
+        .products-section .tab-content .list-wrapper .list-item.apple-watch-item:nth-child(n + 4) {
+          margin-top: 50px; }
+        .products-section .tab-content .list-wrapper .list-item a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          height: 100%; }
+          .products-section .tab-content .list-wrapper .list-item a .photo-wrapper {
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1; }
+            .products-section .tab-content .list-wrapper .list-item a .photo-wrapper img {
+              height: 100%; }
+          .products-section .tab-content .list-wrapper .list-item a .title {
+            margin-top: 20px;
+            text-align: center;
+            font-family: "SF Pro Display";
+            font-size: 20px;
+            color: #0c0c0d;
+            font-weight: normal; }
+
+/*# sourceMappingURL=repair-and-payment.css.map */

@@ -1,3 +1,13 @@
+.types-payment-section {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .types-payment-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #0c0c0d;
+    font-weight: 600; }
+
 .delivery-methods-section {
   background: #000000; }
   .delivery-methods-section .section-title {
@@ -5,28 +15,55 @@
     font-size: 45px;
     color: #ffffff;
     font-weight: 600; }
-  .delivery-methods-section .delivery-methods-wrapper {
-    margin-top: 60px; }
-    .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper {
-      display: flex;
-      align-items: center;
-      padding: 40px 0;
-      border-bottom: 1px solid rgba(196, 196, 196, 0.81); }
-      .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-img-wapper {
-        margin-right: 20px; }
-        .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-img-wapper img {
-          min-width: 40px; }
-      .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-description-wapper .delivery-methods-item-description-title {
-        font-family: "SF Pro Display";
-        font-size: 24px;
-        color: #ffffff;
-        font-weight: 600; }
-      .delivery-methods-section .delivery-methods-wrapper .delivery-method-item-wrapper .delivery-methods-item-description-wapper .delivery-methods-item-description-text {
-        margin-top: 12px;
+
+.methods-wrapper {
+  margin-top: 60px; }
+  .methods-wrapper.payment-methods-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .methods-wrapper.payment-methods-wrapper .method-item-wrapper {
+      width: 48%; }
+      .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(odd) {
+        margin-right: 15px; }
+      .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(even) {
+        margin-left: 15px; }
+      .methods-wrapper.payment-methods-wrapper .method-item-wrapper.additional-description {
         font-family: "SF Pro Display";
         font-size: 16px;
-        color: #ffffff;
-        font-weight: normal; }
+        color: rgba(12, 12, 13, 0.5);
+        font-weight: normal;
+        border-bottom: none; }
+  .methods-wrapper .method-item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(196, 196, 196, 0.81); }
+    .methods-wrapper .method-item-wrapper .method-item-img-wapper {
+      margin-right: 20px; }
+      .methods-wrapper .method-item-wrapper .method-item-img-wapper img {
+        min-width: 40px; }
+    .methods-wrapper .method-item-wrapper .method-item-description-wapper .method-item-description-title {
+      font-family: "SF Pro Display";
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 600; }
+      .methods-wrapper .method-item-wrapper .method-item-description-wapper .method-item-description-title.payment-method-item-description-title {
+        color: #0c0c0d; }
+    .methods-wrapper .method-item-wrapper .method-item-description-wapper .method-item-description-text {
+      margin-top: 12px;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal; }
+      .methods-wrapper .method-item-wrapper .method-item-description-wapper .method-item-description-text.payment-method-item-description-text {
+        color: #0c0c0d; }
 
 .form-section {
   background: #000000;

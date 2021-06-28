@@ -1,0 +1,223 @@
+.pop-up-wrapper {
+  background: rgba(9, 9, 19, 0.79);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .pop-up-wrapper .pop-up-content-wrapper {
+    width: 100%;
+    max-width: 995px;
+    margin: 10px 0; }
+  .pop-up-wrapper .pop-up-container {
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .pop-up-wrapper .close-icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .pop-up-wrapper .close-icon-wrapper img {
+      cursor: pointer; }
+  .pop-up-wrapper .pop-up-body {
+    background: #ffffff;
+    margin-top: 40px;
+    padding: 60px 0; }
+    .pop-up-wrapper .pop-up-body .title {
+      border-bottom: 1px solid rgba(196, 196, 196, 0.75);
+      padding-bottom: 40px; }
+      .pop-up-wrapper .pop-up-body .title .pop-up-container span:first-child {
+        font-family: "SF Pro Display";
+        font-size: 45px;
+        color: #0c0c0d;
+        font-weight: 600; }
+      .pop-up-wrapper .pop-up-body .title .pop-up-container span:last-child {
+        margin-left: 30px;
+        margin-top: 10px; }
+        .pop-up-wrapper .pop-up-body .title .pop-up-container span:last-child a {
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #fe8732;
+          font-weight: 600; }
+    .pop-up-wrapper .pop-up-body .goods {
+      margin-top: 40px; }
+      .pop-up-wrapper .pop-up-body .goods .pop-up-container span:first-child {
+        font-family: "SF Pro Display";
+        font-size: 22px;
+        color: #0c0c0d;
+        font-weight: 600; }
+      .pop-up-wrapper .pop-up-body .goods .pop-up-container span:last-child {
+        margin-left: 30px;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #fe8732;
+        font-weight: 600; }
+    .pop-up-wrapper .pop-up-body .banks {
+      margin-top: 43px; }
+      .pop-up-wrapper .pop-up-body .banks .pop-up-container {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .pop-up-wrapper .pop-up-body .banks .bank-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 12px;
+        border: 1px solid #d0d0d0;
+        border-radius: 100px;
+        width: 100%;
+        max-width: 205px;
+        cursor: pointer; }
+        .pop-up-wrapper .pop-up-body .banks .bank-item .active {
+          border: 1px solid #fe8732; }
+        .pop-up-wrapper .pop-up-body .banks .bank-item .bank-name {
+          margin-left: 8px;
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #0c0c0d;
+          font-weight: 600; }
+    .pop-up-wrapper .pop-up-body .duration {
+      margin-top: 50px; }
+      .pop-up-wrapper .pop-up-body .duration .duration-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 13px 10px;
+        border: 1px solid #0c0c0d;
+        width: 100%;
+        max-width: 205px; }
+        .pop-up-wrapper .pop-up-body .duration .duration-item:not(:last-child) {
+          margin-right: 12px; }
+        .pop-up-wrapper .pop-up-body .duration .duration-item input {
+          width: 20px;
+          height: 20px; }
+        .pop-up-wrapper .pop-up-body .duration .duration-item .duration-description {
+          margin-left: 10px;
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #0c0c0d;
+          font-weight: 600; }
+    .pop-up-wrapper .pop-up-body .duration-slider-wrapper {
+      margin-top: 50px;
+      /*Chrome*/
+      /** FF*/
+      /* IE*/ }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"] {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: #c4c4c4; }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"]::-webkit-slider-runnable-track {
+        height: 16px;
+        -webkit-appearance: none;
+        color: #fe8732;
+        margin-top: -1px; }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"]::-webkit-slider-thumb {
+        width: 16px;
+        -webkit-appearance: none;
+        height: 16px;
+        cursor: ew-resize;
+        border: 2px solid #fe8732;
+        background: #ffffff;
+        border-radius: 50%;
+        -webkit-box-shadow: -80px 0 0 80px #fe8732;
+                box-shadow: -80px 0 0 80px #fe8732; }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"]::-moz-range-progress {
+        background-color: #fe8732; }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"]::-moz-range-track {
+        background-color: #c4c4c4; }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"]::-ms-fill-lower {
+        background-color: #fe8732; }
+      .pop-up-wrapper .pop-up-body .duration-slider-wrapper input[type="range"]::-ms-fill-upper {
+        background-color: #c4c4c4; }
+    .pop-up-wrapper .pop-up-body .credit-info {
+      margin-top: 50px; }
+      .pop-up-wrapper .pop-up-body .credit-info .pop-up-container {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%; }
+      .pop-up-wrapper .pop-up-body .credit-info .credit-info-item {
+        padding: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%; }
+        .pop-up-wrapper .pop-up-body .credit-info .credit-info-item:first-child {
+          border-top: 1px solid rgba(196, 196, 196, 0.75);
+          border-bottom: 1px solid rgba(196, 196, 196, 0.75); }
+        .pop-up-wrapper .pop-up-body .credit-info .credit-info-item:nth-child(n + 2) {
+          border-bottom: 1px solid rgba(196, 196, 196, 0.75); }
+        .pop-up-wrapper .pop-up-body .credit-info .credit-info-item .label {
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #0c0c0d;
+          font-weight: 600; }
+        .pop-up-wrapper .pop-up-body .credit-info .credit-info-item .value {
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #fe8732;
+          font-weight: 600; }
+    .pop-up-wrapper .pop-up-body .additional-info {
+      margin-top: 32px; }
+      .pop-up-wrapper .pop-up-body .additional-info .text {
+        padding: 16px 29px;
+        background: #d6e9d8;
+        border-radius: 3px;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #0c0c0d;
+        font-weight: normal; }
+    .pop-up-wrapper .pop-up-body .actions-wrapper {
+      margin-top: 50px; }
+      .pop-up-wrapper .pop-up-body .actions-wrapper .pop-up-container {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .pop-up-wrapper .pop-up-body .actions-wrapper .pop-up-container .bth-wrapper {
+          width: 100%;
+          max-width: 266px; }
+          .pop-up-wrapper .pop-up-body .actions-wrapper .pop-up-container .bth-wrapper .bth {
+            width: 100%;
+            max-width: 266px;
+            padding: 18px;
+            border: 1px solid #fe8732;
+            background: #fe8732;
+            cursor: pointer;
+            font-family: "SF Pro Display";
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 600; }
+            .pop-up-wrapper .pop-up-body .actions-wrapper .pop-up-container .bth-wrapper .bth.bth-continue {
+              color: #fe8732;
+              background: #ffffff; }
+
+/*# sourceMappingURL=popup-window.css.map */

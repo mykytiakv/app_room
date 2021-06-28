@@ -1,0 +1,48 @@
+@import "./mixin/mixins";
+
+.registration-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  padding-top: 180px;
+  padding-bottom: 150px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    @include fontStyle("SF Pro Display", 82px, #0c0c0d, 600);
+  }
+
+  .login-form {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    fieldset,
+    .bth-wrapper {
+      width: 48%;
+    }
+    :nth-child(odd) {
+      text-align: right;
+      padding-right: 15px;
+      //   background: green;
+    }
+    :nth-child(even) {
+      //   margin-left: 15px;
+      padding-left: 15px;
+    }
+    :nth-child(n + 3) {
+      margin-top: 30px;
+    }
+    .input {
+      text-align: left;
+      @include inputDefault(400px);
+    }
+    .bth {
+      text-align: center;
+      @include formBthDefault(400px);
+    }
+  }
+}

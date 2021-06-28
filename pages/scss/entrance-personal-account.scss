@@ -1,0 +1,49 @@
+@import "./mixin/mixins";
+
+.login-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  padding-top: 180px;
+  padding-bottom: 150px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    @include fontStyle("SF Pro Display", 82px, #0c0c0d, 600);
+  }
+
+  .register-navigation {
+    margin-top: 30px;
+    @include fontStyle("SF Pro Display", 20px, #0c0c0d, normal);
+  }
+  .login-form {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    fieldset {
+      @include fieldsetDefault(256px);
+    }
+    :nth-child(1) {
+      margin-right: 15px;
+    }
+    :nth-child(2) {
+      margin: 0 15px;
+    }
+    :nth-child(3) {
+      margin-left: 15px;
+    }
+    .input {
+      @include inputDefault(256px);
+    }
+    .bth {
+      @include formBthDefault(256px);
+    }
+  }
+  .forgot-password-navigation {
+    margin-top: 17px;
+    @include fontStyle("SF Pro Display", 20px, #0c0c0d, normal);
+  }
+}

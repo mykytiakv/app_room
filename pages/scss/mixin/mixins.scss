@@ -13,3 +13,56 @@ $maxWidth: 1280;
   color: $color;
   font-weight: $weight;
 }
+
+@mixin blockScrollBar() {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    width: 1px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666666;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+  }
+}
+
+@mixin fakeScrollBarLine() {
+  position: absolute;
+  top: 0;
+  left: 3.4px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.42);
+  height: 100%;
+}
+
+@mixin fieldsetDefault($maxWidth) {
+  width: 100%;
+  max-width: $maxWidth;
+}
+
+@mixin inputDefault($maxWidth) {
+  width: 100%;
+  max-width: $maxWidth;
+  padding: 18px;
+  border: 1px solid rgba(12, 12, 13, 0.5);
+  cursor: pointer;
+  @include fontStyle("SF Pro Display", 16px, rgba(12, 12, 13, 0.5), normal);
+}
+
+@mixin formBthDefault($maxWidth) {
+  width: 100%;
+  max-width: $maxWidth;
+  padding: 18px;
+  border: 1px solid #fe8732;
+  background: #fe8732;
+  cursor: pointer;
+  @include fontStyle("SF Pro Display", 16px, #ffffff, 600);
+}

@@ -1,0 +1,248 @@
+@import "./mixin/mixins";
+
+.profile-section {
+  padding: 0;
+}
+.tabs-header-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/Rectangle 6.png");
+  height: 462px;
+  .tab-content {
+    padding-top: 100px;
+    .section-title {
+      @include fontStyle("SF Pro Display", 82px, #ffffff, 600);
+      text-align: center;
+    }
+  }
+}
+
+#profile-tabs-wrapper {
+  padding-top: 75px;
+  .tab-bths-list {
+    display: flex;
+    .profile-tab-bth {
+      flex: 1;
+      text-align: center;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+      a {
+        cursor: pointer;
+        padding-bottom: 30px;
+        display: block;
+        height: 100%;
+        @include fontStyle("SF Pro Display", 40px, #ffffff, 600);
+        &:nth-child(1) {
+          padding-right: 10px;
+        }
+        &:nth-child(2) {
+          padding: 0 10px;
+        }
+        &:nth-child(3) {
+          padding-left: 10px;
+        }
+      }
+      &.tab-active {
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+}
+
+.orders-section,
+.profile-info-section,
+.bonus-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+}
+
+.profile-info-section {
+  .info-wrapper {
+    width: 100%;
+    max-width: 820px;
+    margin: auto;
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0 25px 0;
+      border-bottom: 1px solid rgba(12, 12, 13, 0.5);
+      .label {
+        @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+      }
+      .value {
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+      }
+    }
+  }
+  .bth-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    .bth {
+      @include formBthDefault(400px);
+    }
+  }
+}
+
+.bonus-section {
+  .section-title {
+    text-align: center;
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .bonus-sum {
+    @include fontStyle("SF Pro Display", 64px, #fe8732, 600);
+    margin-top: 20px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .info-block {
+    border-top: 1px solid rgba(12, 12, 13, 0.5);
+    .description {
+      margin-top: 40px;
+      text-align: center;
+      @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+    }
+  }
+}
+
+.orders-section {
+  .orders-list {
+    .order-item {
+      padding: 40px 0;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &:first-child {
+        border-bottom: 1px solid rgba(12, 12, 13, 0.5);
+        border-top: 1px solid rgba(12, 12, 13, 0.5);
+      }
+      &:nth-child(n + 2) {
+        border-bottom: 1px solid rgba(12, 12, 13, 0.5);
+      }
+      .order-id {
+        @include fontStyle("SF Pro Display", 16px, #2939c5, normal);
+        padding-right: 10px;
+      }
+      .order-state {
+        width: 100%;
+        max-width: 113px;
+        text-align: center;
+        padding: 7px 16px;
+        background: #72d450;
+        border-radius: 5px;
+        @include fontStyle("SF Pro Display", 16px, #ffffff, normal);
+      }
+      .order-devices {
+        width: 35%;
+        padding: 0 10px;
+        .order-device {
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+          &:nth-child(n + 2) {
+            margin-top: 16px;
+          }
+        }
+      }
+
+      .order-description {
+        width: 35%;
+        padding: 0 10px;
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+      }
+      .order-date {
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+      }
+    }
+  }
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-wrap: wrap;
+  .left-block,
+  .right-block {
+    width: 50%;
+  }
+  fieldset {
+    &:nth-child(n + 2) {
+      margin-top: 30px;
+    }
+  }
+  .fieldset-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+    }
+  }
+  .left-block {
+    padding-right: 15px;
+    label {
+      cursor: pointer;
+      white-space: nowrap;
+      min-width: 120px;
+      padding-right: 10px;
+    }
+    input {
+      @include inputDefault(542px);
+    }
+  }
+  .right-block {
+    padding-left: 15px;
+    fieldset:first-child label {
+      span:nth-child(2) {
+        cursor: pointer;
+        padding-left: 35px;
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      min-width: 200px;
+      padding-right: 10px;
+      span {
+        display: block;
+      }
+      span:nth-child(2) {
+        cursor: pointer;
+        padding-left: 80px;
+      }
+    }
+    input,
+    select {
+      @include inputDefault(369px);
+    }
+    select {
+      appearance: none;
+      background: url("../images/arrow.png") no-repeat;
+      background-position-x: 95%;
+      background-position-y: center;
+    }
+  }
+  .bths-wrapper {
+    width: 100%;
+    display: flex;
+    .bth-wrapper {
+      width: 50%;
+      &.save-bth-wrapper {
+        padding-right: 15px;
+      }
+      &.cancel-bth-wrapper {
+        padding-left: 15px;
+      }
+      .bth {
+        max-width: 100%;
+        &.cancel-bth {
+          background: #ffffff;
+          color: #fe8732;
+        }
+      }
+    }
+  }
+}
+
+// select::-ms-expand {
+//   display: none;
+// }

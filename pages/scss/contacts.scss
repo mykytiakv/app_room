@@ -1,10 +1,77 @@
 @import "./mixin/mixins";
 
-.contacts-section {
+.shop-info-section {
   background: #ffffff;
   backdrop-filter: blur(200px);
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .description {
+    display: grid;
+    grid-template-areas:
+      " online-shop-info shop-img-wrapper"
+      "service-center-info shop-img-wrapper";
+    grid-template-columns: 50% 50% 50%;
+    align-items: center;
+    .online-shop-info {
+      grid-area: online-shop-info;
+      margin-right: 65px;
+    }
+    .service-center-info {
+      grid-area: service-center-info;
+      margin-right: 65px;
+      margin-top: 120px;
+    }
+    .shop-img-wrapper {
+      grid-area: shop-img-wrapper;
+    }
+    .info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      // .info-block {
+      //   &:nth-child(3) {
+      //     margin-top: 30px;
+      //   }
+      // }
+      .title {
+        min-height: 20px;
+        white-space: nowrap;
+        @include fontStyle(
+          "SF Pro Display",
+          16px,
+          rgba(12, 12, 13, 0.5),
+          normal
+        );
+      }
+      .email-block {
+        padding: 0 10px;
+      }
+      .info-item {
+        display: flex;
+        align-items: center;
+        &:nth-child(2) {
+          margin-top: 20px;
+        }
+        &:nth-child(n + 3) {
+          margin-top: 30px;
+        }
+        .icon-wrapper {
+          margin-right: 15px;
+          img {
+            min-width: 26px;
+          }
+        }
+        .text {
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+          &.timetable {
+            .timetable-item:nth-child(n + 2) {
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

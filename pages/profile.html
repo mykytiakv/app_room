@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль</title>
+    <link rel="stylesheet" href="fonts/SFProDisplay/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <section class="profile-section p-section">
+        <div class="tabs-header-banner">
+            <div class="container">
+                <div id="profile-tabs-wrapper">
+                    <ul class="tab-bths-list">
+                        <li class="profile-tab-bth"><a href="#tab-profile">Мій профіль</a></li>
+                        <li class="profile-tab-bth"><a href="#tab-orders">Мої замовлення</a></li>
+                        <li class="profile-tab-bth"><a href="#tab-affiliate-program">Партнерська програма</a></li>
+                    </ul>
+                </div>
+                <div class="tab-profile tab-content">
+                    <div class="section-title">Мій профіль</div>
+                </div>
+                <div class="tab-orders tab-content">
+                    <div class="section-title">Мої замовлення</div>
+                </div>
+                <div class="tab-affiliate-program tab-content">
+                    <div class="section-title">Партнерська програма</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="profile-info-section p-section tab-profile">
+        <div class="container">
+            <div class="tab-content" id="profile-content">
+                <div class="info-wrapper">
+                    <div class="info-item">
+                        <div class="label first-name">Ім’я</div>
+                        <div class="value first-name">Aнастасія</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label second-name">Прізвище</div>
+                        <div class="value second-name">Петренко</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label email">E-mail</div>
+                        <div class="value email">artweb@gmail.com</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label phone">Номер телефона</div>
+                        <div class="value phone">+380959383592</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label adress">Адреса</div>
+                        <div class="value adress">Львів, Площа Ринок 14</div>
+                    </div>
+                </div>
+                <div class="bth-wrapper">
+                    <button type="button" class="bth edit-profile-bth" id="edit-profile-bth">Редагувати</button>
+                </div>
+            </div>
+            <div class="tab-content" id="edit-profile-form">
+                <form class="edit-profile-form from">
+                    <div class="left-block">
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="first-name">Ім'я</label>
+                                <input type="text" id="first-name" placeholder="Ім'я" class="input first-name-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="second-name">Прізвище</label>
+                                <input type="text" id="second-name" placeholder="Прізвище"
+                                    class="input second-name-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="E-mail" class="input email-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="phone">Номер телефону</label>
+                                <input type="number" id="phone" placeholder="Номер телефону" class="input phone-input">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="right-block">
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="home-number"><span>Aдрес</span><span>Номер будинку (квартири)</span></label>
+                                <input type="number" id="home-number" placeholder="Номер будинку (квартири)"
+                                    class="input home-number-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="city-number"><span></span><span>Місто</span></label>
+                                <input type="text" id="city-number" placeholder="Місто" class="input city-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="status"><span></span><span>Статус</span></label>
+                                <select id="status" class="select status-select">
+                                    <option value="">Виберіть статус</option>
+                                    <option value="status1">Статус 1</option>
+                                    <option value="status2">Статус 2</option>
+                                    <option value="status3">Статус 3</option>
+                                    <option value="status4">Статус 4</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="index-number"><span></span><span>Індекс</span></label>
+                                <input type="text" id="index-number" placeholder="Індекс" class="input index-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="country"><span></span><span>Країна</span></label>
+                                <select id="country" class="select country-select">
+                                    <option value="uk">Україна</option>
+                                    <option value="kr">Корець Республіка</option>
+                                    <option value="dr">Дрогобич Республіка</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="bths-wrapper">
+                        <div class="bth-wrapper save-bth-wrapper">
+                            <button type="submit" class="bth save-bth">Зберегти</button>
+                        </div>
+                        <div class="bth-wrapper cancel-bth-wrapper">
+                            <button id="cancel-edit-profile-bth" type="submit" class="bth cancel-bth">Відмінити</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="orders-section p-section tab-orders">
+        <div class="tab-content">
+            <div class="orders-list">
+                <div class="order-item">
+                    <div class="container">
+                        <div class="order-id">
+                            #10010363
+                        </div>
+                        <div class="order-state">
+                            Новий
+                        </div>
+                        <div class="order-devices">
+                            <div class="order-device">
+                                Apple iPhone 12 64GB Black x 2
+                            </div>
+                            <div class="order-device">
+                                Apple iPhone 12 64GB White x 1
+                            </div>
+                        </div>
+                        <div class="order-description">Отримати в магазині (м. Львів, вул. Гавришкевича, 5)</div>
+                        <div class="order-date">25 квітня 2021</div>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="container">
+                        <div class="order-id">
+                            #10010363
+                        </div>
+                        <div class="order-state">
+                            Новий
+                        </div>
+                        <div class="order-devices">
+                            <div class="order-device">
+                                Apple iPhone 12 64GB Black x 2
+                            </div>
+                            <div class="order-device">
+                                Apple iPhone 12 64GB White x 1
+                            </div>
+                        </div>
+                        <div class="order-description">Отримати в магазині (м. Львів, вул. Гавришкевича, 5)</div>
+                        <div class="order-date">30 мая 2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bonus-section p-section tab-affiliate-program">
+        <div class="container">
+            <div class="tab-content">
+                <div class="section-title">Ваш поточний партнерський бонус:</div>
+                <div class="bonus-sum">+0</div>
+            </div>
+        </div>
+        <div class="info-block">
+            <div class="container">
+                <div class="description">У вас ще не було нарахувань за бонусною програмою.</div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/profile.js"></script>
+</body>
+
+</html>
