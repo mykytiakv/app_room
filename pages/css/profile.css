@@ -250,6 +250,13 @@
       font-size: 16px;
       color: rgba(12, 12, 13, 0.5);
       font-weight: normal; }
+    .edit-profile-form .right-block select {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background: url("../images/arrow.png") no-repeat;
+      background-position-x: 95%;
+      background-position-y: center; }
   .edit-profile-form .bths-wrapper {
     width: 100%;
     display: -webkit-box;
