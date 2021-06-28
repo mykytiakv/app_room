@@ -2,13 +2,14 @@
 
 .pop-up-wrapper {
   background: rgba(9, 9, 19, 0.79);
-  backdrop-filter: blur(40px);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1000;
   .pop-up-content-wrapper {
     width: 100%;

@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="fonts/SFProDisplay/style.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/popup-window.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="pop-up-wrapper">
+    <div id="open-credit-pop-up">CLICK ME TO OPEN MODAL</div>
+    <div id="credit-pop-up" class="pop-up-wrapper">
         <div class="pop-up-content-wrapper">
             <div class="close-icon-wrapper">
-                <img src="./images/close-icon.png" alt="Close">
+                <img src="./images/close-icon.png" alt="Close" class="close-credit-pop-up">
             </div>
             <div class="pop-up-body">
                 <div class="title">
@@ -135,14 +138,15 @@
                             <button type="button" class="bth bth-get-credit">Оформити кредит</button>
                         </div>
                         <div class="bth-wrapper bth-continue-wrapper">
-                            <button type="button" class="bth bth-continue">Продовжити вибір</button>
+                            <button type="button" class="bth bth-continue close-credit-pop-up">Продовжити
+                                вибір</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    <script src="./js/popup-credit.js"></script>
 </body>
 
 </html>
