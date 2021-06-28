@@ -1,0 +1,206 @@
+@import "./mixin/mixins";
+
+.pop-up-wrapper {
+  background: rgba(9, 9, 19, 0.79);
+  backdrop-filter: blur(40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  .pop-up-content-wrapper {
+    width: 100%;
+    max-width: 995px;
+    margin: 10px 0;
+  }
+  .pop-up-container {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+  }
+  .close-icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      cursor: pointer;
+    }
+  }
+  .pop-up-body {
+    background: #ffffff;
+    margin-top: 40px;
+    padding: 60px 0;
+    .title {
+      border-bottom: 1px solid rgba(196, 196, 196, 0.75);
+      padding-bottom: 40px;
+      .pop-up-container {
+        span:first-child {
+          @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+        }
+        span:last-child {
+          margin-left: 30px;
+          margin-top: 10px;
+          a {
+            @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+          }
+        }
+      }
+    }
+    .goods {
+      margin-top: 40px;
+      .pop-up-container {
+        span:first-child {
+          @include fontStyle("SF Pro Display", 22px, #0c0c0d, 600);
+        }
+        span:last-child {
+          margin-left: 30px;
+          @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+        }
+      }
+    }
+    .banks {
+      margin-top: 43px;
+      .pop-up-container {
+        justify-content: space-between;
+      }
+      .bank-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border: 1px solid #d0d0d0;
+        border-radius: 100px;
+        width: 100%;
+        max-width: 205px;
+        cursor: pointer;
+        .active {
+          border: 1px solid #fe8732;
+        }
+        .bank-name {
+          margin-left: 8px;
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
+        }
+      }
+    }
+
+    .duration {
+      margin-top: 50px;
+      .duration-item {
+        display: flex;
+        align-items: center;
+        padding: 13px 10px;
+        border: 1px solid #0c0c0d;
+        width: 100%;
+        max-width: 205px;
+        &:not(:last-child) {
+          margin-right: 12px;
+        }
+        input {
+          width: 20px;
+          height: 20px;
+          //   border: 1px solid #d0d0d0;
+        }
+        .duration-description {
+          margin-left: 10px;
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
+        }
+      }
+    }
+    .duration-slider-wrapper {
+      margin-top: 50px;
+      /*Chrome*/
+      input[type="range"] {
+        overflow: hidden;
+        // width: 80px;
+        -webkit-appearance: none;
+        background-color: #c4c4c4;
+      }
+
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 16px;
+        -webkit-appearance: none;
+        color: #fe8732;
+        margin-top: -1px;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        width: 16px;
+        -webkit-appearance: none;
+        height: 16px;
+        cursor: ew-resize;
+        border: 2px solid #fe8732;
+        background: #ffffff;
+        border-radius: 50%;
+        box-shadow: -80px 0 0 80px #fe8732;
+      }
+
+      /** FF*/
+      input[type="range"]::-moz-range-progress {
+        background-color: #fe8732;
+      }
+      input[type="range"]::-moz-range-track {
+        background-color: #c4c4c4;
+      }
+      /* IE*/
+      input[type="range"]::-ms-fill-lower {
+        background-color: #fe8732;
+      }
+      input[type="range"]::-ms-fill-upper {
+        background-color: #c4c4c4;
+      }
+    }
+
+    .credit-info {
+      margin-top: 50px;
+      .pop-up-container {
+        justify-content: space-between;
+        width: 100%;
+      }
+      .credit-info-item {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &:first-child {
+          border-top: 1px solid rgba(196, 196, 196, 0.75);
+          border-bottom: 1px solid rgba(196, 196, 196, 0.75);
+        }
+        &:nth-child(n + 2) {
+          border-bottom: 1px solid rgba(196, 196, 196, 0.75);
+        }
+        .label {
+          @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
+        }
+        .value {
+          @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+        }
+      }
+    }
+    .additional-info {
+      margin-top: 32px;
+      .text {
+        padding: 16px 29px;
+        background: #d6e9d8;
+        border-radius: 3px;
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+      }
+    }
+    .actions-wrapper {
+      margin-top: 50px;
+      .pop-up-container {
+        justify-content: space-between;
+        .bth-wrapper {
+          @include fieldsetDefault(266px);
+          .bth {
+            @include formBthDefault(266px);
+            &.bth-continue {
+              color: #fe8732;
+              background: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
