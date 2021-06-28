@@ -70,10 +70,7 @@
       width: 45%;
       select {
         @include inputDefault(399px);
-        appearance: none;
-        background: url("../images/arrow.png") no-repeat;
-        background-position-x: 95%;
-        background-position-y: center;
+        @include selectArrowDefault();
       }
       &.left {
         .select-preview {

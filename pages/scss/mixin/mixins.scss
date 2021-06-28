@@ -66,3 +66,10 @@ $maxWidth: 1280;
   cursor: pointer;
   @include fontStyle("SF Pro Display", 16px, #ffffff, 600);
 }
+
+@mixin selectArrowDefault() {
+  appearance: none;
+  background: url("../images/arrow.png") no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}

@@ -12,6 +12,40 @@
   margin-right: 18px;
 }
 
+.select-crediting-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/Mask Group (1).png");
+  height: 411px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
+  }
+  .select-wrapper {
+    margin-top: 60px;
+    @include fieldsetDefault(399px);
+    select {
+      @include inputDefault(399px);
+      color: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background: transparent;
+      background: url("../images/Vector (1).png") no-repeat;
+      appearance: none;
+      background-position-x: 95%;
+      background-position-y: center;
+      option {
+        color: rgba(12, 12, 13, 0.5);
+      }
+    }
+  }
+}
+
 .credit-programs-section,
 .requirements-crediting-section {
   background: #ffffff;
