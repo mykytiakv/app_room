@@ -156,3 +156,83 @@
     }
   }
 }
+
+.edit-profile-form {
+  display: flex;
+  flex-wrap: wrap;
+  .left-block,
+  .right-block {
+    width: 50%;
+  }
+  fieldset {
+    &:nth-child(n + 2) {
+      margin-top: 30px;
+    }
+  }
+  .fieldset-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+    }
+  }
+  .left-block {
+    padding-right: 15px;
+    label {
+      cursor: pointer;
+      white-space: nowrap;
+      min-width: 120px;
+      padding-right: 10px;
+    }
+    input {
+      @include inputDefault(542px);
+    }
+  }
+  .right-block {
+    padding-left: 15px;
+    fieldset:first-child label {
+      span:nth-child(2) {
+        cursor: pointer;
+        padding-left: 35px;
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      min-width: 200px;
+      padding-right: 10px;
+      span {
+        display: block;
+      }
+      span:nth-child(2) {
+        cursor: pointer;
+        padding-left: 80px;
+      }
+    }
+    input,
+    select {
+      @include inputDefault(369px);
+    }
+  }
+  .bths-wrapper {
+    width: 100%;
+    display: flex;
+    .bth-wrapper {
+      width: 50%;
+      &.save-bth-wrapper {
+        padding-right: 15px;
+      }
+      &.cancel-bth-wrapper {
+        padding-left: 15px;
+      }
+      .bth {
+        max-width: 100%;
+        &.cancel-bth {
+          background: #ffffff;
+          color: #fe8732;
+        }
+      }
+    }
+  }
+}

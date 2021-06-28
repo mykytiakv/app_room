@@ -177,4 +177,94 @@
     color: #0c0c0d;
     font-weight: normal; }
 
+.edit-profile-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .edit-profile-form .left-block,
+  .edit-profile-form .right-block {
+    width: 50%; }
+  .edit-profile-form fieldset:nth-child(n + 2) {
+    margin-top: 30px; }
+  .edit-profile-form .fieldset-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .edit-profile-form .fieldset-content label {
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #0c0c0d;
+      font-weight: normal; }
+  .edit-profile-form .left-block {
+    padding-right: 15px; }
+    .edit-profile-form .left-block label {
+      cursor: pointer;
+      white-space: nowrap;
+      min-width: 120px;
+      padding-right: 10px; }
+    .edit-profile-form .left-block input {
+      width: 100%;
+      max-width: 542px;
+      padding: 18px;
+      border: 1px solid rgba(12, 12, 13, 0.5);
+      cursor: pointer;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: rgba(12, 12, 13, 0.5);
+      font-weight: normal; }
+  .edit-profile-form .right-block {
+    padding-left: 15px; }
+    .edit-profile-form .right-block fieldset:first-child label span:nth-child(2) {
+      cursor: pointer;
+      padding-left: 35px; }
+    .edit-profile-form .right-block label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-width: 200px;
+      padding-right: 10px; }
+      .edit-profile-form .right-block label span {
+        display: block; }
+      .edit-profile-form .right-block label span:nth-child(2) {
+        cursor: pointer;
+        padding-left: 80px; }
+    .edit-profile-form .right-block input,
+    .edit-profile-form .right-block select {
+      width: 100%;
+      max-width: 369px;
+      padding: 18px;
+      border: 1px solid rgba(12, 12, 13, 0.5);
+      cursor: pointer;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: rgba(12, 12, 13, 0.5);
+      font-weight: normal; }
+  .edit-profile-form .bths-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .edit-profile-form .bths-wrapper .bth-wrapper {
+      width: 50%; }
+      .edit-profile-form .bths-wrapper .bth-wrapper.save-bth-wrapper {
+        padding-right: 15px; }
+      .edit-profile-form .bths-wrapper .bth-wrapper.cancel-bth-wrapper {
+        padding-left: 15px; }
+      .edit-profile-form .bths-wrapper .bth-wrapper .bth {
+        max-width: 100%; }
+        .edit-profile-form .bths-wrapper .bth-wrapper .bth.cancel-bth {
+          background: #ffffff;
+          color: #fe8732; }
+
 /*# sourceMappingURL=profile.css.map */

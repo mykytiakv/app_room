@@ -39,7 +39,7 @@
     </section>
     <section class="profile-info-section p-section tab-profile">
         <div class="container">
-            <div class="tab-content">
+            <div class="tab-content" id="profile-content">
                 <div class="info-wrapper">
                     <div class="info-item">
                         <div class="label first-name">Ім’я</div>
@@ -63,14 +63,95 @@
                     </div>
                 </div>
                 <div class="bth-wrapper">
-                    <button type="button" class="bth edit-profile-bth">Редагувати</button>
+                    <button type="button" class="bth edit-profile-bth" id="edit-profile-bth">Редагувати</button>
                 </div>
+            </div>
+            <div class="tab-content" id="edit-profile-form">
+                <form class="edit-profile-form from">
+                    <div class="left-block">
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="first-name">Ім'я</label>
+                                <input type="text" id="first-name" placeholder="Ім'я" class="input first-name-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="second-name">Прізвище</label>
+                                <input type="text" id="second-name" placeholder="Прізвище"
+                                    class="input second-name-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="E-mail" class="input email-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="phone">Номер телефону</label>
+                                <input type="number" id="phone" placeholder="Номер телефону" class="input phone-input">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="right-block">
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="home-number"><span>Aдрес</span><span>Номер будинку (квартири)</span></label>
+                                <input type="number" id="home-number" placeholder="Номер будинку (квартири)"
+                                    class="input home-number-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="city-number"><span></span><span>Місто</span></label>
+                                <input type="text" id="city-number" placeholder="Місто" class="input city-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="status"><span></span><span>Статус</span></label>
+                                <select id="status" class="select status-select">
+                                    <option value="">Виберіть статус</option>
+                                    <option value="status1">Статус 1</option>
+                                    <option value="status2">Статус 2</option>
+                                    <option value="status3">Статус 3</option>
+                                    <option value="status4">Статус 4</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="index-number"><span></span><span>Індекс</span></label>
+                                <input type="text" id="index-number" placeholder="Індекс" class="input index-input">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="fieldset-content">
+                                <label for="country"><span></span><span>Країна</span></label>
+                                <select id="country" class="select country-select">
+                                    <option value="uk">Україна</option>
+                                    <option value="kr">Корець Республіка</option>
+                                    <option value="dr">Дрогобич Республіка</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="bths-wrapper">
+                        <div class="bth-wrapper save-bth-wrapper">
+                            <button type="submit" class="bth save-bth">Зберегти</button>
+                        </div>
+                        <div class="bth-wrapper cancel-bth-wrapper">
+                            <button id="cancel-edit-profile-bth" type="submit" class="bth cancel-bth">Відмінити</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
 
     <section class="orders-section p-section tab-orders">
-
         <div class="tab-content">
             <div class="orders-list">
                 <div class="order-item">
@@ -134,20 +215,3 @@
 </body>
 
 </html>
-
-<!-- <div class="tab-affiliate-program" class="tab-content">
-    <div class="section-title">Партнерська програма BODY</div>
-</div> -->
-
-<!-- <form class="login-form from">
-    <fieldset>
-        <input type="text" placeholder="Ім'я" class="input first-name-input">
-    </fieldset>
-    <fieldset>
-        <input type="text" placeholder="Прізвище" class="input second-name-input">
-    </fieldset>
-    <div class="bth-wrapper register-bth-wrapper">
-        <button type="submit" class="bth register-bth">Зареєструватися</button>
-    </div>
-
-</form> -->

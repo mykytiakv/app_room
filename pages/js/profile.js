@@ -12,6 +12,12 @@ $(document).ready(function () {
     $(tabsContentClasses[0]).show();
     $(tabsContentClasses[1]).hide();
     $(tabsContentClasses[2]).hide();
+    $("#edit-profile-form").hide();
+  };
+
+  const chanheProfileTabLayout = (layout1, layout2) => {
+    $(layout1).hide();
+    $(layout2).show();
   };
 
   initDefaultTab();
@@ -27,5 +33,15 @@ $(document).ready(function () {
     $(classIndetificator).show();
     $(disabledTabs[0]).hide();
     $(disabledTabs[1]).hide();
+  });
+
+  $("#cancel-edit-profile-bth").click((event) => {
+    event.stopPropagation();
+    chanheProfileTabLayout("#edit-profile-form", "#profile-content");
+  });
+
+  $("#edit-profile-bth").click((event) => {
+    event.stopPropagation();
+    chanheProfileTabLayout("#profile-content", "#edit-profile-form");
   });
 });
