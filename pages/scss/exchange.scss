@@ -1,0 +1,127 @@
+@import "./mixin/mixins";
+
+.how-it-works-section {
+  background: #141415;
+  backdrop-filter: blur(200px);
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
+  }
+  .description-wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    .description-item-wrapper {
+      display: flex;
+      align-items: center;
+      &:nth-child(1) {
+        .description-item-text {
+          max-width: 250px;
+        }
+      }
+      &:nth-child(2) {
+        padding: 0 10px;
+        .description-item-text {
+          max-width: 290px;
+        }
+      }
+      &:nth-child(3) {
+        .description-item-text {
+          max-width: 335px;
+        }
+      }
+      .description-item-text {
+        margin-left: 15px;
+        @include fontStyle("SF Pro Display", 24px, #ffffff, 600);
+      }
+    }
+  }
+}
+
+.exchange-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px);
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+  }
+  .exchange-selects-wrapper {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(12, 12, 13, 0.3);
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .select-title {
+      @include fontStyle("SF Pro Display", 24px, #0c0c0d, 600);
+      width: 50%;
+      &.right {
+        text-align: right;
+      }
+    }
+    .arrows-icon-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .select-wrapper {
+      display: flex;
+      align-items: flex-end;
+      width: 45%;
+      select {
+        @include inputDefault(399px);
+        @include selectArrowDefault();
+      }
+      &.left {
+        .select-preview {
+          margin-left: 45px;
+        }
+      }
+      &.right {
+        justify-content: flex-end;
+        .select-preview {
+          margin-right: 45px;
+        }
+      }
+      .select-preview {
+        img {
+          max-width: 90px;
+        }
+      }
+    }
+  }
+  .leave-request-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .leave-request-form {
+      display: flex;
+      flex: 1;
+      fieldset {
+        @include fieldsetDefault(284px);
+        &.phone-input-fieldset {
+          margin: 0 30px;
+        }
+      }
+      input {
+        @include inputDefault(284px);
+      }
+      .leave-request-bth {
+        @include formBthDefault(284px);
+      }
+    }
+    .approximate-surcharge {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      .label {
+        @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
+      }
+      .value {
+        margin-left: 42px;
+        @include fontStyle("SF Pro Display", 36px, #fe8732, 600);
+      }
+    }
+  }
+}
