@@ -9,6 +9,9 @@
   max-width: 1440px;
   margin: auto;
   padding: 0 27px;
+  @media screen and (max-width: 367px) {
+    padding: 0 10px;
+  }
 }
 
 .p-section {
