@@ -1,3 +1,100 @@
+.subscribe-newsletter-section {
+  background: #000000;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .subscribe-newsletter-section {
+      padding-bottom: 0; } }
+  .subscribe-newsletter-section .mask-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  .subscribe-newsletter-section .iPhone-img-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3; }
+    @media screen and (max-width: 768px) {
+      .subscribe-newsletter-section .iPhone-img-wrapper {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+  .subscribe-newsletter-section .section-title {
+    font-family: "SF Pro Display";
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 600; }
+    @media screen and (max-width: 480px) {
+      .subscribe-newsletter-section .section-title {
+        font-size: 36px; } }
+  .subscribe-newsletter-section .section-sub-title {
+    margin-top: 60px;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600; }
+    @media screen and (max-width: 480px) {
+      .subscribe-newsletter-section .section-sub-title {
+        margin-top: 30px;
+        font-size: 18px; } }
+  .subscribe-newsletter-section .container {
+    z-index: 4;
+    position: relative; }
+  .subscribe-newsletter-section .input-wrapper {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 480px) {
+      .subscribe-newsletter-section .input-wrapper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .subscribe-newsletter-section .input-wrapper input {
+      padding: 19px 30px;
+      border: 1px solid #ffffff;
+      background: none;
+      font-family: "SF Pro Display";
+      font-size: 17px;
+      color: #ffffff;
+      font-weight: 600;
+      width: 100%;
+      max-width: 500px;
+      outline: none;
+      min-height: 60px; }
+      @media screen and (max-width: 768px) {
+        .subscribe-newsletter-section .input-wrapper input {
+          max-width: 50%; } }
+      @media screen and (max-width: 480px) {
+        .subscribe-newsletter-section .input-wrapper input {
+          max-width: 100%; } }
+    .subscribe-newsletter-section .input-wrapper button {
+      right: 1px;
+      position: relative;
+      min-height: 60px;
+      width: 100%;
+      max-width: 356px;
+      padding: 18px;
+      border: 1px solid #fe8732;
+      background: #fe8732;
+      cursor: pointer;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 600; }
+      @media screen and (max-width: 768px) {
+        .subscribe-newsletter-section .input-wrapper button {
+          max-width: 50%; } }
+      @media screen and (max-width: 480px) {
+        .subscribe-newsletter-section .input-wrapper button {
+          max-width: 100%;
+          margin-top: 30px; } }
+
 .profile-section {
   padding: 0; }
 
@@ -273,4 +370,5 @@
         .edit-profile-form .bths-wrapper .bth-wrapper .bth.cancel-bth {
           background: #ffffff;
           color: #fe8732; }
+
 /*# sourceMappingURL=profile.css.map */

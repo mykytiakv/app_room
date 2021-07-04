@@ -1,7 +1,6 @@
 .how-it-works-section {
   background: #141415;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px); }
+  backdrop-filter: blur(200px); }
   .how-it-works-section .section-title {
     font-family: "SF Pro Display";
     font-size: 45px;
@@ -9,19 +8,11 @@
     font-weight: 600; }
   .how-it-works-section .description-wrapper {
     margin-top: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    justify-content: space-between; }
     .how-it-works-section .description-wrapper .description-item-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      align-items: center; }
       .how-it-works-section .description-wrapper .description-item-wrapper:nth-child(1) .description-item-text {
         max-width: 250px; }
       .how-it-works-section .description-wrapper .description-item-wrapper:nth-child(2) {
@@ -39,8 +30,7 @@
 
 .exchange-section {
   background: #ffffff;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px); }
+  backdrop-filter: blur(200px); }
   .exchange-section .section-title {
     font-family: "SF Pro Display";
     font-size: 45px;
@@ -51,14 +41,9 @@
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(12, 12, 13, 0.3); }
     .exchange-section .exchange-selects-wrapper .container {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: space-between;
       width: 100%; }
     .exchange-section .exchange-selects-wrapper .select-title {
       font-family: "SF Pro Display";
@@ -69,19 +54,11 @@
       .exchange-section .exchange-selects-wrapper .select-title.right {
         text-align: right; }
     .exchange-section .exchange-selects-wrapper .arrows-icon-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      align-items: center; }
     .exchange-section .exchange-selects-wrapper .select-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
+      align-items: flex-end;
       width: 45%; }
       .exchange-section .exchange-selects-wrapper .select-wrapper select {
         width: 100%;
@@ -93,40 +70,26 @@
         font-size: 16px;
         color: rgba(12, 12, 13, 0.5);
         font-weight: normal;
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
+        appearance: none;
         background: url("../images/arrow.png") no-repeat;
         background-position-x: 95%;
         background-position-y: center; }
       .exchange-section .exchange-selects-wrapper .select-wrapper.left .select-preview {
         margin-left: 45px; }
       .exchange-section .exchange-selects-wrapper .select-wrapper.right {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
+        justify-content: flex-end; }
         .exchange-section .exchange-selects-wrapper .select-wrapper.right .select-preview {
           margin-right: 45px; }
       .exchange-section .exchange-selects-wrapper .select-wrapper .select-preview img {
         max-width: 90px; }
   .exchange-section .leave-request-wrapper {
     margin-top: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    justify-content: space-between;
+    align-items: center; }
     .exchange-section .leave-request-wrapper .leave-request-form {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
+      flex: 1; }
       .exchange-section .leave-request-wrapper .leave-request-form fieldset {
         width: 100%;
         max-width: 284px; }
@@ -154,12 +117,8 @@
         color: #ffffff;
         font-weight: 600; }
     .exchange-section .leave-request-wrapper .approximate-surcharge {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      align-items: center;
       padding-left: 10px; }
       .exchange-section .leave-request-wrapper .approximate-surcharge .label {
         font-family: "SF Pro Display";

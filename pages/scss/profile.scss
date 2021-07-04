@@ -1,5 +1,7 @@
 @import "./mixin/mixins";
 
+@include subscribeNewsletterSection();
+
 .profile-section {
   padding: 0;
 }

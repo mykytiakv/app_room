@@ -1,7 +1,6 @@
 .shop-info-section {
   background: #ffffff;
-  -webkit-backdrop-filter: blur(200px);
-          backdrop-filter: blur(200px); }
+  backdrop-filter: blur(200px); }
   .shop-info-section .section-title {
     font-family: "SF Pro Display";
     font-size: 45px;
@@ -11,9 +10,7 @@
     display: grid;
     grid-template-areas: " online-shop-info shop-img-wrapper" "service-center-info shop-img-wrapper";
     grid-template-columns: 50% 50% 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    align-items: center; }
     .shop-info-section .description .online-shop-info {
       grid-area: online-shop-info;
       margin-right: 65px; }
@@ -24,12 +21,8 @@
     .shop-info-section .description .shop-img-wrapper {
       grid-area: shop-img-wrapper; }
     .shop-info-section .description .info-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      justify-content: space-between;
       margin-top: 60px; }
       .shop-info-section .description .info-wrapper .title {
         min-height: 20px;
@@ -41,12 +34,8 @@
       .shop-info-section .description .info-wrapper .email-block {
         padding: 0 10px; }
       .shop-info-section .description .info-wrapper .info-item {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        align-items: center; }
         .shop-info-section .description .info-wrapper .info-item:nth-child(2) {
           margin-top: 20px; }
         .shop-info-section .description .info-wrapper .info-item:nth-child(n + 3) {
@@ -72,8 +61,6 @@
     font-weight: 600; }
   .shops-section .shops-wrapper {
     margin-top: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
     .shops-section .shops-wrapper .shop-item-wrapper {
       position: relative; }
@@ -98,8 +85,7 @@
         .shops-section .shops-wrapper .shop-item-wrapper .shop-item-label-wrapper.center-label {
           top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
           font-family: "SF Pro Display";
           font-size: 30px;
           color: #ffffff;
@@ -110,8 +96,7 @@
           bottom: 0;
           padding: 25px 10px;
           background: rgba(101, 101, 121, 0.17);
-          -webkit-backdrop-filter: blur(200px);
-                  backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
           font-family: "SF Pro Display";
           font-size: 17px;
           color: #ffffff;
