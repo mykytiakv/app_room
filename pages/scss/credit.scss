@@ -1,5 +1,9 @@
 @import "./mixin/mixins";
 
+@include subscribeNewsletterSection();
+
+@include footerSection();
+
 @mixin circle {
   width: 10px;
   min-width: 10px;

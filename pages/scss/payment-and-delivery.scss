@@ -2,6 +2,8 @@
 
 @include subscribeNewsletterSection();
 
+@include footerSection();
+
 .types-payment-section {
   background: #ffffff;
   backdrop-filter: blur(200px);
