@@ -1,10 +1,18 @@
 @import "./mixin/mixins";
 
+@include subscribeNewsletterSection();
+
+@include footerSection();
+
 .registration-section {
   background: #ffffff;
   backdrop-filter: blur(200px);
   padding-top: 180px;
   padding-bottom: 150px;
+  @media screen and (max-width: 480px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -12,6 +20,9 @@
   }
   .section-title {
     @include fontStyle("SF Pro Display", 82px, #0c0c0d, 600);
+    @media screen and (max-width: 480px) {
+      font-size: 40px;
+    }
   }
 
   .login-form {
@@ -27,10 +38,8 @@
     :nth-child(odd) {
       text-align: right;
       padding-right: 15px;
-      //   background: green;
     }
     :nth-child(even) {
-      //   margin-left: 15px;
       padding-left: 15px;
     }
     :nth-child(n + 3) {
@@ -43,6 +52,30 @@
     .bth {
       text-align: center;
       @include formBthDefault(400px);
+    }
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+      max-width: 345px;
+      fieldset,
+      .bth-wrapper {
+        width: 100%;
+      }
+      :nth-child(odd) {
+        padding-right: 0;
+      }
+      :nth-child(even) {
+        padding-left: 0;
+      }
+      :nth-child(n + 2) {
+        margin-top: 30px;
+      }
+      .input {
+        max-width: 345px;
+      }
+      .bth {
+        max-width: 345px;
+      }
     }
   }
 }
