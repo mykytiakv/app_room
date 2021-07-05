@@ -220,28 +220,49 @@
   background-size: cover;
   background-position: center;
   background-image: url("../images/Rectangle 6.png");
-  height: 462px; }
+  min-height: 462px; }
   .tabs-header-banner .tab-content {
-    padding-top: 100px; }
+    padding: 100px 0; }
     .tabs-header-banner .tab-content .section-title {
       font-family: "SF Pro Display";
       font-size: 82px;
       color: #ffffff;
       font-weight: 600;
       text-align: center; }
+      @media screen and (max-width: 480px) {
+        .tabs-header-banner .tab-content .section-title {
+          font-size: 52px; } }
 
 #profile-tabs-wrapper {
   padding-top: 75px; }
+  @media screen and (max-width: 480px) {
+    #profile-tabs-wrapper {
+      padding-top: 60px; } }
   #profile-tabs-wrapper .tab-bths-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (max-width: 480px) {
+      #profile-tabs-wrapper .tab-bths-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     #profile-tabs-wrapper .tab-bths-list .profile-tab-bth {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1;
       text-align: center;
       border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+      @media screen and (max-width: 480px) {
+        #profile-tabs-wrapper .tab-bths-list .profile-tab-bth {
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          display: inline-block;
+          margin: auto; }
+          #profile-tabs-wrapper .tab-bths-list .profile-tab-bth:nth-child(n + 2) {
+            margin: 25px auto 0 auto; } }
       #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a {
         cursor: pointer;
         padding-bottom: 30px;
@@ -251,12 +272,24 @@
         font-size: 40px;
         color: #ffffff;
         font-weight: 600; }
+        @media screen and (max-width: 768px) {
+          #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a {
+            font-size: 20px; } }
         #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a:nth-child(1) {
           padding-right: 10px; }
         #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a:nth-child(2) {
           padding: 0 10px; }
         #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a:nth-child(3) {
           padding-left: 10px; }
+        @media screen and (max-width: 480px) {
+          #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a {
+            padding-bottom: 12px; }
+            #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a:nth-child(1) {
+              padding-right: 0; }
+            #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a:nth-child(2) {
+              padding: 0 0; }
+            #profile-tabs-wrapper .tab-bths-list .profile-tab-bth a:nth-child(3) {
+              padding-left: 0; } }
       #profile-tabs-wrapper .tab-bths-list .profile-tab-bth.tab-active {
         border-bottom: 2px solid #ffffff; }
 
@@ -266,11 +299,19 @@
   background: #ffffff;
   -webkit-backdrop-filter: blur(200px);
           backdrop-filter: blur(200px); }
+  @media screen and (max-width: 480px) {
+    .orders-section,
+    .profile-info-section,
+    .bonus-section {
+      padding-top: 60px; } }
 
 .profile-info-section .info-wrapper {
   width: 100%;
   max-width: 820px;
   margin: auto; }
+  @media screen and (max-width: 768px) {
+    .profile-info-section .info-wrapper {
+      max-width: 100%; } }
   .profile-info-section .info-wrapper .info-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -298,6 +339,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 60px; }
+  @media screen and (max-width: 480px) {
+    .profile-info-section .bth-wrapper {
+      margin-top: 40px; } }
   .profile-info-section .bth-wrapper .bth {
     width: 100%;
     max-width: 400px;
@@ -309,6 +353,9 @@
     font-size: 16px;
     color: #ffffff;
     font-weight: 600; }
+    @media screen and (max-width: 480px) {
+      .profile-info-section .bth-wrapper .bth {
+        max-width: 100%; } }
 
 .bonus-section .section-title {
   text-align: center;
@@ -346,6 +393,10 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .orders-section .orders-list .order-item .container {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
   .orders-section .orders-list .order-item:first-child {
     border-bottom: 1px solid rgba(12, 12, 13, 0.5);
     border-top: 1px solid rgba(12, 12, 13, 0.5); }
@@ -357,6 +408,9 @@
     color: #2939c5;
     font-weight: normal;
     padding-right: 10px; }
+    @media screen and (max-width: 480px) {
+      .orders-section .orders-list .order-item .order-id {
+        width: 50%; } }
   .orders-section .orders-list .order-item .order-state {
     width: 100%;
     max-width: 113px;
@@ -368,9 +422,22 @@
     font-size: 16px;
     color: #ffffff;
     font-weight: normal; }
+    @media screen and (max-width: 768px) {
+      .orders-section .orders-list .order-item .order-state {
+        width: 50%; } }
   .orders-section .orders-list .order-item .order-devices {
     width: 35%;
     padding: 0 10px; }
+    @media screen and (max-width: 768px) {
+      .orders-section .orders-list .order-item .order-devices {
+        padding-right: 0;
+        text-align: right; } }
+    @media screen and (max-width: 480px) {
+      .orders-section .orders-list .order-item .order-devices {
+        width: 100%;
+        padding: 0 0;
+        text-align: left;
+        margin-top: 43px; } }
     .orders-section .orders-list .order-item .order-devices .order-device {
       font-family: "SF Pro Display";
       font-size: 16px;
@@ -385,11 +452,30 @@
     font-size: 16px;
     color: #0c0c0d;
     font-weight: normal; }
+    @media screen and (max-width: 768px) {
+      .orders-section .orders-list .order-item .order-description {
+        width: 70%;
+        margin-top: 30px;
+        padding-left: 0; } }
+    @media screen and (max-width: 480px) {
+      .orders-section .orders-list .order-item .order-description {
+        width: 70%;
+        margin-top: 43px; } }
   .orders-section .orders-list .order-item .order-date {
     font-family: "SF Pro Display";
     font-size: 16px;
     color: #0c0c0d;
     font-weight: normal; }
+    @media screen and (max-width: 768px) {
+      .orders-section .orders-list .order-item .order-date {
+        width: 30%;
+        margin-top: 30px;
+        text-align: right; } }
+    @media screen and (max-width: 480px) {
+      .orders-section .orders-list .order-item .order-date {
+        width: 100%;
+        text-align: left;
+        margin-top: 43px; } }
 
 .edit-profile-form {
   display: -webkit-box;
@@ -400,6 +486,10 @@
   .edit-profile-form .left-block,
   .edit-profile-form .right-block {
     width: 50%; }
+    @media screen and (max-width: 768px) {
+      .edit-profile-form .left-block,
+      .edit-profile-form .right-block {
+        width: 100%; } }
   .edit-profile-form fieldset:nth-child(n + 2) {
     margin-top: 30px; }
   .edit-profile-form .fieldset-content {
@@ -412,6 +502,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media screen and (max-width: 480px) {
+      .edit-profile-form .fieldset-content {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .edit-profile-form .fieldset-content label {
       font-family: "SF Pro Display";
       font-size: 16px;
@@ -419,11 +518,17 @@
       font-weight: normal; }
   .edit-profile-form .left-block {
     padding-right: 15px; }
+    @media screen and (max-width: 768px) {
+      .edit-profile-form .left-block {
+        padding-right: 0; } }
     .edit-profile-form .left-block label {
       cursor: pointer;
       white-space: nowrap;
       min-width: 120px;
       padding-right: 10px; }
+      @media screen and (max-width: 768px) {
+        .edit-profile-form .left-block label {
+          white-space: initial; } }
     .edit-profile-form .left-block input {
       width: 100%;
       max-width: 542px;
@@ -434,11 +539,33 @@
       font-size: 16px;
       color: rgba(12, 12, 13, 0.5);
       font-weight: normal; }
+      @media screen and (max-width: 480px) {
+        .edit-profile-form .left-block input {
+          max-width: 100%;
+          margin-top: 16px; } }
   .edit-profile-form .right-block {
     padding-left: 15px; }
+    @media screen and (max-width: 768px) {
+      .edit-profile-form .right-block {
+        padding-left: 0;
+        margin-top: 30px; } }
     .edit-profile-form .right-block fieldset:first-child label span:nth-child(2) {
       cursor: pointer;
       padding-left: 35px; }
+    @media screen and (max-width: 480px) {
+      .edit-profile-form .right-block fieldset:first-child label {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+        .edit-profile-form .right-block fieldset:first-child label span {
+          display: block; }
+          .edit-profile-form .right-block fieldset:first-child label span:last-child {
+            margin-top: 30px;
+            padding-left: 0; } }
     .edit-profile-form .right-block label {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -453,6 +580,9 @@
       .edit-profile-form .right-block label span:nth-child(2) {
         cursor: pointer;
         padding-left: 80px; }
+        @media screen and (max-width: 480px) {
+          .edit-profile-form .right-block label span:nth-child(2) {
+            padding-left: 0; } }
     .edit-profile-form .right-block input,
     .edit-profile-form .right-block select {
       width: 100%;
@@ -464,6 +594,15 @@
       font-size: 16px;
       color: rgba(12, 12, 13, 0.5);
       font-weight: normal; }
+      @media screen and (max-width: 768px) {
+        .edit-profile-form .right-block input,
+        .edit-profile-form .right-block select {
+          max-width: 396px; } }
+      @media screen and (max-width: 480px) {
+        .edit-profile-form .right-block input,
+        .edit-profile-form .right-block select {
+          max-width: 100%;
+          margin-top: 16px; } }
     .edit-profile-form .right-block select {
       -webkit-appearance: none;
          -moz-appearance: none;
@@ -475,13 +614,25 @@
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .edit-profile-form .bths-wrapper .bth-wrapper {
       width: 50%; }
+      @media screen and (max-width: 768px) {
+        .edit-profile-form .bths-wrapper .bth-wrapper {
+          width: 100%; } }
       .edit-profile-form .bths-wrapper .bth-wrapper.save-bth-wrapper {
         padding-right: 15px; }
+        @media screen and (max-width: 768px) {
+          .edit-profile-form .bths-wrapper .bth-wrapper.save-bth-wrapper {
+            padding-right: 0; } }
       .edit-profile-form .bths-wrapper .bth-wrapper.cancel-bth-wrapper {
         padding-left: 15px; }
+        @media screen and (max-width: 768px) {
+          .edit-profile-form .bths-wrapper .bth-wrapper.cancel-bth-wrapper {
+            padding-left: 0;
+            margin-top: 30px; } }
       .edit-profile-form .bths-wrapper .bth-wrapper .bth {
         max-width: 100%; }
         .edit-profile-form .bths-wrapper .bth-wrapper .bth.cancel-bth {
