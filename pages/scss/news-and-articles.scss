@@ -1,5 +1,7 @@
 @import "./mixin/mixins";
 
+@include footerSection();
+
 .news-section {
   background: #ffffff;
   backdrop-filter: blur(200px);

@@ -1,5 +1,9 @@
 @import "./mixin/mixins";
 
+@include subscribeNewsletterSection();
+
+@include footerSection();
+
 .shops-section {
   background: #ffffff;
   backdrop-filter: blur(200px);

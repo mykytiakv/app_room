@@ -1,5 +1,9 @@
 @import "./mixin/mixins";
 
+@include subscribeNewsletterSection();
+
+@include footerSection();
+
 .table-warranty-program-section,
 .table-warranty-insurance-section {
   background: #ffffff;

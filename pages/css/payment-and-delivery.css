@@ -95,6 +95,123 @@
           max-width: 100%;
           margin-top: 30px; } }
 
+.footer {
+  padding: 82px 0;
+  background: #0c0c0d; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 40px 0; } }
+  .footer .container {
+    display: grid;
+    grid-template-areas: "logo-block catalog-block services-block contacts-block social-networks-block" "logo-block catalog-block services-block timetable-block social-networks-block";
+    grid-template-columns: 20% 15% 20% 20% 20%;
+    grid-template-rows: -webkit-max-content max-content -webkit-max-content max-content -webkit-max-content max-content;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    @media screen and (max-width: 768px) {
+      .footer .container {
+        grid-template-areas: "logo-block catalog-block services-block" "contacts-block catalog-block services-block" "social-networks-block timetable-block timetable-block";
+        grid-template-columns: 40% 25% 35%; } }
+    @media screen and (max-width: 480px) {
+      .footer .container {
+        grid-template-areas: "logo-block" "catalog-block" "services-block" "contacts-block" "timetable-block" "social-networks-block";
+        grid-template-columns: 100%;
+        justify-items: center; } }
+  .footer .logo-block {
+    grid-area: logo-block;
+    max-width: 200px; }
+    @media screen and (max-width: 480px) {
+      .footer .logo-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .footer .logo-block .logo-description {
+          display: none; } }
+  .footer .catalog-block {
+    grid-area: catalog-block; }
+  .footer .services-block {
+    grid-area: services-block; }
+  .footer .contacts-block {
+    grid-area: contacts-block; }
+  .footer .timetable-block {
+    grid-area: timetable-block; }
+    @media screen and (max-width: 768px) {
+      .footer .timetable-block {
+        margin-top: 30px; } }
+  .footer .social-networks-block {
+    grid-area: social-networks-block; }
+    @media screen and (max-width: 768px) {
+      .footer .social-networks-block {
+        margin-top: 30px; } }
+    .footer .social-networks-block .logo-description {
+      display: none; }
+    @media screen and (max-width: 480px) {
+      .footer .social-networks-block .logo-description {
+        display: block;
+        max-width: 200px; } }
+  .footer .footer-block {
+    padding-right: 10px; }
+    @media screen and (max-width: 480px) {
+      .footer .footer-block {
+        text-align: center;
+        padding-right: 0; }
+        .footer .footer-block:nth-child(n + 2) {
+          margin-top: 30px; }
+        .footer .footer-block:nth-child(n + 3) {
+          margin-top: 36px; } }
+    .footer .footer-block .title {
+      font-family: "SF Pro Display";
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600; }
+    .footer .footer-block .logo-description {
+      margin-top: 30px;
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.3);
+      font-weight: normal; }
+    .footer .footer-block .footer-list {
+      margin-top: 20px; }
+      .footer .footer-block .footer-list .list-item {
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: normal; }
+        .footer .footer-block .footer-list .list-item a {
+          font-family: "SF Pro Display";
+          font-size: 16px;
+          color: #ffffff;
+          font-weight: normal; }
+        .footer .footer-block .footer-list .list-item:nth-child(n + 2) {
+          margin-top: 12px; }
+      .footer .footer-block .footer-list.social-networks-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        @media screen and (max-width: 480px) {
+          .footer .footer-block .footer-list.social-networks-list {
+            max-width: 140px;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            margin: 30px auto; } }
+        .footer .footer-block .footer-list.social-networks-list .list-item {
+          margin-top: 0;
+          margin-right: 28px;
+          min-width: 25px; }
+          @media screen and (max-width: 480px) {
+            .footer .footer-block .footer-list.social-networks-list .list-item {
+              margin-right: 0px; } }
+
 .types-payment-section {
   background: #ffffff;
   -webkit-backdrop-filter: blur(200px);
