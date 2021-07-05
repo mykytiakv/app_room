@@ -1,7 +1,10 @@
 .repair-section {
   background: #ffffff;
-  backdrop-filter: blur(200px); }
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
   .repair-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
     .repair-section .container .left-block,
     .repair-section .container .right-block {
@@ -61,8 +64,12 @@
     .questions-section .question-item:last-child {
       border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
     .questions-section .question-item .question-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
       .questions-section .question-item .question-header .question {
         font-family: "SF Pro Display";
         font-size: 30px;
@@ -76,21 +83,30 @@
       color: #ffffff;
       font-weight: normal;
       max-height: 0;
+      -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
       overflow: hidden; }
       .questions-section .question-item .answer.open {
         margin-top: 20px;
         max-height: 1000px;
+        -webkit-transition: all 0.7s ease;
         transition: all 0.7s ease; }
 
 .products-section {
   padding: 60px 0;
   background: #f6f6f6;
-  backdrop-filter: blur(200px); }
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
   .products-section .tab-bths-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: center; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .products-section .tab-bths-list .tab-bth {
       border: 1px solid #0c0c0d;
       max-width: 249px;
@@ -116,13 +132,25 @@
   .products-section .tab-content {
     margin-top: 60px; }
     .products-section .tab-content .list-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .products-section .tab-content .list-wrapper .list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center; }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .products-section .tab-content .list-wrapper .list-item.iPhone-item {
           width: 20%; }
           .products-section .tab-content .list-wrapper .list-item.iPhone-item:nth-child(n + 6) {
@@ -140,11 +168,18 @@
         .products-section .tab-content .list-wrapper .list-item.apple-watch-item:nth-child(n + 4) {
           margin-top: 50px; }
         .products-section .tab-content .list-wrapper .list-item a {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           height: 100%; }
           .products-section .tab-content .list-wrapper .list-item a .photo-wrapper {
-            flex: 1; }
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1; }
             .products-section .tab-content .list-wrapper .list-item a .photo-wrapper img {
               height: 100%; }
           .products-section .tab-content .list-wrapper .list-item a .title {

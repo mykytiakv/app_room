@@ -1,7 +1,8 @@
 .table-warranty-program-section,
 .table-warranty-insurance-section {
   background: #ffffff;
-  backdrop-filter: blur(200px); }
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
   .table-warranty-program-section .section-title,
   .table-warranty-insurance-section .section-title {
     font-family: "SF Pro Display";
