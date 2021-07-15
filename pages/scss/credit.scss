@@ -4,6 +4,51 @@
 
 @include footerSection();
 
+@include repairSection();
+
+@include questionSection();
+
+.questions-section {
+  .section-title {
+    @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
+    margin-bottom: 60px;
+  }
+}
+
+.repair-section {
+  background: #000000;
+  .container {
+    .left-block,
+    .right-block {
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .left-block {
+      ::-webkit-scrollbar-thumb {
+        background: #ffffff;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+      }
+      .scroll-line {
+        background: rgba(255, 255, 255, 0.42);
+      }
+    }
+    .info-wrapper {
+      .info-item {
+        .title {
+          color: #ffffff;
+        }
+        .main-text {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
 @mixin circle {
   width: 10px;
   min-width: 10px;
@@ -30,6 +75,7 @@
   }
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
+    text-align: center;
   }
   .select-wrapper {
     margin-top: 60px;
@@ -83,8 +129,14 @@
   margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
   .list-wrapper {
     padding-right: 30px;
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -94,12 +146,18 @@
   }
   .list-wrapper {
     width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     &:nth-child(1),
     &:nth-child(2) {
       margin-top: 30px;
     }
     &:nth-child(n + 3) {
       margin-top: 60px;
+      @media screen and (max-width: 768px) {
+        margin-top: 30px;
+      }
     }
     ul.requirements-list {
       li {

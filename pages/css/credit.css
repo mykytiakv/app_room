@@ -191,6 +191,145 @@
             .footer .footer-block .footer-list.social-networks-list .list-item {
               margin-right: 0px; } }
 
+.repair-section {
+  background: #ffffff;
+  backdrop-filter: blur(200px); }
+  .repair-section .container {
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container {
+        flex-wrap: wrap; } }
+    .repair-section .container .left-block,
+    .repair-section .container .right-block {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .left-block,
+        .repair-section .container .right-block {
+          width: 100%; } }
+    .repair-section .container .left-block {
+      max-height: 390px;
+      position: relative;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .repair-section .container .left-block ::-webkit-scrollbar {
+        width: 8px;
+        background: transparent; }
+      .repair-section .container .left-block ::-webkit-scrollbar-track {
+        width: 1px; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb {
+        background: #666666; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
+        background: #666666; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .left-block {
+          order: 1;
+          margin-top: 45px; } }
+      .repair-section .container .left-block .scroll-line {
+        position: absolute;
+        top: 0;
+        left: 3.4px;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.42);
+        height: 100%; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container .right-block img {
+        width: 100%; } }
+    .repair-section .container .info-wrapper {
+      overflow: auto;
+      direction: rtl;
+      max-height: 390px;
+      position: relative;
+      padding-right: 30px;
+      padding-left: 43px; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .info-wrapper {
+          padding-right: 0;
+          max-height: 349px; } }
+      @media screen and (max-width: 480px) {
+        .repair-section .container .info-wrapper {
+          padding-left: 10px; } }
+      .repair-section .container .info-wrapper .info-item:nth-child(n + 2) {
+        margin-top: 50px; }
+      .repair-section .container .info-wrapper .info-item .title {
+        text-align: left;
+        font-family: "SF Pro Display";
+        font-size: 24px;
+        color: #0c0c0d;
+        font-weight: 600; }
+      .repair-section .container .info-wrapper .info-item .main-text {
+        text-align: left;
+        margin-top: 30px;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #0c0c0d;
+        font-weight: normal; }
+
+.questions-section {
+  background: #000000; }
+  .questions-section .question-item {
+    padding: 45px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.38); }
+    @media screen and (max-width: 768px) {
+      .questions-section .question-item {
+        padding: 35px 0; } }
+    .questions-section .question-item:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+    .questions-section .question-item .question-header {
+      display: flex;
+      justify-content: space-between; }
+      .questions-section .question-item .question-header .question {
+        font-family: "SF Pro Display";
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        padding-right: 5px; }
+        @media screen and (max-width: 480px) {
+          .questions-section .question-item .question-header .question {
+            font-size: 25px; } }
+      .questions-section .question-item .question-header .plus-icon-wrapper {
+        cursor: pointer; }
+    .questions-section .question-item .answer {
+      font-family: "SF Pro Display";
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: normal;
+      max-height: 0;
+      transition: all 0.2s ease;
+      overflow: hidden; }
+      .questions-section .question-item .answer.open {
+        margin-top: 20px;
+        max-height: 1000px;
+        transition: all 0.7s ease; }
+
+.questions-section .section-title {
+  font-family: "SF Pro Display";
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 60px; }
+
+.repair-section {
+  background: #000000; }
+  .repair-section .container .left-block,
+  .repair-section .container .right-block {
+    width: 50%; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container .left-block,
+      .repair-section .container .right-block {
+        width: 100%; } }
+  .repair-section .container .left-block ::-webkit-scrollbar-thumb {
+    background: #ffffff; }
+  .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; }
+  .repair-section .container .left-block .scroll-line {
+    background: rgba(255, 255, 255, 0.42); }
+  .repair-section .container .info-wrapper .info-item .title {
+    color: #ffffff; }
+  .repair-section .container .info-wrapper .info-item .main-text {
+    color: #ffffff; }
+
 .select-crediting-section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +344,8 @@
     font-family: "SF Pro Display";
     font-size: 45px;
     color: #ffffff;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
   .select-crediting-section .select-wrapper {
     margin-top: 60px;
     width: 100%;
@@ -263,8 +403,14 @@
   margin-right: 30px;
   display: flex;
   flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .lists-wrapper {
+      margin-right: 0; } }
   .lists-wrapper .list-wrapper {
     padding-right: 30px; }
+    @media screen and (max-width: 768px) {
+      .lists-wrapper .list-wrapper {
+        padding-right: 0; } }
 
 .requirements-lists .list-title {
   font-family: "SF Pro Display";
@@ -273,10 +419,16 @@
   font-weight: bold; }
 .requirements-lists .list-wrapper {
   width: 50%; }
+  @media screen and (max-width: 768px) {
+    .requirements-lists .list-wrapper {
+      width: 100%; } }
   .requirements-lists .list-wrapper:nth-child(1), .requirements-lists .list-wrapper:nth-child(2) {
     margin-top: 30px; }
   .requirements-lists .list-wrapper:nth-child(n + 3) {
     margin-top: 60px; }
+    @media screen and (max-width: 768px) {
+      .requirements-lists .list-wrapper:nth-child(n + 3) {
+        margin-top: 30px; } }
   .requirements-lists .list-wrapper ul.requirements-list li {
     margin-top: 16px;
     display: flex;

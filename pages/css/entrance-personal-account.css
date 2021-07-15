@@ -105,6 +105,7 @@
     display: grid;
     grid-template-areas: "logo-block catalog-block services-block contacts-block social-networks-block" "logo-block catalog-block services-block timetable-block social-networks-block";
     grid-template-columns: 20% 15% 20% 20% 20%;
+    grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
     grid-template-rows: -webkit-max-content max-content -webkit-max-content max-content -webkit-max-content max-content;
     grid-template-rows: max-content max-content max-content max-content max-content max-content;
     -webkit-box-align: start;
@@ -324,5 +325,4 @@
                   order: 1; }
         .login-section .login-form .forgot-password-navigation {
           text-align: left; } }
-
 /*# sourceMappingURL=entrance-personal-account.css.map */

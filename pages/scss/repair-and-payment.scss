@@ -6,37 +6,7 @@
 
 @include repairSection();
 
-.questions-section {
-  background: #000000;
-  .question-item {
-    padding: 45px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.38);
-    &:last-child {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.38);
-    }
-    .question-header {
-      display: flex;
-      justify-content: space-between;
-      .question {
-        @include fontStyle("SF Pro Display", 30px, #ffffff, bold);
-      }
-      .plus-icon-wrapper {
-        cursor: pointer;
-      }
-    }
-    .answer {
-      @include fontStyle("SF Pro Display", 16px, #ffffff, normal);
-      max-height: 0;
-      transition: all 0.2s ease;
-      overflow: hidden;
-      &.open {
-        margin-top: 20px;
-        max-height: 1000px;
-        transition: all 0.7s ease;
-      }
-    }
-  }
-}
+@include questionSection();
 
 .products-section {
   padding: 60px 0;

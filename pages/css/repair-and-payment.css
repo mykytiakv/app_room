@@ -105,6 +105,7 @@
     display: grid;
     grid-template-areas: "logo-block catalog-block services-block contacts-block social-networks-block" "logo-block catalog-block services-block timetable-block social-networks-block";
     grid-template-columns: 20% 15% 20% 20% 20%;
+    grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
     grid-template-rows: -webkit-max-content max-content -webkit-max-content max-content -webkit-max-content max-content;
     grid-template-rows: max-content max-content max-content max-content max-content max-content;
     -webkit-box-align: start;
@@ -298,6 +299,9 @@
   .questions-section .question-item {
     padding: 45px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.38); }
+    @media screen and (max-width: 768px) {
+      .questions-section .question-item {
+        padding: 35px 0; } }
     .questions-section .question-item:last-child {
       border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
     .questions-section .question-item .question-header {
@@ -311,7 +315,11 @@
         font-family: "SF Pro Display";
         font-size: 30px;
         color: #ffffff;
-        font-weight: bold; }
+        font-weight: bold;
+        padding-right: 5px; }
+        @media screen and (max-width: 480px) {
+          .questions-section .question-item .question-header .question {
+            font-size: 25px; } }
       .questions-section .question-item .question-header .plus-icon-wrapper {
         cursor: pointer; }
     .questions-section .question-item .answer {
@@ -426,5 +434,4 @@
             font-size: 20px;
             color: #0c0c0d;
             font-weight: normal; }
-
 /*# sourceMappingURL=repair-and-payment.css.map */
