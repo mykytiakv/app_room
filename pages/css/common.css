@@ -18,6 +18,9 @@
   @media screen and (max-width: 768px) {
     .p-section {
       padding: 100px 0; } }
+  @media screen and (max-width: 480px) {
+    .p-section {
+      padding: 80px 0; } }
 
 img {
   max-width: 100%;

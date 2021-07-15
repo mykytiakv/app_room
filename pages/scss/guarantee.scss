@@ -4,6 +4,42 @@
 
 @include footerSection();
 
+@include repairSection();
+
+.repair-section {
+  background: #000000;
+  .container {
+    .left-block,
+    .right-block {
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .left-block {
+      ::-webkit-scrollbar-thumb {
+        background: #ffffff;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+      }
+      .scroll-line {
+        background: rgba(255, 255, 255, 0.42);
+      }
+    }
+    .info-wrapper {
+      .info-item {
+        .title {
+          color: #ffffff;
+        }
+        .main-text {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
 .table-warranty-program-section,
 .table-warranty-insurance-section {
   background: #ffffff;
@@ -29,6 +65,10 @@
       }
       tbody th {
         @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+          font-weight: normal;
+        }
       }
       tbody {
         td {
@@ -73,9 +113,16 @@
   &.warranty-program-banner {
     background-image: url("../images/img_4229 1.png");
     height: 533px;
+    @media screen and (max-width: 480px) {
+      height: 247px;
+    }
   }
   &.warranty-insurance-banner {
     background-image: url("../images/care-1\ 1.png");
     height: 520px;
+    @media screen and (max-width: 480px) {
+      height: 292px;
+      background-position: 67% 100%;
+    }
   }
 }

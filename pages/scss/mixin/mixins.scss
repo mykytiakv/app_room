@@ -290,3 +290,71 @@ $maxWidth: 768px;
     }
   }
 }
+
+@mixin repairSection() {
+  .repair-section {
+    background: #ffffff;
+    backdrop-filter: blur(200px);
+    .container {
+      display: flex;
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+      .left-block,
+      .right-block {
+        width: 50%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .left-block {
+        max-height: 390px;
+        position: relative;
+        @include blockScrollBar();
+        @media screen and (max-width: 768px) {
+          order: 1;
+          margin-top: 45px;
+        }
+        .scroll-line {
+          @include fakeScrollBarLine();
+        }
+      }
+      .right-block {
+        img {
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+      .info-wrapper {
+        overflow: auto;
+        direction: rtl;
+        max-height: 390px;
+        position: relative;
+        padding-right: 30px;
+        padding-left: 43px;
+        @media screen and (max-width: 768px) {
+          padding-right: 0;
+          max-height: 349px;
+        }
+        @media screen and (max-width: 480px) {
+          padding-left: 10px;
+        }
+        .info-item {
+          &:nth-child(n + 2) {
+            margin-top: 50px;
+          }
+          .title {
+            text-align: left;
+            @include fontStyle("SF Pro Display", 24px, #0c0c0d, 600);
+          }
+          .main-text {
+            text-align: left;
+            margin-top: 30px;
+            @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+          }
+        }
+      }
+    }
+  }
+}
