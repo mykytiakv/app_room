@@ -336,7 +336,7 @@
   background-size: cover;
   background-position: center;
   background-image: url("../images/Mask Group (1).png");
-  height: 411px; }
+  min-height: 411px; }
   .select-crediting-section .container {
     display: flex;
     flex-direction: column;
@@ -347,6 +347,9 @@
     color: #ffffff;
     font-weight: 600;
     text-align: center; }
+    @media screen and (max-width: 480px) {
+      .select-crediting-section .section-title {
+        font-size: 40px; } }
   .select-crediting-section .select-wrapper {
     margin-top: 60px;
     width: 100%;
@@ -454,11 +457,64 @@
   font-size: 28px;
   color: #fe8732;
   font-weight: bold; }
+  @media screen and (max-width: 480px) {
+    .credit-programs-lists .list-title {
+      font-size: 20px; } }
 .credit-programs-lists .list-wrapper {
   width: 33%;
   margin-top: 60px;
   display: flex;
   flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .credit-programs-lists .list-wrapper {
+      width: 100%;
+      margin-top: 40px; }
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(1) {
+        order: 1; }
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(2) {
+        order: 3; }
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(3) {
+        order: 5; }
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(4) {
+        order: 2; }
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(5) {
+        order: 4; }
+      .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(1) {
+        order: 1; }
+      .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(2) {
+        order: 3; }
+      .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(3) {
+        order: 5; }
+      .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(4) {
+        order: 6;
+        width: 100%; }
+      .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(5) {
+        order: 2; }
+      .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(6), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(6) {
+        order: 4; } }
+  @media screen and (max-width: 480px) {
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(1) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(2) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(3) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(4) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(5) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(1) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(2) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(3) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(4) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(5) {
+      order: initial; }
+    .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(6), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(6) {
+      order: initial; } }
   .credit-programs-lists .list-wrapper.program-description {
     padding-bottom: 50px;
     font-family: "SF Pro Display";
@@ -471,6 +527,13 @@
     display: flex;
     flex-direction: column;
     flex: 1; }
+    @media screen and (max-width: 768px) {
+      .credit-programs-lists .list-wrapper ul.requirements-list {
+        flex-direction: row;
+        flex-wrap: wrap; } }
+    @media screen and (max-width: 480px) {
+      .credit-programs-lists .list-wrapper ul.requirements-list {
+        flex-direction: column; } }
     .credit-programs-lists .list-wrapper ul.requirements-list li {
       margin-top: 16px;
       display: flex;
@@ -479,12 +542,21 @@
       font-size: 16px;
       color: #0c0c0d;
       font-weight: normal; }
+      @media screen and (max-width: 768px) {
+        .credit-programs-lists .list-wrapper ul.requirements-list li {
+          width: 50%; } }
+      @media screen and (max-width: 480px) {
+        .credit-programs-lists .list-wrapper ul.requirements-list li {
+          width: 100%; } }
       .credit-programs-lists .list-wrapper ul.requirements-list li.commision-item {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
         flex: 1; }
+        @media screen and (max-width: 768px) {
+          .credit-programs-lists .list-wrapper ul.requirements-list li.commision-item {
+            justify-content: center; } }
         .credit-programs-lists .list-wrapper ul.requirements-list li.commision-item .grey-text {
           color: rgba(12, 12, 13, 0.5); }
       .credit-programs-lists .list-wrapper ul.requirements-list li:nth-child(1) {

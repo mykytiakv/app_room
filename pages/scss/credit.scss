@@ -66,7 +66,7 @@
   background-size: cover;
   background-position: center;
   background-image: url("../images/Mask Group (1).png");
-  height: 411px;
+  min-height: 411px;
 
   .container {
     display: flex;
@@ -76,6 +76,9 @@
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
     text-align: center;
+    @media screen and (max-width: 480px) {
+      font-size: 40px;
+    }
   }
   .select-wrapper {
     margin-top: 60px;
@@ -176,12 +179,110 @@
 .credit-programs-lists {
   .list-title {
     @include fontStyle("SF Pro Display", 28px, #fe8732, bold);
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+    }
   }
   .list-wrapper {
     width: 33%;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 40px;
+      &.profitable-3,
+      &.p-5,
+      &.m-24 {
+        .requirements-list {
+          li:nth-child(1) {
+            order: 1;
+          }
+          li:nth-child(2) {
+            order: 3;
+          }
+          li:nth-child(3) {
+            order: 5;
+          }
+          li:nth-child(4) {
+            order: 2;
+          }
+          li:nth-child(5) {
+            order: 4;
+          }
+        }
+      }
+      &.t-0-14,
+      &.g-10 {
+        .requirements-list {
+          li:nth-child(1) {
+            order: 1;
+          }
+          li:nth-child(2) {
+            order: 3;
+          }
+          li:nth-child(3) {
+            order: 5;
+          }
+          li:nth-child(4) {
+            order: 6;
+            width: 100%;
+          }
+          li:nth-child(5) {
+            order: 2;
+          }
+          li:nth-child(6) {
+            order: 4;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 480px) {
+      &.profitable-3,
+      &.p-5,
+      &.m-24 {
+        .requirements-list {
+          li:nth-child(1) {
+            order: initial;
+          }
+          li:nth-child(2) {
+            order: initial;
+          }
+          li:nth-child(3) {
+            order: initial;
+          }
+          li:nth-child(4) {
+            order: initial;
+          }
+          li:nth-child(5) {
+            order: initial;
+          }
+        }
+      }
+      &.t-0-14,
+      &.g-10 {
+        .requirements-list {
+          li:nth-child(1) {
+            order: initial;
+          }
+          li:nth-child(2) {
+            order: initial;
+          }
+          li:nth-child(3) {
+            order: initial;
+          }
+          li:nth-child(4) {
+            order: initial;
+          }
+          li:nth-child(5) {
+            order: initial;
+          }
+          li:nth-child(6) {
+            order: initial;
+          }
+        }
+      }
+    }
     &.program-description {
       padding-bottom: 50px;
       @include fontStyle("SF Pro Display", 18px, #0c0c0d, normal);
@@ -193,17 +294,33 @@
       display: flex;
       flex-direction: column;
       flex: 1;
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+      }
       li {
         margin-top: 16px;
         display: flex;
         align-items: center;
         @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+        @media screen and (max-width: 768px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
         &.commision-item {
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
           align-items: flex-start;
           flex: 1;
+          @media screen and (max-width: 768px) {
+            justify-content: center;
+          }
           .grey-text {
             color: rgba(12, 12, 13, 0.5);
           }
