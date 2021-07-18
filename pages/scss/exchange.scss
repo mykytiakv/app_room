@@ -4,6 +4,10 @@
 
 @include footerSection();
 
+@include repairSection();
+
+@include questionSection();
+
 .how-it-works-section {
   background: #141415;
   backdrop-filter: blur(200px);
