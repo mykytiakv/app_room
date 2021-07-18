@@ -21,11 +21,18 @@
 
 .methods-wrapper {
   margin-top: 60px;
+  @media screen and (max-width: 480px) {
+    margin-top: 50px;
+  }
   &.payment-methods-wrapper {
     display: flex;
     flex-wrap: wrap;
     .method-item-wrapper {
-      width: 48%;
+      width: 47%;
+      &:nth-child(1),
+      &:nth-child(2) {
+        padding-top: 0;
+      }
       &:nth-child(odd) {
         margin-right: 15px;
       }
@@ -41,6 +48,26 @@
         );
         border-bottom: none;
       }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+        &:nth-child(even) {
+          margin-left: 0;
+        }
+        &:nth-child(2) {
+          padding-top: 40px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        &:nth-child(1) {
+          padding-top: 20px;
+        }
+        &:nth-child(2) {
+          padding-top: 20px;
+        }
+      }
     }
   }
   .method-item-wrapper {
@@ -48,8 +75,15 @@
     align-items: center;
     padding: 40px 0;
     border-bottom: 1px solid rgba(196, 196, 196, 0.81);
+    @media screen and (max-width: 480px) {
+      padding: 20px 0;
+      align-items: flex-start;
+    }
     .method-item-img-wapper {
       margin-right: 20px;
+      @media screen and (max-width: 480px) {
+        margin-top: 15px;
+      }
       img {
         min-width: 40px;
       }
