@@ -6,12 +6,706 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News and Articles</title>
-    <link rel="stylesheet" href="fonts/SFProDisplay/style.css">
+    <!-- <link rel="stylesheet" href="fonts/SFProDisplay/style.css"> -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/news-and-articles.css">
+
+    <!--  -->
+    <link rel="preload" crossorigin="anonymous" href="libs/glyphter-font/fonts/Glyphter.woff" as="font">
+    <link rel="stylesheet" href="fonts/SFProDisplay/style.css">
+    <link rel="stylesheet" href="libs/glyphter-font/css/Glyphter.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--  -->
 </head>
 
 <body>
+    <!-- ----------------------------------------------- -->
+    <!-- START b-topper -->
+    <div class="b-topper d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <nav class="nav b-topper__nav">
+                        <a class="nav-link d-none d-xxl-block" href="#">Новини та статті</a>
+                        <a class="nav-link d-none d-xl-block" href="#">Контакти</a>
+                        <a class="nav-link d-none d-xl-block" href="#">Оплата та доставка</a>
+                        <a class="nav-link d-none d-lg-block" href="#">Ремонт та сервіс</a>
+                        <a class="nav-link" href="#">Обмін</a>
+                        <a class="nav-link" href="#">Гарантія</a>
+                        <a class="nav-link" href="#">Кредит</a>
+                    </nav>
+                </div>
+
+                <div class="col-auto ml-auto mr-auto mr-lg-0">
+                    <div class="dropdown b-choose-phone">
+                        <button class="btn dropdown-toggle" data-toggle="dropdown">0 800 338 695</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="tel:0800338695">0 800 338 695</a>
+                            <a class="dropdown-item" href="tel:0673509635">067 35 09 635</a>
+                            <a class="dropdown-item" href="tel:0931707333">093 17 07 333</a>
+                        </div>
+                        <div class="b-choose-phone__info">Безкоштовно</div>
+                    </div>
+                </div>
+
+                <div class="col-auto d-flex align-items-center">
+                    <div class="b-topper__work-time">9:00 - 21:00 (пн-нд)</div>
+
+                    <div class="d-none d-xl-block">
+                        <div class="b-change-lang">
+                            <strong>Ua</strong>
+                            <span class="b-change-lang__divider">|</span>
+                            <a href="#">Ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END b-topper -->
+
+    <!-- START b-header -->
+    <header class="b-header">
+        <div class="container">
+            <div class="b-header__inner">
+                <a class="b-header__burger d-xl-none js-mobile-nav-action" href="#mobile-nav">
+                    <svg fill="none" viewBox="0 0 44 22" width="44">
+                        <path fill="#fff"
+                            d="M1.375 2.75h41.25a1.376 1.376 0 000-2.75H1.375a1.375 1.375 0 000 2.75zM42.625 9.625H1.375a1.375 1.375 0 000 2.75h41.25a1.375 1.375 0 000-2.75zM42.625 19.25h-27.5a1.375 1.375 0 000 2.75h27.5a1.375 1.375 0 000-2.75z" />
+                    </svg>
+                </a>
+
+                <a href="/">
+                    <img class="b-header__logo" loading="lazy" src="images/logo.svg" alt="">
+                </a>
+
+                <nav class="nav ml-auto d-none d-xl-block b-main-nav">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="category.php"><span>iPhone</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 12 Pro</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 12 Pro Max</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 12 mini</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 12</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone SE 2</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone6.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 11 Pro Max</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone7.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 11 Pro</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone8.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 11</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone9.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone XR</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/iphone10.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone 7</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_mac.php"><span>Mac</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">MacBook Pro</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">MacBook Air</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iMac 24” M1 2021</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iMac 2020</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iMac 2020 Custom</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac6.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Mac Mini</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac7.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Mac Pro</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac8.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Дисплеї</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/mac9.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Комплектуючі до MacBook</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_watch.php"><span>Apple Watch</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/watch1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Watch Series 6</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/watch2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Apple Watch SE</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/watch3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Watch Series 3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_ipad.php"><span>iPad</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad Pro 12.9 M1 2021</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad Pro 11 M1 2021</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad 10,2 2020</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad Air 10,9 2020</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad Pro 11" 2020</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad6.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad Pro 12,9" 2020</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad7.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad mini 5</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/ipad8.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Комплектуючі до iPad</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_airpods.php"><span>Airpods</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/airpods1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">AirPods Max</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/airpods2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">AirPods 2</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/airpods3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">AirPods Pro</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_gadgets.php"><span>Гаджети</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">AirTag</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Sony Playstation 5</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Sony Playstation 4</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Електро транспорт</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Apple Tv</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets6.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Wi-Fi пристрої / роутери</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets7.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Квадрокоптери і дрони</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets8.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Фітнес-браслети</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/gadgets9.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Nintendo Switch</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_acoustics.php"><span>Акустика</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/acoustics1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">HomePod</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/acoustics2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Marshall</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/acoustics3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">JBL</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/acoustics4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Harman / Kardon</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/acoustics5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Навушники</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_accessories.php"><span>Аксесуари</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Аксесуари для iPhone</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Аксесуари для iPad</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Аксесуари для MacBook</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Аксесуари для Apple Watch</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Аксесуари для Apple AirPods</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories6.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Автомобільні аксесуари</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories7.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Кабелі, зарядки і
+                                                перехідники</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories8.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Інші аксесуари</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/accessories9.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Розпродаж</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="category_used.php"><span>Вживана техніка</span></a>
+                            <div class="b-main-nav-child b-main-nav-child--dark">
+                                <div class="container">
+                                    <div class="b-main-nav-child__inner">
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/used1.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPhone бу</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/used2.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iPad бу</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/used3.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">MacBook бу</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/used4.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">Apple Watch бу</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/used5.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">AirPods бу</span>
+                                        </a>
+                                        <a href="#" class="b-main-nav-child__link">
+                                            <span class="b-main-nav-child__img"><img loading="lazy"
+                                                    src="images/menu-child/used6.png" alt=""></span>
+                                            <span class="b-main-nav-child__name">iMac бу</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="nav b-header__nav ml-auto ml-xl-auto">
+                    <a class="nav-link" href="#">
+                        <i class="icon-search"></i>
+                    </a>
+
+                    <!-- START b-cart -->
+                    <div class="nav-link b-cart">
+                        <div class="b-cart__action js-cart-action"><i class="icon-cart"></i></div>
+                        <div class="b-cart__box js-cart">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="b-cart__heading">Корзина</div>
+                                <div class="b-cart__close js-cart-action"><i class="icon-close"></i></div>
+                            </div>
+                            <div class="b-cart__list">
+                                <div class="b-cart__item">
+                                    <figure class="b-cart__img-wrap">
+                                        <img loading="lazy" src="images/product/3.png" alt="">
+                                    </figure>
+                                    <div class="b-cart__text">
+                                        <a class="b-cart__remove" href="#"><i class="icon-close"></i></a>
+                                        <div class="b-cart__title">
+                                            <a href="product.php">Apple iPhone 12 Pro Max 128GB Gold</a>
+                                        </div>
+                                        <div class="b-cart__col">
+                                            <div class="b-cart__add-heading">Кількість</div>
+                                            <div
+                                                class="btn-group b-number-spinner b-number-spinner--light js-number-spinner">
+                                                <button class="btn" data-dir="dwn" disabled><i
+                                                        class="icon-minus"></i></button>
+                                                <input type="text" name="quantity" value="1" class="form-control"
+                                                    readonly>
+                                                <button class="btn" data-dir="up"><i class="icon-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="b-cart__col">
+                                            <div class="b-cart__add-heading">Сума</div>
+                                            <div class="b-cart__price">$1 205</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b-cart__item">
+                                    <figure class="b-cart__img-wrap">
+                                        <img loading="lazy" src="images/product/4.png" alt="">
+                                    </figure>
+                                    <div class="b-cart__text">
+                                        <a class="b-cart__remove" href="#"><i class="icon-close"></i></a>
+                                        <div class="b-cart__title">
+                                            <a href="product.php">Apple iPhone 12 Mini 64GB Blue</a>
+                                        </div>
+                                        <div class="b-cart__col">
+                                            <div class="b-cart__add-heading">Кількість</div>
+                                            <div
+                                                class="btn-group b-number-spinner b-number-spinner--light js-number-spinner">
+                                                <button class="btn" data-dir="dwn" disabled><i
+                                                        class="icon-minus"></i></button>
+                                                <input type="text" name="quantity" value="1" class="form-control"
+                                                    readonly>
+                                                <button class="btn" data-dir="up"><i class="icon-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="b-cart__col">
+                                            <div class="b-cart__add-heading">Сума</div>
+                                            <div class="b-cart__price">$805</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="b-cart__note">ціна в гривнях розраховується відповідно до курсу в день оплати.
+                            </p>
+                            <div class="b-cart__total">
+                                <div>Всього</div>
+                                <div>$2 010</div>
+                            </div>
+                            <a class="btn btn-warning btn-lg btn-block" href="checkout.php">Оформити замовлення</a>
+                        </div>
+                    </div>
+                    <!-- END b-cart -->
+
+                    <a class="nav-link d-none d-md-block" href="#">
+                        <i class="icon-user"></i>
+                    </a>
+                    <a class="nav-link d-md-none" href="tel:0800338695">
+                        <i class="icon-phone"></i>
+                    </a>
+                </nav>
+
+                <div class="d-none d-md-block d-xl-none">
+                    <div class="b-change-lang">
+                        <strong>Ua</strong>
+                        <span class="b-change-lang__divider">|</span>
+                        <a href="#">Ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    </div>
+    <!-- END b-header -->
+
+    <!-- START b-main-slider -->
+    <div class="b-main-slider">
+        <div class="container">
+            <div class="b-main-slider__item">
+                <div class="b-promo-box__text">
+                    <ol class="breadcrumb b-promo-box__breadcrumb" itemscope itemtype="#">
+                        <li class="breadcrumb-item"><a href="/">Головна</a></li>
+                        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="#">
+                            <a href="#" itemprop="item">
+                                <span itemprop="name">Новини та статті</span>
+                                <meta itemprop="position" content="1">
+                            </a>
+                        </li>
+                    </ol>
+                    <h1 class="b-promo-box__title">Новини та статті</h1>
+
+                </div>
+                <figure class="b-main-slider__img-wrap">
+                    <img loading="lazy" src="images/main-slider/Group 311.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- END b-main-slider -->
+
+    <!-- START mobile-nav -->
+    <nav class="b-mobile-nav js-mobile-nav">
+        <div class="b-mobile-nav__header">
+            <div class="b-mobile-nav__close js-mobile-nav-action">
+                <i class="icon-close"></i>
+            </div>
+            <div class="b-mobile-nav__logo">
+                <a href="#"><img loading="lazy" src="img/logo-mobile.svg" alt=""></a>
+            </div>
+        </div>
+        <ul class="b-mobile-nav__list main">
+            <li class="b-mobile-nav__heading mt-0 d-none d-md-block">Каталог товарів</li>
+            <li data-child-id="1">
+                <a href="#"><img loading="lazy" src="img/menu/1.svg" alt="">IPhone</a>
+            </li>
+            <li data-child-id="2">
+                <a href="#"><img loading="lazy" src="img/menu/2.svg" alt="">Mac</a>
+            </li>
+            <li data-child-id="3">
+                <a href="#"><img loading="lazy" src="img/menu/3.svg" alt="">Apple Watch</a>
+            </li>
+            <li data-child-id="4">
+                <a href="#"><img loading="lazy" src="img/menu/4.svg" alt="">IPad</a>
+            </li>
+            <li data-child-id="5">
+                <a href="#"><img loading="lazy" src="img/menu/5.svg" alt="">Airpods</a>
+            </li>
+            <li data-child-id="6">
+                <a href="#"><img loading="lazy" src="img/menu/6.svg" alt="">Гаджети</a>
+            </li>
+            <li data-child-id="7">
+                <a href="#"><img loading="lazy" src="img/menu/7.svg" alt="">Акустика</a>
+            </li>
+            <li data-child-id="8">
+                <a href="#"><img loading="lazy" src="img/menu/8.svg" alt="">Аксесуари</a>
+            </li>
+            <li data-child-id="9">
+                <a href="#"><img loading="lazy" src="img/menu/9.svg" alt="">Вживана техніка</a>
+            </li>
+            <li class="b-mobile-nav__heading">Інформація та сервіси</li>
+            <li><a href="#"><img loading="lazy" src="img/menu/10.svg" alt="">Контакти</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/11.svg" alt="">Оплата та доставка</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/12.svg" alt="">Ремонт та сервіс</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/13.svg" alt="">Обмін</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/14.svg" alt="">Гарантія</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/15.svg" alt="">Кредит</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="1">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">IPhone</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">iPhone 12 Pro</a></li>
+            <li><a href="#">iPhone 12 Pro Max</a></li>
+            <li><a href="#">iPhone 12 mini</a></li>
+            <li><a href="#">iPhone 12</a></li>
+            <li><a href="#">iPhone SE 2</a></li>
+            <li><a href="#">iPhone 11 Pro Max</a></li>
+            <li><a href="#">iPhone 11 Pro</a></li>
+            <li><a href="#">iPhone 11</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="2">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">Mac</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">MacBook Pro</a></li>
+            <li><a href="#">MacBook Air</a></li>
+            <li><a href="#">iMac 24” M1 2021</a></li>
+            <li><a href="#">iMac 2020</a></li>
+            <li><a href="#">iMac 2020 Custom</a></li>
+            <li><a href="#">Mac Mini</a></li>
+            <li><a href="#">Mac Pro</a></li>
+            <li><a href="#">Дисплеї</a></li>
+            <li><a href="#">Комплектуючі до MacBook</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="3">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">Apple Watch</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">Watch Series 6</a></li>
+            <li><a href="#">Apple Watch SE</a></li>
+            <li><a href="#">Watch Series 3</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="4">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">IPad</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">iPad Pro 12.9 M1 2021</a></li>
+            <li><a href="#">iPad Pro 11 M1 2021</a></li>
+            <li><a href="#">iPad 10,2 2020</a></li>
+            <li><a href="#">iPad Air 10,9 2020</a></li>
+            <li><a href="#">iPad Pro 11” 2020</a></li>
+            <li><a href="#">iPad Pro 12,9” 2020</a></li>
+            <li><a href="#">iPad mini 5</a></li>
+            <li><a href="#">Комплектуючі до iPad</a></li>
+        </ul>
+    </nav>
+    <!-- END mobile-nav -->
+    <!-- ----------------------------------------------- -->
 
     <section class="news-section p-section">
         <div class="container">
@@ -118,7 +812,7 @@
                     <li class="social-network-item list-item">
                         <a target="_blank" rel="nofollow" href="#">
                             <img src="./images/facebook (2) 1.png" alt="Facebook">
-                            <i class="icon-facebook"></i>
+
                         </a>
                     </li>
                     <li class="social-network-item list-item">
@@ -138,6 +832,20 @@
             </div>
         </div>
     </footer>
+    <script src="libs/jquery.min.js" defer></script>
+    <script src="libs/bootstrap/js/popper.min.js" defer></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="libs/owl-carousel/owl.carousel.js" defer></script>
+
+
+    <script src="libs/slick/slick.min.js" defer></script>
+
+
+    <script src="libs/jquery-ui/jquery-ui.js" defer></script>
+    <script src="libs/jquery.mask.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <script src="libs/smooth-scrollbar/smooth-scrollbar.js"></script>
 </body>
 
 </html>
