@@ -232,6 +232,9 @@
 
 .methods-wrapper {
   margin-top: 60px; }
+  @media screen and (max-width: 480px) {
+    .methods-wrapper {
+      margin-top: 50px; } }
   .methods-wrapper.payment-methods-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -239,7 +242,9 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .methods-wrapper.payment-methods-wrapper .method-item-wrapper {
-      width: 48%; }
+      width: 47%; }
+      .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(1), .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(2) {
+        padding-top: 0; }
       .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(odd) {
         margin-right: 15px; }
       .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(even) {
@@ -250,6 +255,20 @@
         color: rgba(12, 12, 13, 0.5);
         font-weight: normal;
         border-bottom: none; }
+      @media screen and (max-width: 768px) {
+        .methods-wrapper.payment-methods-wrapper .method-item-wrapper {
+          width: 100%; }
+          .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(odd) {
+            margin-right: 0; }
+          .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(even) {
+            margin-left: 0; }
+          .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(2) {
+            padding-top: 40px; } }
+      @media screen and (max-width: 480px) {
+        .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(1) {
+          padding-top: 20px; }
+        .methods-wrapper.payment-methods-wrapper .method-item-wrapper:nth-child(2) {
+          padding-top: 20px; } }
   .methods-wrapper .method-item-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -259,8 +278,17 @@
             align-items: center;
     padding: 40px 0;
     border-bottom: 1px solid rgba(196, 196, 196, 0.81); }
+    @media screen and (max-width: 480px) {
+      .methods-wrapper .method-item-wrapper {
+        padding: 20px 0;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .methods-wrapper .method-item-wrapper .method-item-img-wapper {
       margin-right: 20px; }
+      @media screen and (max-width: 480px) {
+        .methods-wrapper .method-item-wrapper .method-item-img-wapper {
+          margin-top: 15px; } }
       .methods-wrapper .method-item-wrapper .method-item-img-wapper img {
         min-width: 40px; }
     .methods-wrapper .method-item-wrapper .method-item-description-wapper .method-item-description-title {

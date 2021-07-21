@@ -4,6 +4,10 @@
 
 @include footerSection();
 
+@include repairSection();
+
+@include questionSection();
+
 .how-it-works-section {
   background: #141415;
   backdrop-filter: blur(200px);
@@ -14,23 +18,63 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+    }
     .description-item-wrapper {
       display: flex;
       align-items: center;
+      .description-item-img-wapper {
+        min-width: max-content;
+      }
       &:nth-child(1) {
         .description-item-text {
           max-width: 250px;
         }
+        @media screen and (max-width: 900px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 530px) {
+          width: 100%;
+          .description-item-text {
+            max-width: 100%;
+          }
+        }
       }
       &:nth-child(2) {
         padding: 0 10px;
+
         .description-item-text {
           max-width: 290px;
+        }
+        @media screen and (max-width: 900px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 530px) {
+          margin-top: 40px;
+          width: 100%;
+          padding: 0;
+          .description-item-text {
+            max-width: 100%;
+          }
         }
       }
       &:nth-child(3) {
         .description-item-text {
           max-width: 335px;
+        }
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          margin-top: 72px;
+          .description-item-text {
+            max-width: 400px;
+          }
+        }
+        @media screen and (max-width: 530px) {
+          margin-top: 40px;
+          .description-item-text {
+            max-width: 100%;
+          }
         }
       }
       .description-item-text {
@@ -56,22 +100,93 @@
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;
+      @media screen and (max-width: 900px) {
+        :nth-child(1) {
+          order: 1;
+        }
+        :nth-child(2) {
+          order: 3;
+        }
+        :nth-child(3) {
+          order: 4;
+          margin-top: 30px;
+        }
+        :nth-child(4) {
+          order: 2;
+        }
+        :nth-child(5) {
+          order: 5;
+          margin-top: 30px;
+        }
+      }
+      @media screen and (max-width: 530px) {
+        :nth-child(1) {
+          order: 1;
+          // width: 100%;
+        }
+        :nth-child(2) {
+          order: 4;
+          // width: 100%;
+        }
+        :nth-child(3) {
+          order: 2;
+          width: 100%;
+          // max-width: 100%;
+          // img {
+          //   width: 30px;
+          // }
+        }
+        :nth-child(4) {
+          order: 2;
+          // width: 100%;
+          justify-content: flex-end;
+        }
+        :nth-child(5) {
+          order: 5;
+          margin-top: 30px;
+        }
+      }
     }
     .select-title {
       @include fontStyle("SF Pro Display", 24px, #0c0c0d, 600);
       width: 50%;
+      @media screen and (max-width: 900px) {
+        width: 30%;
+      }
+      @media screen and (max-width: 530px) {
+        width: 100%;
+      }
       &.right {
         text-align: right;
+        @media screen and (max-width: 530px) {
+          text-align: left;
+        }
       }
     }
     .arrows-icon-wrapper {
       display: flex;
       align-items: center;
+      @media screen and (max-width: 900px) {
+        img {
+          max-width: 30px;
+        }
+      }
+      @media screen and (max-width: 530px) {
+        width: 100%;
+        margin: 30px 0;
+      }
     }
     .select-wrapper {
       display: flex;
       align-items: flex-end;
       width: 45%;
+      @media screen and (max-width: 900px) {
+        width: 49%;
+      }
+      @media screen and (max-width: 530px) {
+        width: 100%;
+        justify-content: space-between;
+      }
       select {
         @include inputDefault(399px);
         @include selectArrowDefault();
@@ -79,12 +194,22 @@
       &.left {
         .select-preview {
           margin-left: 45px;
+          @media screen and (max-width: 530px) {
+            margin-left: 10px;
+          }
         }
       }
       &.right {
         justify-content: flex-end;
+        @media screen and (max-width: 530px) {
+          flex-direction: row-reverse;
+        }
         .select-preview {
           margin-right: 45px;
+          @media screen and (max-width: 530px) {
+            margin-left: 10px;
+            margin-right: 0;
+          }
         }
       }
       .select-preview {
@@ -99,32 +224,76 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+    }
     .leave-request-form {
       display: flex;
       flex: 1;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @media screen and (max-width: 530px) {
+        flex-wrap: wrap;
+      }
       fieldset {
         @include fieldsetDefault(284px);
+        @media screen and (max-width: 900px) {
+          max-width: 216px;
+        }
+        @media screen and (max-width: 530px) {
+          max-width: 100%;
+        }
         &.phone-input-fieldset {
           margin: 0 30px;
+          @media screen and (max-width: 530px) {
+            margin: 30px 0;
+          }
         }
       }
       input {
         @include inputDefault(284px);
+        @media screen and (max-width: 900px) {
+          max-width: 216px;
+        }
+        @media screen and (max-width: 530px) {
+          max-width: 100%;
+        }
       }
       .leave-request-bth {
         @include formBthDefault(284px);
+        @media screen and (max-width: 900px) {
+          max-width: 216px;
+        }
+        @media screen and (max-width: 530px) {
+          max-width: 100%;
+        }
       }
     }
     .approximate-surcharge {
       display: flex;
       align-items: center;
       padding-left: 10px;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top: 60px;
+        padding-left: 0;
+        justify-content: space-between;
+      }
       .label {
         @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
+        @media screen and (max-width: 530px) {
+          max-width: 128px;
+        }
       }
       .value {
         margin-left: 42px;
         @include fontStyle("SF Pro Display", 36px, #fe8732, 600);
+        @media screen and (max-width: 530px) {
+          margin-left: 5px;
+        }
       }
     }
   }

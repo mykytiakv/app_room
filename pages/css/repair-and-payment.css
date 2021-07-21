@@ -220,9 +220,17 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .repair-section .container .left-block,
     .repair-section .container .right-block {
       width: 50%; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .left-block,
+        .repair-section .container .right-block {
+          width: 100%; } }
     .repair-section .container .left-block {
       max-height: 390px;
       position: relative;
@@ -239,6 +247,12 @@
         background: #666666; }
       .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
         background: #666666; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .left-block {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1;
+          margin-top: 45px; } }
       .repair-section .container .left-block .scroll-line {
         position: absolute;
         top: 0;
@@ -246,35 +260,47 @@
         width: 1px;
         background: rgba(0, 0, 0, 0.42);
         height: 100%; }
-
-.info-wrapper {
-  overflow: auto;
-  direction: rtl;
-  max-height: 390px;
-  position: relative;
-  padding-right: 30px;
-  padding-left: 43px; }
-  .info-wrapper .info-item:nth-child(n + 2) {
-    margin-top: 50px; }
-  .info-wrapper .info-item .title {
-    text-align: left;
-    font-family: "SF Pro Display";
-    font-size: 24px;
-    color: #0c0c0d;
-    font-weight: 600; }
-  .info-wrapper .info-item .main-text {
-    text-align: left;
-    margin-top: 30px;
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    color: #0c0c0d;
-    font-weight: normal; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container .right-block img {
+        width: 100%; } }
+    .repair-section .container .info-wrapper {
+      overflow: auto;
+      direction: rtl;
+      max-height: 390px;
+      position: relative;
+      padding-right: 30px;
+      padding-left: 43px; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .info-wrapper {
+          padding-right: 0;
+          max-height: 349px; } }
+      @media screen and (max-width: 480px) {
+        .repair-section .container .info-wrapper {
+          padding-left: 10px; } }
+      .repair-section .container .info-wrapper .info-item:nth-child(n + 2) {
+        margin-top: 50px; }
+      .repair-section .container .info-wrapper .info-item .title {
+        text-align: left;
+        font-family: "SF Pro Display";
+        font-size: 24px;
+        color: #0c0c0d;
+        font-weight: 600; }
+      .repair-section .container .info-wrapper .info-item .main-text {
+        text-align: left;
+        margin-top: 30px;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #0c0c0d;
+        font-weight: normal; }
 
 .questions-section {
   background: #000000; }
   .questions-section .question-item {
     padding: 45px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.38); }
+    @media screen and (max-width: 768px) {
+      .questions-section .question-item {
+        padding: 35px 0; } }
     .questions-section .question-item:last-child {
       border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
     .questions-section .question-item .question-header {
@@ -288,9 +314,14 @@
         font-family: "SF Pro Display";
         font-size: 30px;
         color: #ffffff;
-        font-weight: bold; }
+        font-weight: bold;
+        padding-right: 5px; }
+        @media screen and (max-width: 480px) {
+          .questions-section .question-item .question-header .question {
+            font-size: 25px; } }
       .questions-section .question-item .question-header .plus-icon-wrapper {
-        cursor: pointer; }
+        cursor: pointer;
+        min-width: 26px; }
     .questions-section .question-item .answer {
       font-family: "SF Pro Display";
       font-size: 16px;

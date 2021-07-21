@@ -212,6 +212,107 @@
             .footer .footer-block .footer-list.social-networks-list .list-item {
               margin-right: 0px; } }
 
+.repair-section {
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px); }
+  .repair-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .repair-section .container .left-block,
+    .repair-section .container .right-block {
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .left-block,
+        .repair-section .container .right-block {
+          width: 100%; } }
+    .repair-section .container .left-block {
+      max-height: 390px;
+      position: relative;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .repair-section .container .left-block ::-webkit-scrollbar {
+        width: 8px;
+        background: transparent; }
+      .repair-section .container .left-block ::-webkit-scrollbar-track {
+        width: 1px; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb {
+        background: #666666; }
+      .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
+        background: #666666; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .left-block {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1;
+          margin-top: 45px; } }
+      .repair-section .container .left-block .scroll-line {
+        position: absolute;
+        top: 0;
+        left: 3.4px;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.42);
+        height: 100%; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container .right-block img {
+        width: 100%; } }
+    .repair-section .container .info-wrapper {
+      overflow: auto;
+      direction: rtl;
+      max-height: 390px;
+      position: relative;
+      padding-right: 30px;
+      padding-left: 43px; }
+      @media screen and (max-width: 768px) {
+        .repair-section .container .info-wrapper {
+          padding-right: 0;
+          max-height: 349px; } }
+      @media screen and (max-width: 480px) {
+        .repair-section .container .info-wrapper {
+          padding-left: 10px; } }
+      .repair-section .container .info-wrapper .info-item:nth-child(n + 2) {
+        margin-top: 50px; }
+      .repair-section .container .info-wrapper .info-item .title {
+        text-align: left;
+        font-family: "SF Pro Display";
+        font-size: 24px;
+        color: #0c0c0d;
+        font-weight: 600; }
+      .repair-section .container .info-wrapper .info-item .main-text {
+        text-align: left;
+        margin-top: 30px;
+        font-family: "SF Pro Display";
+        font-size: 16px;
+        color: #0c0c0d;
+        font-weight: normal; }
+
+.repair-section {
+  background: #000000; }
+  .repair-section .container .left-block,
+  .repair-section .container .right-block {
+    width: 50%; }
+    @media screen and (max-width: 768px) {
+      .repair-section .container .left-block,
+      .repair-section .container .right-block {
+        width: 100%; } }
+  .repair-section .container .left-block ::-webkit-scrollbar-thumb {
+    background: #ffffff; }
+  .repair-section .container .left-block ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; }
+  .repair-section .container .left-block .scroll-line {
+    background: rgba(255, 255, 255, 0.42); }
+  .repair-section .container .info-wrapper .info-item .title {
+    color: #ffffff; }
+  .repair-section .container .info-wrapper .info-item .main-text {
+    color: #ffffff; }
+
 .table-warranty-program-section,
 .table-warranty-insurance-section {
   background: #ffffff;
@@ -248,6 +349,11 @@
         font-size: 16px;
         color: #fe8732;
         font-weight: 600; }
+        @media screen and (max-width: 480px) {
+          .table-warranty-program-section .table-wrapper table tbody th,
+          .table-warranty-insurance-section .table-wrapper table tbody th {
+            font-size: 14px;
+            font-weight: normal; } }
       .table-warranty-program-section .table-wrapper table tbody td,
       .table-warranty-insurance-section .table-wrapper table tbody td {
         font-family: "SF Pro Display";
@@ -284,8 +390,15 @@
   .banner-wrapper.warranty-program-banner {
     background-image: url("../images/img_4229 1.png");
     height: 533px; }
+    @media screen and (max-width: 480px) {
+      .banner-wrapper.warranty-program-banner {
+        height: 247px; } }
   .banner-wrapper.warranty-insurance-banner {
     background-image: url("../images/care-1 1.png");
     height: 520px; }
+    @media screen and (max-width: 480px) {
+      .banner-wrapper.warranty-insurance-banner {
+        height: 292px;
+        background-position: 67% 100%; } }
 
 /*# sourceMappingURL=guarantee.css.map */

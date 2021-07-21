@@ -4,80 +4,9 @@
 
 @include footerSection();
 
-.repair-section {
-  background: #ffffff;
-  backdrop-filter: blur(200px);
-  .container {
-    display: flex;
-    .left-block,
-    .right-block {
-      width: 50%;
-    }
-    .left-block {
-      max-height: 390px;
-      position: relative;
-      @include blockScrollBar();
-      .scroll-line {
-        @include fakeScrollBarLine();
-      }
-    }
-  }
-}
+@include repairSection();
 
-.info-wrapper {
-  overflow: auto;
-  direction: rtl;
-  max-height: 390px;
-  position: relative;
-  padding-right: 30px;
-  padding-left: 43px;
-  .info-item {
-    &:nth-child(n + 2) {
-      margin-top: 50px;
-    }
-    .title {
-      text-align: left;
-      @include fontStyle("SF Pro Display", 24px, #0c0c0d, 600);
-    }
-    .main-text {
-      text-align: left;
-      margin-top: 30px;
-      @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
-    }
-  }
-}
-
-.questions-section {
-  background: #000000;
-  .question-item {
-    padding: 45px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.38);
-    &:last-child {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.38);
-    }
-    .question-header {
-      display: flex;
-      justify-content: space-between;
-      .question {
-        @include fontStyle("SF Pro Display", 30px, #ffffff, bold);
-      }
-      .plus-icon-wrapper {
-        cursor: pointer;
-      }
-    }
-    .answer {
-      @include fontStyle("SF Pro Display", 16px, #ffffff, normal);
-      max-height: 0;
-      transition: all 0.2s ease;
-      overflow: hidden;
-      &.open {
-        margin-top: 20px;
-        max-height: 1000px;
-        transition: all 0.7s ease;
-      }
-    }
-  }
-}
+@include questionSection();
 
 .products-section {
   padding: 60px 0;

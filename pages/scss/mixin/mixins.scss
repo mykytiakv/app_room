@@ -290,3 +290,113 @@ $maxWidth: 768px;
     }
   }
 }
+
+@mixin repairSection() {
+  .repair-section {
+    background: #ffffff;
+    backdrop-filter: blur(200px);
+    .container {
+      display: flex;
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+      .left-block,
+      .right-block {
+        width: 50%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .left-block {
+        max-height: 390px;
+        position: relative;
+        @include blockScrollBar();
+        @media screen and (max-width: 768px) {
+          order: 1;
+          margin-top: 45px;
+        }
+        .scroll-line {
+          @include fakeScrollBarLine();
+        }
+      }
+      .right-block {
+        img {
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+      .info-wrapper {
+        overflow: auto;
+        direction: rtl;
+        max-height: 390px;
+        position: relative;
+        padding-right: 30px;
+        padding-left: 43px;
+        @media screen and (max-width: 768px) {
+          padding-right: 0;
+          max-height: 349px;
+        }
+        @media screen and (max-width: 480px) {
+          padding-left: 10px;
+        }
+        .info-item {
+          &:nth-child(n + 2) {
+            margin-top: 50px;
+          }
+          .title {
+            text-align: left;
+            @include fontStyle("SF Pro Display", 24px, #0c0c0d, 600);
+          }
+          .main-text {
+            text-align: left;
+            margin-top: 30px;
+            @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin questionSection() {
+  .questions-section {
+    background: #000000;
+    .question-item {
+      padding: 45px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.38);
+      @media screen and (max-width: 768px) {
+        padding: 35px 0;
+      }
+      &:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+      }
+      .question-header {
+        display: flex;
+        justify-content: space-between;
+        .question {
+          @include fontStyle("SF Pro Display", 30px, #ffffff, bold);
+          padding-right: 5px;
+          @media screen and (max-width: 480px) {
+            font-size: 25px;
+          }
+        }
+        .plus-icon-wrapper {
+          cursor: pointer;
+          min-width: 26px;
+        }
+      }
+      .answer {
+        @include fontStyle("SF Pro Display", 16px, #ffffff, normal);
+        max-height: 0;
+        transition: all 0.2s ease;
+        overflow: hidden;
+        &.open {
+          margin-top: 20px;
+          max-height: 1000px;
+          transition: all 0.7s ease;
+        }
+      }
+    }
+  }
+}
