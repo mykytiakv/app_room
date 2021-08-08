@@ -14,13 +14,23 @@
     flex-wrap: wrap;
     .news-item-wrapper {
       width: 50%;
+      &:hover {
+        .news-item-img-wapper {
+          position: relative;
+          img {
+            transform: scale(1.15);
+          }
+        }
+      }
       @media screen and (max-width: 768px) {
         width: 100%;
       }
       .news-item-img-wapper {
         position: relative;
+        overflow: hidden;
         img {
           width: 100%;
+          transition: all 1s;
         }
       }
       .news-item-label-wrapper {
