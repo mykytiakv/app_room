@@ -1,0 +1,19 @@
+{
+    "name": "Apple-Room",
+    "short_name": "Apple-Room",
+    "icons": [
+        {
+            "src": "img/favicon/android-chrome-192x192.png?v=E6jzW6YGyX",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/favicon/android-chrome-512x512.png?v=E6jzW6YGyX",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

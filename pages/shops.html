@@ -5,8 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shops</title>
-    <link rel="stylesheet" href="fonts/SFProDisplay/style.css">
+    <title>Apple Room</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" crossorigin="anonymous" href="libs/glyphter-font/fonts/Glyphter.woff" as="font">
+
+    <link rel="preload" href="fonts/SFProDisplay/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/glyphter-font/css/Glyphter.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/owl-carousel/assets/owl.carousel.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/owl-carousel/assets/owl.theme.default.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="libs/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="libs/jquery-ui/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/main.css?v=1.5">
+
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/shops.css">
 </head>
@@ -141,83 +168,254 @@
                 class="iPhone-img">
         </div>
     </section>
-    <footer class="footer">
+    <!-- -------------------------------------------------------------------------- -->
+    <!-- START b-footer -->
+    <footer class="b-footer">
         <div class="container">
-            <div class="footer-block logo-block">
-                <div class="logo-wrapper">
-                    <img src="./images/Apple Room logo 1.png" alt="Appleroo.ua">
+            <div class="row">
+                <div class="col-md-4 col-xl">
+                    <img class="b-footer__logo" loading="lazy" src="img/logo.svg" alt="">
+                    <p class="b-footer__copyright d-none d-md-block">2012 - 2021 Apple Room - Магазин та сервісний центр
+                    </p>
+
+                    <div class="d-none d-md-block d-xl-none">
+                        <div class="b-footer__heading">
+                            Контакти
+                            <a href="#" class="b-collapse-mobile-action" data-toggle="collapse"
+                                data-target="#footer-collapse3" aria-expanded="false"><i></i></a>
+                        </div>
+                        <ul class="list-unstyled b-collapse-mobile collapse" id="footer-collapse3">
+                            <li><a href="tel:0800338695">0 800 338 695 (Безкоштовно)</a></li>
+                            <li><a href="tel:+38(093)1707333">+38 (093) 17 07 333</a></li>
+                            <li><a href="tel:+38(067)3509635">+38 (067) 35 09 635</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="logo-description">
-                    2012 - 2021 Apple Room - Магазин та сервісний центр
+                <div class="col-md-3 col-xl">
+                    <div class="b-footer__heading">
+                        Каталог
+                        <a href="#" class="b-collapse-mobile-action" data-toggle="collapse"
+                            data-target="#footer-collapse1" aria-expanded="false"><i></i></a>
+                    </div>
+                    <ul class="list-unstyled b-collapse-mobile collapse" id="footer-collapse1">
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">Асесуари</a></li>
+                        <li><a href="#">Гаджети</a></li>
+                        <li><a href="#">Вживана техніка</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xl">
+                    <div class="b-footer__heading">
+                        Інформація та сервіси
+                        <a href="#" class="b-collapse-mobile-action" data-toggle="collapse"
+                            data-target="#footer-collapse2" aria-expanded="false"><i></i></a>
+                    </div>
+                    <ul class="list-unstyled b-collapse-mobile collapse" id="footer-collapse2">
+                        <li><a href="#">Новини та статті</a></li>
+                        <li><a href="#">Магазини</a></li>
+                        <li><a href="#">Вакансії</a></li>
+                        <li><a href="#">Оплата та доставка</a></li>
+                        <li><a href="#">Ремонт та сервіс</a></li>
+                        <li><a href="#">Обмін</a></li>
+                        <li><a href="#">Гарантія</a></li>
+                        <li><a href="#">Кредит</a></li>
+                        <li><a href="#">Відгуки</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl d-md-none d-xl-block">
+                    <div class="b-footer__heading">
+                        Контакти
+                        <a href="#" class="b-collapse-mobile-action" data-toggle="collapse"
+                            data-target="#footer-collapse4" aria-expanded="false"><i></i></a>
+                    </div>
+                    <ul class="list-unstyled b-collapse-mobile collapse" id="footer-collapse4">
+                        <li><a href="tel:0800338695">0 800 338 695 (Безкоштовно)</a></li>
+                        <li><a href="tel:+38(093)1707333">+38 (093) 17 07 333</a></li>
+                        <li><a href="tel:+38(067)3509635">+38 (067) 35 09 635</a></li>
+                    </ul>
+
+                    <div class="mt-5">
+                        <div class="b-footer__heading">Графік роботи:</div>
+                        <p class="b-footer__work-time">Пн - Нд: 10:00 - 21:00 год</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl">
+                    <div class="b-footer__heading">Слідкуйте за нами</div>
+                    <ul class="list-inline b-social-network">
+                        <li class="list-inline-item">
+                            <a target="_blank" rel="nofollow" href="#">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" rel="nofollow" href="#">
+                                <i class="icon-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" rel="nofollow" href="#">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-none d-md-block d-xl-none">
+                    <div class="b-footer__heading">Графік роботи:</div>
+                    <p class="b-footer__work-time">Пн - Нд: 10:00 - 21:00 год</p>
                 </div>
             </div>
-            <div class="footer-block catalog-block">
-                <div class="title">Каталог</div>
-                <ul class="catalog-list footer-list">
-                    <li class="catalog-item list-item"><a href="#">iPhone</a></li>
-                    <li class="catalog-item list-item"><a href="#">Mac</a></li>
-                    <li class="catalog-item list-item"><a href="#">iPad</a></li>
-                    <li class="catalog-item list-item"><a href="#">Apple Watch</a></li>
-                    <li class="catalog-item list-item"><a href="#">AirPods</a></li>
-                    <li class="catalog-item list-item"><a href="#">Асесуари</a></li>
-                    <li class="catalog-item list-item"><a href="#">Гаджети</a></li>
-                    <li class="catalog-item list-item"><a href="#">Вживана техніка</a></li>
-                </ul>
-            </div>
-            <div class="footer-block services-block">
-                <div class="title">Інформація та сервіси</div>
-                <ul class="services-list footer-list">
-                    <li class="service-item list-item"><a href="#">Новини та статті</a></li>
-                    <li class="service-item list-item"><a href="#">Магазини</a></li>
-                    <li class="service-item list-item"><a href="#">Вакансії</a></li>
-                    <li class="service-item list-item"><a href="#">Оплата та доставка</a></li>
-                    <li class="service-item list-item"><a href="#">Ремонт та сервіс</a></li>
-                    <li class="service-item list-item"><a href="#">Обмін</a></li>
-                    <li class="service-item list-item"><a href="#">Гарантія</a></li>
-                    <li class="service-item list-item"><a href="#">Кредит</a></li>
-                    <li class="service-item list-item"><a href="#">Відгуки</a></li>
-                </ul>
-            </div>
-            <div class="footer-block contacts-block">
-                <div class="title">Контакти</div>
-                <ul class="contacts-list footer-list">
-                    <li class="contact-item list-item"><a href="tel:0800338695">0 800 338 695 (Безкоштовно)</a></li>
-                    <li class="contact-item list-item"><a href="tel:+38(093)1707333">+38 (093) 17 07 333</a></li>
-                    <li class="contact-item list-item"><a href="tel:+38(067)3509635">+38 (067) 35 09 635</a></li>
-                </ul>
-            </div>
-            <div class="footer-block timetable-block">
-                <div class="title">Графік роботи:</div>
-                <ul class="timetable-list footer-list">
-                    <li class="timetable-item list-item">Пн - Нд: 10:00 - 21:00 год</li>
-                </ul>
-            </div>
-            <div class="footer-block social-networks-block">
-                <div class="title">Слідкуйте за нами</div>
-                <ul class="social-networks-list footer-list">
-                    <li class="social-network-item list-item">
-                        <a target="_blank" rel="nofollow" href="#">
-                            <img src="./images/facebook (2) 1.png" alt="Facebook">
-                            <i class="icon-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="social-network-item list-item">
-                        <a target="_blank" rel="nofollow" href="#">
-                            <img src="./images/youtube 1.png" alt="Youtube">
-                        </a>
-                    </li>
-                    <li class="social-network-item list-item">
-                        <a target="_blank" rel="nofollow" href="#">
-                            <img src="./images/instagram (2) 1.png" alt="Instagram">
-                        </a>
-                    </li>
-                </ul>
-                <div class="logo-description">
-                    2012 - 2021 Apple Room - Магазин та сервісний центр
-                </div>
-            </div>
+            <p class="b-footer__copyright d-md-none">2012 - 2021 Apple Room - Магазин та сервісний центр</p>
         </div>
     </footer>
+    <!-- END b-footer -->
+
+    </div> <!-- end wrapper -->
+
+    <!-- START mobile-nav -->
+    <nav class="b-mobile-nav js-mobile-nav">
+        <div class="b-mobile-nav__header">
+            <div class="b-mobile-nav__close js-mobile-nav-action">
+                <i class="icon-close"></i>
+            </div>
+            <div class="b-mobile-nav__logo">
+                <a href="#"><img loading="lazy" src="img/logo-mobile.svg" alt=""></a>
+            </div>
+        </div>
+        <ul class="b-mobile-nav__list main">
+            <li class="b-mobile-nav__heading mt-0 d-none d-md-block">Каталог товарів</li>
+            <li data-child-id="1">
+                <a href="#"><img loading="lazy" src="img/menu/1.svg" alt="">IPhone</a>
+            </li>
+            <li data-child-id="2">
+                <a href="#"><img loading="lazy" src="img/menu/2.svg" alt="">Mac</a>
+            </li>
+            <li data-child-id="3">
+                <a href="#"><img loading="lazy" src="img/menu/3.svg" alt="">Apple Watch</a>
+            </li>
+            <li data-child-id="4">
+                <a href="#"><img loading="lazy" src="img/menu/4.svg" alt="">IPad</a>
+            </li>
+            <li data-child-id="5">
+                <a href="#"><img loading="lazy" src="img/menu/5.svg" alt="">Airpods</a>
+            </li>
+            <li data-child-id="6">
+                <a href="#"><img loading="lazy" src="img/menu/6.svg" alt="">Гаджети</a>
+            </li>
+            <li data-child-id="7">
+                <a href="#"><img loading="lazy" src="img/menu/7.svg" alt="">Акустика</a>
+            </li>
+            <li data-child-id="8">
+                <a href="#"><img loading="lazy" src="img/menu/8.svg" alt="">Аксесуари</a>
+            </li>
+            <li data-child-id="9">
+                <a href="#"><img loading="lazy" src="img/menu/9.svg" alt="">Вживана техніка</a>
+            </li>
+            <li class="b-mobile-nav__heading">Інформація та сервіси</li>
+            <li><a href="#"><img loading="lazy" src="img/menu/10.svg" alt="">Контакти</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/11.svg" alt="">Оплата та доставка</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/12.svg" alt="">Ремонт та сервіс</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/13.svg" alt="">Обмін</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/14.svg" alt="">Гарантія</a></li>
+            <li><a href="#"><img loading="lazy" src="img/menu/15.svg" alt="">Кредит</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="1">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">IPhone</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">iPhone 12 Pro</a></li>
+            <li><a href="#">iPhone 12 Pro Max</a></li>
+            <li><a href="#">iPhone 12 mini</a></li>
+            <li><a href="#">iPhone 12</a></li>
+            <li><a href="#">iPhone SE 2</a></li>
+            <li><a href="#">iPhone 11 Pro Max</a></li>
+            <li><a href="#">iPhone 11 Pro</a></li>
+            <li><a href="#">iPhone 11</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="2">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">Mac</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">MacBook Pro</a></li>
+            <li><a href="#">MacBook Air</a></li>
+            <li><a href="#">iMac 24” M1 2021</a></li>
+            <li><a href="#">iMac 2020</a></li>
+            <li><a href="#">iMac 2020 Custom</a></li>
+            <li><a href="#">Mac Mini</a></li>
+            <li><a href="#">Mac Pro</a></li>
+            <li><a href="#">Дисплеї</a></li>
+            <li><a href="#">Комплектуючі до MacBook</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="3">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">Apple Watch</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">Watch Series 6</a></li>
+            <li><a href="#">Apple Watch SE</a></li>
+            <li><a href="#">Watch Series 3</a></li>
+        </ul>
+        <ul class="b-mobile-nav__list child" data-id="4">
+            <li class="b-mobile-nav__heading mt-0">
+                <span class="b-mobile-nav__active">IPad</span>
+                <span class="b-mobile-nav__back js-mobile-nav-back">Назад</span>
+            </li>
+            <li><a href="#">iPad Pro 12.9 M1 2021</a></li>
+            <li><a href="#">iPad Pro 11 M1 2021</a></li>
+            <li><a href="#">iPad 10,2 2020</a></li>
+            <li><a href="#">iPad Air 10,9 2020</a></li>
+            <li><a href="#">iPad Pro 11” 2020</a></li>
+            <li><a href="#">iPad Pro 12,9” 2020</a></li>
+            <li><a href="#">iPad mini 5</a></li>
+            <li><a href="#">Комплектуючі до iPad</a></li>
+        </ul>
+    </nav>
+    <!-- END mobile-nav -->
+
+    <div itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="Apple">
+        <link itemprop="url" href="https://appleroom.ua">
+        <link itemprop="logo" href="https://appleroom.ua/wa-data/public/shop/themes/appleroom/img/logo.svg">
+        <meta itemprop="description"
+            content="Магазин та Сервісний Центр Apple у Львові ✓ Найнижча Ціна ✓ Офіційна Гарантія ☝ Постійні Знижки ✓ Найкращий Сервіс">
+        <meta itemprop="telephone" content="0 800 338 695">
+        <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+            <meta itemprop="target" content="https://appleroom.ua/search/?query={search_term_string}">
+            <input class="d-none" itemprop="query-input" type="search" name="search_term_string" required>
+        </form>
+    </div>
+
+    <script src="//livejs.com/live.js" defer></script>
+    <script src="libs/jquery.min.js" defer></script>
+    <script src="libs/bootstrap/js/popper.min.js" defer></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="libs/owl-carousel/owl.carousel.js" defer></script>
+
+    <script src="libs/slick/slick.min.js" defer></script>
+
+    <script src="libs/jquery-ui/jquery-ui.js" defer></script>
+    <script src="libs/jquery-ui/jquery.ui.touch-punch.min.js" defer></script>
+
+    <script src="libs/jquery.mask.js" defer></script>
+    <script src="js/main.js?v=1.5" defer></script>
+
+    <script src="libs/smooth-scrollbar/smooth-scrollbar.js"></script>
+    <script type="module">
+        // js-scrollbar
+        const myScrollbar = document.querySelector('.js-scrollbar');
+
+        if (myScrollbar != null) {
+            Scrollbar.init(myScrollbar, {
+                overscrollEffect: 'bounce',
+                alwaysShowTracks: true,
+            });
+        }
+    </script>
 </body>
 
 </html>

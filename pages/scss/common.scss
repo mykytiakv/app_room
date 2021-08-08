@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  word-break: inherit;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -26,7 +30,7 @@
 
 img {
   max-width: 100%;
-  display: block;
+  // display: block;
 }
 
 a {
