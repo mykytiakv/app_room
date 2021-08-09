@@ -66,6 +66,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        &:hover {
+          border: 4px solid #fe8732;
+        }
         &.iPhone-item {
           width: 20%;
           @media screen and (max-width: 500px) {

@@ -469,15 +469,15 @@
     .credit-programs-lists .list-wrapper {
       width: 100%;
       margin-top: 40px; }
-      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(1) {
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(1) {
         order: 1; }
-      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(2) {
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(2) {
         order: 3; }
-      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(3) {
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(3) {
         order: 5; }
-      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(4) {
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(4) {
         order: 2; }
-      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(5) {
+      .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(5) {
         order: 4; }
       .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(1) {
         order: 1; }
@@ -493,15 +493,15 @@
       .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(6), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(6) {
         order: 4; } }
   @media screen and (max-width: 480px) {
-    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(1) {
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(1) {
       order: initial; }
-    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(2) {
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(2), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(2) {
       order: initial; }
-    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(3) {
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(3), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(3) {
       order: initial; }
-    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(4) {
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(4), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(4) {
       order: initial; }
-    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.p-5 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(5) {
+    .credit-programs-lists .list-wrapper.profitable-3 .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.p-5-plan .requirements-list li:nth-child(5), .credit-programs-lists .list-wrapper.m-24 .requirements-list li:nth-child(5) {
       order: initial; }
     .credit-programs-lists .list-wrapper.t-0-14 .requirements-list li:nth-child(1), .credit-programs-lists .list-wrapper.g-10 .requirements-list li:nth-child(1) {
       order: initial; }

@@ -396,7 +396,15 @@
     .shops-section .shops-wrapper .shop-item-wrapper {
       position: relative; }
       .shops-section .shops-wrapper .shop-item-wrapper .content {
-        position: relative; }
+        position: relative;
+        cursor: pointer;
+        overflow: hidden; }
+        .shops-section .shops-wrapper .shop-item-wrapper .content:hover img {
+          -webkit-transform: scale(1.15);
+                  transform: scale(1.15); }
+        .shops-section .shops-wrapper .shop-item-wrapper .content img {
+          -webkit-transition: all 1s;
+          transition: all 1s; }
         .shops-section .shops-wrapper .shop-item-wrapper .content:after {
           content: "";
           position: absolute;

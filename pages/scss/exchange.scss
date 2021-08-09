@@ -11,11 +11,14 @@
 .how-it-works-section {
   background: #141415;
   backdrop-filter: blur(200px);
+  &.p-section {
+    padding: 50px 0;
+  }
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
   }
   .description-wrapper {
-    margin-top: 80px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 900px) {

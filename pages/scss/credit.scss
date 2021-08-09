@@ -192,7 +192,7 @@
       width: 100%;
       margin-top: 40px;
       &.profitable-3,
-      &.p-5,
+      &.p-5-plan,
       &.m-24 {
         .requirements-list {
           li:nth-child(1) {
@@ -239,7 +239,7 @@
     }
     @media screen and (max-width: 480px) {
       &.profitable-3,
-      &.p-5,
+      &.p-5-plan,
       &.m-24 {
         .requirements-list {
           li:nth-child(1) {

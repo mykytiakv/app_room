@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+    // popover
+    $('[data-toggle="popover"]').popover();
+
+    // b-custom-checkbox
+    $('.b-custom-checkbox').each(function() {
+        if ($(this).find('input').is(':checked')) {
+            $(this).addClass('active');
+        }
+    });
+
+    $(document).on('input', '.b-custom-checkbox input', function() {
+       $(this).parents('.b-custom-checkbox').toggleClass('active');
+    });
+
     // js-cart-action
     $('.js-cart-action').click(function() {
         $('.js-cart').toggleClass('active');
@@ -39,17 +53,16 @@ $(document).ready(function() {
     const productItem = $('.b-product-item');
 
     function productItemActive($current) {
-        let itemHeight = $current.find('.overlay-inner').innerHeight() + 20;
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            let itemHeight = $current.find('.overlay-inner').innerHeight() + 20,
+                $stage = $current.parents('.owl-stage');
 
-        if ($current.find('.overlay').length) {
-            $current.find('.overlay').css('height', 'calc(100% + '+ itemHeight +'px)');
-            $current.parents('.owl-stage').height($current.height() + itemHeight);
+            if ($current.find('.overlay').length) {
+                $current.find('.overlay').css('height', 'calc(100% + ' + itemHeight + 'px)');
+                $stage.height('auto').height($stage.height() + itemHeight);
+            }
         }
     }
-
-    productItem.on('touchstart', function () {
-        productItemActive($(this));
-    });
 
     productItem.mouseover(function() {
         productItemActive($(this));
@@ -126,22 +139,35 @@ $(document).ready(function() {
     });
 
     // js-main-news
-    $('.js-main-news').owlCarousel({
-        items: 2,
-        nav: false,
-        dots: false,
-        loop: false,
-        margin: 30,
-        responsive:{
-            0:{
-                margin: 22,
-                items:1
+    const $mainNews = $('.js-main-news');
+
+    if ($mainNews.length) {
+        $mainNews.owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 3000,
+            items: 2,
+            nav: false,
+            dots: false,
+            loop: false,
+            margin: 30,
+            responsive: {
+                0: {
+                    stagePadding: 50,
+                    margin: 22,
+                    items: 1
+                },
+                992: {
+                    items: 2
+                }
             },
-            992:{
-                items:2
+            onInitialized: function () {
+                updateSize($mainNews);
+            },
+            onRefreshed: function () {
+                updateSize($mainNews);
             }
-        }
-    });
+        });
+    }
 
     const owlCustomNav = {
         navText: [
@@ -230,6 +256,23 @@ $(document).ready(function() {
         });
     }
 
+    /* js-prod-set */
+    const $prodSet = $('.js-prod-set');
+
+    if ($prodSet.length) {
+        $prodSet.slick({
+            slidesToShow: 1,
+            verticalSwiping: true,
+            dots: false,
+            focusOnSelect: true,
+            vertical: true,
+            loop: false,
+            arrows: true,
+            prevArrow: '<i class="icon-slide-left prev"></i>',
+            nextArrow: '<i class="icon-slide-right next"></i>'
+        });
+    }
+
     // windResize
     function windResize() {
 
@@ -304,6 +347,59 @@ $(document).ready(function() {
     });
 });
 
+// numberAnimation
+const time = 1000;
+const step = 100;
+
+function numberAnimation(num, e) {
+    let n = 0;
+
+    num = num.replace(/ /g, '');
+
+    let t = Math.round(time / (num / step));
+    let interval = setInterval(() => {
+        n = n + step;
+        if (n > num) {
+            clearInterval(interval);
+            n = num;
+        }
+        e.innerHTML = parseFloat(n).toLocaleString();
+    }, t);
+}
+
+document.querySelectorAll('[data-num-animate]').forEach(e => {
+    numberAnimation(e.dataset.numAnimate, e);
+});
+
+// countDown
+function countDown(time, e) {
+    let countDownDate = new Date(time).getTime(),
+        x = setInterval(function() {
+            let now = new Date().getTime(),
+                distance = countDownDate - now;
+
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+                hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            e.innerHTML = '' +
+                '<div><span>' + days + '</span> днів</div>' +
+                '<div><span>' + hours + '</span> годин</div>' +
+                '<div><span>' + minutes + '</span> хвилин</div>' +
+                '<div><span>' + seconds + '</span> секунд</div>';
+
+            if (distance < 0) {
+                clearInterval(x);
+                e.innerHTML = 'Завершено!';
+            }
+        }, 1000);
+}
+
+document.querySelectorAll('[data-count-down]').forEach(e => {
+    countDown(e.dataset.countDown, e);
+});
+
 // updateSize
 function updateSize($carousel) {
     setTimeout(function () {
@@ -314,10 +410,7 @@ function updateSize($carousel) {
                 let $thisElement = $(this);
 
                 // Max height
-                let prevHeight = $thisElement.height(),
-                    thisHeight = $thisElement.height('auto').height();
-
-                $thisElement.height(prevHeight);
+                let thisHeight = $thisElement.height('auto').height();
                 maxHeight = (maxHeight > thisHeight ? maxHeight : thisHeight);
             });
 
