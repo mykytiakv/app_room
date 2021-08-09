@@ -373,7 +373,7 @@
       .table-warranty-program-section .table-wrapper table td,
       .table-warranty-insurance-section .table-wrapper table th,
       .table-warranty-insurance-section .table-wrapper table td {
-        padding: 24px 0;
+        padding: 15px 0;
         border-bottom: 1px solid rgba(12, 12, 13, 0.5);
         word-wrap: break-word; }
       .table-warranty-program-section .table-wrapper table.warranty-insurance-table thead th:nth-child(2),
