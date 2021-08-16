@@ -19,7 +19,6 @@
   .pop-up-container {
     padding: 0 50px;
     display: flex;
-    align-items: center;
   }
   .close-icon-wrapper {
     display: flex;
@@ -75,7 +74,7 @@
         width: 100%;
         max-width: 205px;
         cursor: pointer;
-        .active {
+        &.active {
           border: 1px solid #fe8732;
         }
         .bank-name {
@@ -194,14 +193,25 @@
         .bth-wrapper {
           @include fieldsetDefault(266px);
           .bth {
-            @include formBthDefault(266px);
-            &.bth-continue {
-              color: #fe8732;
-              background: #ffffff;
-            }
+            width: 100%;
+            max-width: 266px;
+            border: 1px solid #fe8732;
+            border-radius: 0;
+            // @include formBthDefault(266px);
+            // &.bth-continue {
+            //   color: #fe8732;
+            //   background: #ffffff;
+            // }
           }
         }
       }
     }
   }
+}
+
+.b-custom-checkbox {
+  margin-bottom: 0;
+  padding: 0;
+  min-height: auto;
+  line-height: initial;
 }

@@ -6,4 +6,9 @@ $(document).ready(function () {
   $(".close-credit-pop-up").click(() => {
     $("#credit-pop-up").hide();
   });
+
+  $(".bank-item").click((e) => {
+    $(".bank-item").removeClass("active");
+    $(e.target.closest(".bank-item")).toggleClass("active");
+  });
 });

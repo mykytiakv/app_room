@@ -51,7 +51,12 @@
     }
     .bth {
       text-align: center;
-      @include formBthDefault(400px);
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #fe8732;
+      border-radius: 0;
+      height: 100%;
+      // @include formBthDefault(400px);
     }
     @media screen and (max-width: 480px) {
       flex-direction: column;

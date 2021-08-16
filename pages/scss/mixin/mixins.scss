@@ -144,7 +144,10 @@ $maxWidth: 768px;
         right: 1px;
         position: relative;
         min-height: 60px;
-        @include formBthDefault(356px);
+        border-radius: 0;
+        width: 100%;
+        max-width: 356px;
+        // @include formBthDefault(356px);
         @media screen and (max-width: 768px) {
           max-width: 50%;
         }
@@ -363,7 +366,7 @@ $maxWidth: 768px;
   .questions-section {
     background: #000000;
     .question-item {
-      padding: 45px 0;
+      padding: 22px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.38);
       @media screen and (max-width: 768px) {
         padding: 35px 0;

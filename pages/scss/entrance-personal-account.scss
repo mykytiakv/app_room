@@ -52,7 +52,11 @@
       @include inputDefault(256px);
     }
     .bth {
-      @include formBthDefault(256px);
+      width: 100%;
+      max-width: 256px;
+      border: 1px solid #fe8732;
+      border-radius: 0;
+      // @include formBthDefault(256px);
     }
     .forgot-password-navigation {
       width: 100%;

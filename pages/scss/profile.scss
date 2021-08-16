@@ -124,7 +124,11 @@
       margin-top: 40px;
     }
     .bth {
-      @include formBthDefault(400px);
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #fe8732;
+      border-radius: 0;
+      // @include formBthDefault(400px);
       @media screen and (max-width: 480px) {
         max-width: 100%;
       }
@@ -371,10 +375,15 @@
       }
       .bth {
         max-width: 100%;
-        &.cancel-bth {
-          background: #ffffff;
-          color: #fe8732;
-        }
+        // &.cancel-bth {
+        //   background: #ffffff;
+        //   color: #fe8732;
+        //   font-weight: 400;
+        //   &:hover {
+        //     color: #212529;
+        //     background-color: #fe8732;
+        //   }
+        // }
       }
     }
   }

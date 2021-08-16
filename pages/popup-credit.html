@@ -5,8 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup window</title>
-    <link rel="stylesheet" href="fonts/SFProDisplay/style.css">
+    <title>Apple Room</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="img/favicon/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" crossorigin="anonymous" href="libs/glyphter-font/fonts/Glyphter.woff" as="font">
+
+    <link rel="preload" href="fonts/SFProDisplay/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/glyphter-font/css/Glyphter.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/owl-carousel/assets/owl.carousel.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/owl-carousel/assets/owl.theme.default.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="libs/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="libs/jquery-ui/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/main.css?v=1.5">
+
+
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/popup-window.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -76,22 +104,25 @@
                 <div class="duration">
                     <div class="pop-up-container">
                         <div class="duration-item">
-                            <input type="checkbox">
-                            <div class="duration-description">
-                                До 4 місяців
-                            </div>
+                            <label class="b-custom-checkbox border-0">
+                                <span class="duration-description">До 4 місяців</span>
+                                <input type="checkbox">
+                                <span class="b-custom-checkbox__checkbox"></span>
+                            </label>
                         </div>
                         <div class="duration-item">
-                            <input type="checkbox">
-                            <div class="duration-description">
-                                До 10 місяців
-                            </div>
+                            <label class="b-custom-checkbox border-0">
+                                <span class="duration-description">До 10 місяців</span>
+                                <input type="checkbox">
+                                <span class="b-custom-checkbox__checkbox"></span>
+                            </label>
                         </div>
                         <div class="duration-item">
-                            <input type="checkbox">
-                            <div class="duration-description">
-                                До 24 місяців
-                            </div>
+                            <label class="b-custom-checkbox border-0">
+                                <span class="duration-description">До 24 місяців</span>
+                                <input type="checkbox">
+                                <span class="b-custom-checkbox__checkbox"></span>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -135,10 +166,12 @@
                 <div class="actions-wrapper">
                     <div class="pop-up-container">
                         <div class="bth-wrapper bth-get-credit-wrapper">
-                            <button type="button" class="bth bth-get-credit">Оформити кредит</button>
+                            <button type="button" class="bth bth-get-credit btn-warning btn-lg btn-block">Оформити
+                                кредит</button>
                         </div>
                         <div class="bth-wrapper bth-continue-wrapper">
-                            <button type="button" class="bth bth-continue close-credit-pop-up">Продовжити
+                            <button type="button"
+                                class="bth bth-continue close-credit-pop-up btn-block btn-lg btn-outline-warning">Продовжити
                                 вибір</button>
                         </div>
                     </div>

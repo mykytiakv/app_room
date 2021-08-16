@@ -266,7 +266,11 @@
         }
       }
       .leave-request-bth {
-        @include formBthDefault(284px);
+        width: 100%;
+        max-width: 284px;
+        border: 1px solid #fe8732;
+        border-radius: 0;
+        // @include formBthDefault(284px);
         @media screen and (max-width: 900px) {
           max-width: 216px;
         }
