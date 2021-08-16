@@ -23,10 +23,7 @@
     padding: 0 50px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    display: flex; }
   .pop-up-wrapper .close-icon-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,7 +88,7 @@
         width: 100%;
         max-width: 205px;
         cursor: pointer; }
-        .pop-up-wrapper .pop-up-body .banks .bank-item .active {
+        .pop-up-wrapper .pop-up-body .banks .bank-item.active {
           border: 1px solid #fe8732; }
         .pop-up-wrapper .pop-up-body .banks .bank-item .bank-name {
           margin-left: 8px;
@@ -219,5 +216,11 @@
             .pop-up-wrapper .pop-up-body .actions-wrapper .pop-up-container .bth-wrapper .bth.bth-continue {
               color: #fe8732;
               background: #ffffff; }
+
+.b-custom-checkbox {
+  margin-bottom: 0;
+  padding: 0;
+  min-height: auto;
+  line-height: initial; }
 
 /*# sourceMappingURL=popup-window.css.map */
