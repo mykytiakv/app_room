@@ -193,11 +193,15 @@
         .bth-wrapper {
           @include fieldsetDefault(266px);
           .bth {
-            @include formBthDefault(266px);
-            &.bth-continue {
-              color: #fe8732;
-              background: #ffffff;
-            }
+            width: 100%;
+            max-width: 266px;
+            border: 1px solid #fe8732;
+            border-radius: 0;
+            // @include formBthDefault(266px);
+            // &.bth-continue {
+            //   color: #fe8732;
+            //   background: #ffffff;
+            // }
           }
         }
       }

@@ -77,16 +77,9 @@
       right: 1px;
       position: relative;
       min-height: 60px;
+      border-radius: 0;
       width: 100%;
-      max-width: 356px;
-      padding: 18px;
-      border: 1px solid #fe8732;
-      background: #fe8732;
-      cursor: pointer;
-      font-family: "SF Pro Display";
-      font-size: 16px;
-      color: #ffffff;
-      font-weight: 600; }
+      max-width: 356px; }
       @media screen and (max-width: 768px) {
         .subscribe-newsletter-section .input-wrapper button {
           max-width: 50%; } }
@@ -281,14 +274,8 @@
     .login-section .login-form .bth {
       width: 100%;
       max-width: 256px;
-      padding: 18px;
       border: 1px solid #fe8732;
-      background: #fe8732;
-      cursor: pointer;
-      font-family: "SF Pro Display";
-      font-size: 16px;
-      color: #ffffff;
-      font-weight: 600; }
+      border-radius: 0; }
     .login-section .login-form .forgot-password-navigation {
       width: 100%;
       margin-top: 17px;
