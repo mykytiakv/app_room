@@ -24,6 +24,12 @@
       border: 1px solid #0c0c0d;
       max-width: 249px;
       width: 100%;
+      &:hover {
+        border: 1px solid #fe8732;
+        a {
+          color: #fe8732;
+        }
+      }
       &:nth-child(1) {
         margin-right: 20px;
         @media screen and (max-width: 500px) {
@@ -46,9 +52,16 @@
         padding: 18px;
         display: block;
         text-align: center;
+        text-decoration: none;
         @include fontStyle("SF Pro Display", 18px, #0c0c0d, bold);
       }
       &.ui-tabs-active {
+        border: 1px solid #fe8732;
+        a {
+          color: #fe8732;
+        }
+      }
+      &.active {
         border: 1px solid #fe8732;
         a {
           color: #fe8732;
@@ -119,6 +132,7 @@
           display: flex;
           flex-direction: column;
           height: 100%;
+          text-decoration: none;
           // .photo-wrapper {
           //   flex: 1;
           //   img {

@@ -128,7 +128,7 @@
           }
           .info-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             &:nth-child(2) {
               margin-top: 0;
               order: -1;
@@ -150,7 +150,7 @@
       }
       .info-item {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         &:nth-child(2) {
           margin-top: 20px;
         }
@@ -245,8 +245,7 @@
           left: 0;
           bottom: 0;
           padding: 25px 10px;
-          background: rgba(101, 101, 121, 0.17);
-          backdrop-filter: blur(200px);
+          background: rgba(101, 101, 121, 1);
           @include fontStyle("SF Pro Display", 17px, #ffffff, 600);
         }
       }

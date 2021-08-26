@@ -4,7 +4,6 @@
 
 .news-section {
   background: #ffffff;
-  backdrop-filter: blur(200px);
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
   }
@@ -39,8 +38,7 @@
         bottom: 0;
         padding: 52px 60px;
         width: 100%;
-        background: rgba(101, 101, 121, 0.17);
-        backdrop-filter: blur(200px);
+        background: rgba(101, 101, 121, 1);
         @include fontStyle("SF Pro Display", 30px, #ffffff, 600);
         @media screen and (max-width: 600px) {
           padding: 35px 30px;

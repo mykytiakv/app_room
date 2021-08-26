@@ -16,6 +16,7 @@
   background: #000000;
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
+    line-height: 54px;
   }
 }
 

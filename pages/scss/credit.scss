@@ -8,6 +8,18 @@
 
 @include questionSection();
 
+.b-page-description {
+  background-color: #000000;
+}
+.scroll-content {
+  color: #ffffff;
+}
+
+.section-title {
+  @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
+  margin-bottom: 60px;
+}
+
 .questions-section {
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
@@ -105,6 +117,7 @@
   backdrop-filter: blur(200px);
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
+    line-height: 57px;
   }
 }
 

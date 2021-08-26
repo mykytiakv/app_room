@@ -40,19 +40,23 @@
     .pop-up-wrapper .pop-up-body .title {
       border-bottom: 1px solid rgba(196, 196, 196, 0.75);
       padding-bottom: 40px; }
-      .pop-up-wrapper .pop-up-body .title .pop-up-container span:first-child {
-        font-family: "SF Pro Display";
-        font-size: 45px;
-        color: #0c0c0d;
-        font-weight: 600; }
-      .pop-up-wrapper .pop-up-body .title .pop-up-container span:last-child {
-        margin-left: 30px;
-        margin-top: 10px; }
-        .pop-up-wrapper .pop-up-body .title .pop-up-container span:last-child a {
+      .pop-up-wrapper .pop-up-body .title .pop-up-container {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .pop-up-wrapper .pop-up-body .title .pop-up-container span:first-child {
           font-family: "SF Pro Display";
-          font-size: 16px;
-          color: #fe8732;
+          font-size: 45px;
+          color: #0c0c0d;
           font-weight: 600; }
+        .pop-up-wrapper .pop-up-body .title .pop-up-container span:last-child {
+          margin-left: 30px; }
+          .pop-up-wrapper .pop-up-body .title .pop-up-container span:last-child a {
+            font-family: "SF Pro Display";
+            font-size: 16px;
+            color: #fe8732;
+            font-weight: 600;
+            text-decoration: underline; }
     .pop-up-wrapper .pop-up-body .goods {
       margin-top: 40px; }
       .pop-up-wrapper .pop-up-body .goods .pop-up-container span:first-child {

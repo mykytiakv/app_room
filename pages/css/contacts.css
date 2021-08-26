@@ -323,9 +323,9 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center; }
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start; }
             .shop-info-section .description .info-wrapper .phones-block .info-item:nth-child(2) {
               margin-top: 0;
               -webkit-box-ordinal-group: 0;
@@ -345,9 +345,9 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
         .shop-info-section .description .info-wrapper .info-item:nth-child(2) {
           margin-top: 20px; }
         .shop-info-section .description .info-wrapper .info-item:nth-child(n + 3) {
@@ -432,9 +432,7 @@
           left: 0;
           bottom: 0;
           padding: 25px 10px;
-          background: rgba(101, 101, 121, 0.17);
-          -webkit-backdrop-filter: blur(200px);
-                  backdrop-filter: blur(200px);
+          background: #656579;
           font-family: "SF Pro Display";
           font-size: 17px;
           color: #ffffff;

@@ -35,14 +35,15 @@
       border-bottom: 1px solid rgba(196, 196, 196, 0.75);
       padding-bottom: 40px;
       .pop-up-container {
+        align-items: center;
         span:first-child {
           @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
         }
         span:last-child {
           margin-left: 30px;
-          margin-top: 10px;
           a {
             @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
+            text-decoration: underline;
           }
         }
       }

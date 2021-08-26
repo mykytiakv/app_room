@@ -627,11 +627,11 @@
         <div class="container">
             <div id="products-tabs-wrapper">
                 <ul class="tab-bths-list">
-                    <li class="tab-bth"><a href="#tab-iPhones">Ремонт iPhone</a></li>
-                    <li class="tab-bth"><a href="#tab-iPad">Ремонт iPad</a></li>
-                    <li class="tab-bth"><a href="#tab-apple-watch">Ремонт Apple Watch</a></li>
+                    <li class="tab-bth active"><a href="repair-and-payment.html">Ремонт iPhone</a></li>
+                    <li class="tab-bth"><a href="repair-and-payment-v2.html">Ремонт iPad</a></li>
+                    <li class="tab-bth"><a href="repair-and-payment-v3.html">Ремонт Apple Watch</a></li>
                 </ul>
-                <div id="tab-iPhones" class="tab-content">
+                <div class="tab-content">
                     <div class="iPhones-list-wrapper list-wrapper">
                         <div class="iPhone-item list-item">
                             <a href="#">
@@ -712,94 +712,6 @@
                                     <img src="./images/iphone-7-32gb-black-1000x1000 1.png" alt="iPhone">
                                 </div>
                                 <div class="title">iPhone 7</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-iPad" class="tab-content">
-                    <div class="iPades-list-wrapper list-wrapper">
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad1.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad Pro 12.9 M1 2021</div>
-                            </a>
-                        </div>
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad2.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad Pro 11 M1 2021</div>
-                            </a>
-                        </div>
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad3.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad 10,2 2020</div>
-                            </a>
-                        </div>
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad4.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad Air 10,9 2020</div>
-                            </a>
-                        </div>
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad5.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad Pro 11'' 2020</div>
-                            </a>
-                        </div>
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad6.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad Pro 12,9” 2020</div>
-                            </a>
-                        </div>
-                        <div class="iPad-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/ipad7.png" alt="iPad">
-                                </div>
-                                <div class="title">iPad mini 5</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-apple-watch" class="tab-content">
-                    <div class="apple-watches-list-wrapper list-wrapper">
-                        <div class="apple-watch-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/apple-watch1.png" alt="Apple watch">
-                                </div>
-                                <div class="title">Watch Series 6</div>
-                            </a>
-                        </div>
-                        <div class="apple-watch-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/apple-watch2.png" alt="Apple watch">
-                                </div>
-                                <div class="title">Apple Watch SE</div>
-                            </a>
-                        </div>
-                        <div class="apple-watch-item list-item">
-                            <a href="#">
-                                <div class="photo-wrapper">
-                                    <img src="./images/apple-watch3.png" alt="Apple watch">
-                                </div>
-                                <div class="title">Watch Series 3</div>
                             </a>
                         </div>
                     </div>
@@ -943,22 +855,30 @@
             </div>
         </div>
     </section>
-    <section class="subscribe-newsletter-section p-section">
-        <img src="./images/Mask Group.png" alt="" class="mask-img">
+    <!-- START b-page-subscribe -->
+    <div class="b-page-subscribe">
         <div class="container">
-            <div class="section-title">Підписатися на акційні пропозиції</div>
-            <div class="section-sub-title">Підпишіться на розсилку і дізнавайтеся першим про нові акції і спецпропозиції
-                магазину!</div>
-            <div class="input-wrapper">
-                <input type="text" placeholder="Введіть ваш Email">
-                <button class="bth btn-warning btn-lg btn-block">Підписатись на розсилку</button>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="b-heading">Підписатися на акційні пропозиції</div>
+                    <p>Підпишіться на розсилку і дізнавайтеся першим про нові акції і спецпропозиції магазину!</p>
+                    <form class="b-page-subscribe__form">
+                        <div class="input-group input-group-lg">
+                            <input type="email" name="email" class="form-control" placeholder="Введіть ваш Email"
+                                required>
+                            <div class="input-group-append">
+                                <button class="btn btn-warning" type="submit">Підписатись на розсилку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-4 col-xxl-3 align-self-end ml-auto text-center">
+                    <img class="b-page-subscribe__img" loading="lazy" src="img/info/subscribe.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="iPhone-img-wrapper">
-            <img src="./images/apple-iphone-11-pro-256gb-space-gray-mwcm2-76368711261358 1.png" alt="iPhone"
-                class="iPhone-img">
-        </div>
-    </section>
+    </div>
+    <!-- END b-page-subscribe -->
     <!-- -------------------------------------------------------------------------- -->
     <!-- START b-footer -->
     <footer class="b-footer">
@@ -1207,7 +1127,7 @@
             });
         }
     </script>
-    <script src="./js/repair-and-payment.js"></script>
+
 </body>
 
 </html>

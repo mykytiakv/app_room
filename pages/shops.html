@@ -626,13 +626,19 @@
                 <div class="container">
                     <div class="left-block">
                         <div class="shop-item-img-wapper">
-                            <img src="images/Rectangle 144.png" alt="Shop">
+                            <a href="#">
+                                <img src="images/Rectangle 144.png" alt="Shop">
+                            </a>
+
                         </div>
                     </div>
                     <div class="right-block">
                         <div class="shop-info-wrapper">
                             <div class="shop-info-item shop-adress">
-                                м. Львів, ТРЦ "King Cross Leopolis"
+                                <a href="#">
+                                    м. Львів, ТРЦ "King Cross Leopolis"
+                                </a>
+
                             </div>
                             <div class="shop-info-item shop-feedbacks">
                                 <div class="stars-wrapper">
@@ -680,13 +686,18 @@
                 <div class="container">
                     <div class="left-block">
                         <div class="shop-item-img-wapper">
-                            <img src="images/Rectangle 173.png" alt="Shop">
+                            <a href="#">
+                                <img src="images/Rectangle 173.png" alt="Shop">
+                            </a>
+
                         </div>
                     </div>
                     <div class="right-block">
                         <div class="shop-info-wrapper">
                             <div class="shop-info-item shop-adress">
-                                м. Львів, вул. Гавришкевича, 5
+                                <a href="#">
+                                    м. Львів, вул. Гавришкевича, 5
+                                </a>
                             </div>
                             <div class="shop-info-item shop-feedbacks">
                                 <div class="stars-wrapper">
@@ -730,22 +741,30 @@
             </div>
         </div>
     </section>
-    <section class="subscribe-newsletter-section p-section">
-        <img src="./images/Mask Group.png" alt="" class="mask-img">
+    <!-- START b-page-subscribe -->
+    <div class="b-page-subscribe">
         <div class="container">
-            <div class="section-title">Підписатися на акційні пропозиції</div>
-            <div class="section-sub-title">Підпишіться на розсилку і дізнавайтеся першим про нові акції і спецпропозиції
-                магазину!</div>
-            <div class="input-wrapper">
-                <input type="text" placeholder="Введіть ваш Email">
-                <button class="bth btn-warning btn-lg btn-block">Підписатись на розсилку</button>
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="b-heading">Підписатися на акційні пропозиції</div>
+                    <p>Підпишіться на розсилку і дізнавайтеся першим про нові акції і спецпропозиції магазину!</p>
+                    <form class="b-page-subscribe__form">
+                        <div class="input-group input-group-lg">
+                            <input type="email" name="email" class="form-control" placeholder="Введіть ваш Email"
+                                required>
+                            <div class="input-group-append">
+                                <button class="btn btn-warning" type="submit">Підписатись на розсилку</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-4 col-xxl-3 align-self-end ml-auto text-center">
+                    <img class="b-page-subscribe__img" loading="lazy" src="img/info/subscribe.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="iPhone-img-wrapper">
-            <img src="./images/apple-iphone-11-pro-256gb-space-gray-mwcm2-76368711261358 1.png" alt="iPhone"
-                class="iPhone-img">
-        </div>
-    </section>
+    </div>
+    <!-- END b-page-subscribe -->
     <!-- -------------------------------------------------------------------------- -->
     <!-- START b-footer -->
     <footer class="b-footer">

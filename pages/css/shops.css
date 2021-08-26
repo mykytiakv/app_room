@@ -260,11 +260,12 @@
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; }
             .shops-section .shops-wrapper .shop-item-wrapper .container .right-block .shop-info-wrapper .shop-adress {
-              width: 100%;
-              font-family: "SF Pro Display";
-              font-size: 30px;
-              color: #0c0c0d;
-              font-weight: 600; }
+              width: 100%; }
+              .shops-section .shops-wrapper .shop-item-wrapper .container .right-block .shop-info-wrapper .shop-adress a {
+                font-family: "SF Pro Display";
+                font-size: 30px;
+                color: #0c0c0d;
+                font-weight: 600; }
               @media screen and (max-width: 768px) {
                 .shops-section .shops-wrapper .shop-item-wrapper .container .right-block .shop-info-wrapper .shop-adress {
                   -webkit-box-ordinal-group: 2;

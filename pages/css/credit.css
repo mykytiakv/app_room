@@ -297,6 +297,19 @@
         max-height: 1000px;
         transition: all 0.7s ease; }
 
+.b-page-description {
+  background-color: #000000; }
+
+.scroll-content {
+  color: #ffffff; }
+
+.section-title {
+  font-family: "SF Pro Display";
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 60px; }
+
 .questions-section .section-title {
   font-family: "SF Pro Display";
   font-size: 45px;
@@ -376,7 +389,8 @@
     font-family: "SF Pro Display";
     font-size: 45px;
     color: #0c0c0d;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 57px; }
 
 .requirements-crediting-section .section-title {
   padding-bottom: 60px; }

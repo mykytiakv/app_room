@@ -355,6 +355,10 @@
       border: 1px solid #0c0c0d;
       max-width: 249px;
       width: 100%; }
+      .products-section .tab-bths-list .tab-bth:hover {
+        border: 1px solid #fe8732; }
+        .products-section .tab-bths-list .tab-bth:hover a {
+          color: #fe8732; }
       .products-section .tab-bths-list .tab-bth:nth-child(1) {
         margin-right: 20px; }
         @media screen and (max-width: 500px) {
@@ -374,6 +378,7 @@
         padding: 18px;
         display: block;
         text-align: center;
+        text-decoration: none;
         font-family: "SF Pro Display";
         font-size: 18px;
         color: #0c0c0d;
@@ -381,6 +386,10 @@
       .products-section .tab-bths-list .tab-bth.ui-tabs-active {
         border: 1px solid #fe8732; }
         .products-section .tab-bths-list .tab-bth.ui-tabs-active a {
+          color: #fe8732; }
+      .products-section .tab-bths-list .tab-bth.active {
+        border: 1px solid #fe8732; }
+        .products-section .tab-bths-list .tab-bth.active a {
           color: #fe8732; }
   .products-section .tab-content {
     margin-top: 60px; }
@@ -446,7 +455,8 @@
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
-          height: 100%; }
+          height: 100%;
+          text-decoration: none; }
           .products-section .tab-content .list-wrapper .list-item a .title {
             margin-top: 20px;
             text-align: center;

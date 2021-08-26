@@ -286,6 +286,12 @@
         color: #0c0c0d;
         font-weight: normal; }
 
+.b-page-description {
+  background-color: #000000; }
+
+.scroll-content {
+  color: #ffffff; }
+
 .repair-section {
   background: #000000; }
   .repair-section .container .left-block,

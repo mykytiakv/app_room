@@ -221,7 +221,8 @@
     font-family: "SF Pro Display";
     font-size: 45px;
     color: #ffffff;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 54px; }
 
 .methods-wrapper {
   margin-top: 60px; }

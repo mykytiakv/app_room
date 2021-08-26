@@ -34,16 +34,14 @@
     <link rel="stylesheet" href="css/main.css?v=1.5">
 
 
-
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/exchange.css">
+    <link rel="stylesheet" href="css/profile.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-
     <!-- START b-topper -->
     <div class="b-topper d-none d-md-block">
         <div class="container">
@@ -600,192 +598,71 @@
         </div>
     </header>
     <!-- END b-header -->
-
-    <!-- START b-promo-box -->
-    <div class="b-promo-box">
-        <div class="container">
-            <div class="b-promo-box__inner">
-                <div class="b-promo-box__text">
-                    <ol class="breadcrumb b-promo-box__breadcrumb" itemscope
-                        itemtype="https://schema.org/BreadcrumbList">
-                        <li class="breadcrumb-item"><a href="/">Головна</a></li>
-                        <li class="breadcrumb-item" itemprop="itemListElement" itemscope
-                            itemtype="http://schema.org/ListItem">
-                            <a href="#" itemprop="item">
-                                <span itemprop="name">Обмін</span>
-                                <meta itemprop="position" content="1">
-                            </a>
-                        </li>
-                    </ol>
-                    <h1 class="b-promo-box__title">Обмін</h1>
-                </div>
-                <figure class="b-promo-box__img-wrap">
-                    <!-- <img loading="lazy" src="img/Group 310.png" alt=""> -->
-                </figure>
-            </div>
-        </div>
-    </div>
-    <!-- END b-promo-box -->
-
-    <section class="how-it-works-section p-section">
-        <div class="container">
-            <div class="section-title">Як це працює?</div>
-            <div class="description-wrapper">
-                <div class="description-item-wrapper">
-                    <div class="description-item-img-wapper">
-                        <img src="images/mobile 1.png" alt="Phone">
-                    </div>
-                    <div class="description-item-text">
-                        Вкажіть модель свого iPhone
-                    </div>
-                </div>
-                <div class="description-item-wrapper">
-                    <div class="description-item-img-wapper">
-                        <img src="images/discount (2) 1.png" alt="Discount">
-                    </div>
-                    <div class="description-item-text">
-                        Виберіть iPhone на який хочете отримати знижку
-                    </div>
-                </div>
-                <div class="description-item-wrapper">
-                    <div class="description-item-img-wapper">
-                        <img src="images/price 1.png" alt="Price">
-                    </div>
-                    <div class="description-item-text">
-                        Дізнайтеся свою ціну
-                        зі знижкою і забронюйте iPhone
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="exchange-section p-section">
-        <div class="container">
-            <div class="section-title">Як це працює?</div>
-        </div>
-
-        <div class="exchange-selects-wrapper">
+    <section class="profile-section p-section">
+        <div class="tabs-header-banner">
             <div class="container">
-                <div class="select-title">
-                    Ви віддаєте
+                <div id="profile-tabs-wrapper">
+                    <ul class="tab-bths-list">
+                        <li class="profile-tab-bth"><a href="profile.html">Мій профіль</a></li>
+                        <li class="profile-tab-bth tab-active"><a href="profile-v2.html">Мої замовлення</a></li>
+                        <li class="profile-tab-bth"><a href="profile-v3.html">Партнерська програма</a></li>
+                    </ul>
                 </div>
-                <div class="select-title right">
-                    Хочете отримати
+
+                <div class="tab-orders tab-content">
+                    <div class="section-title">Мої замовлення</div>
                 </div>
-                <div class="select-wrapper left">
-                    <select class="select goods-select">
-                        <option value="">Виберіть телефон</option>
-                        <option value="iPhone7">iPhone 7</option>
-                        <option value="iPhone8">iPhone 8</option>
-                        <option value="iPhone7">iPhone 10</option>
-                    </select>
-                    <div class="select-preview">
-                        <img src="./images/1217699 1.png" alt="Preview">
-                    </div>
-                </div>
-                <div class="arrows-icon-wrapper">
-                    <img src="./images/Group (1).png" alt="Arrows" />
-                </div>
-                <div class="select-wrapper right">
-                    <div class="select-preview">
-                        <img src="./images/1643700 1.png" alt="Preview">
-                    </div>
-                    <select class="select goods-select">
-                        <option value="">Виберіть телефон</option>
-                        <option value="iPhone11">iPhone 11</option>
-                        <option value="iPhone12">iPhone 12</option>
-                        <option value="iPhoneSE">iPhone SE</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="leave-request-wrapper">
-                <form class="leave-request-form from">
-                    <fieldset class="first-name-input-fieldset">
-                        <input type="text" placeholder="Ім’я" class="input first-name-input">
-                    </fieldset>
-                    <fieldset class="phone-input-fieldset">
-                        <input type="phone" placeholder="Телефон" class="input phone-input">
-                    </fieldset>
-                    <button type="submit" class="bth leave-request-bth btn-warning btn-lg btn-block">Залишити
-                        заявку</button>
-                </form>
-                <div class="approximate-surcharge">
-                    <span class="label">Орієнтовна сума доплати:</span>
-                    <span class="value">934 USD</span>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- START b-page-description -->
-    <div class="b-page-description">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5">
-                    <figure class="b-page-description__img-wrap">
-                        <img loading="lazy" src="./images/vikt1 1 (2).png" alt="">
-                    </figure>
+    <section class="orders-section p-section tab-orders">
+        <div class="tab-content">
+            <div class="orders-list">
+                <div class="order-item">
+                    <div class="container">
+                        <div class="order-id">
+                            #10010363
+                        </div>
+                        <div class="order-state">
+                            Новий
+                        </div>
+                        <div class="order-devices">
+                            <div class="order-device">
+                                Apple iPhone 12 64GB Black x 2
+                            </div>
+                            <div class="order-device">
+                                Apple iPhone 12 64GB White x 1
+                            </div>
+                        </div>
+                        <div class="order-description">Отримати в магазині (м. Львів, вул. Гавришкевича, 5)</div>
+                        <div class="order-date">25 квітня 2021</div>
+                    </div>
                 </div>
-                <div class="order-xl-first col-xl-5">
-                    <div class="b-page-description__text js-scrollbar">
-                        <h3>Обмін iPhone на вигідних умовах</h3>
-                        <p>Згідно статистики майже половина покупців Обмін айфона – це спосіб
-                            перетворити те, що у вас є, на те, що ви хочете мати. Іншими словами, ви можете обміняти
-                            старий айфон на новий, оплативши лише різницю у ціні. Дана практика використовується по
-                            цілому світі і відома під назвою Apple Trade in.</p>
-                        <h3>Нюанси, про які треба знати, якщо ви хочете здати айфон</h3>
-                        <p>Для обміну айфона по системі Trade in важливою є наявність оригінальної
-                            коробками з заводською комплектацією або гарантійного талону від нашої мережі, який
-                            видавався при купівлі.</p>
+                <div class="order-item">
+                    <div class="container">
+                        <div class="order-id">
+                            #10010363
+                        </div>
+                        <div class="order-state">
+                            Новий
+                        </div>
+                        <div class="order-devices">
+                            <div class="order-device">
+                                Apple iPhone 12 64GB Black x 2
+                            </div>
+                            <div class="order-device">
+                                Apple iPhone 12 64GB White x 1
+                            </div>
+                        </div>
+                        <div class="order-description">Отримати в магазині (м. Львів, вул. Гавришкевича, 5)</div>
+                        <div class="order-date">30 мая 2021</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END b-page-description -->
-
-    <!-- START b-faq-block -->
-    <div class="b-faq-block" itemscope itemtype="https://schema.org/FAQPage">
-        <div class="container">
-            <div class="b-faq-block__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="b-faq-block__question" itemprop="name">Що таке Trade-in?</h3>
-                <div class="b-faq-block__answer" itemscope itemprop="acceptedAnswer"
-                    itemtype="https://schema.org/Answer">
-                    <div itemprop="text">text</div>
-                </div>
-            </div>
-            <div class="b-faq-block__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="b-faq-block__question" itemprop="name">Скільки коштує діагностика пристрою?
-                </h3>
-                <div class="b-faq-block__answer" itemscope itemprop="acceptedAnswer"
-                    itemtype="https://schema.org/Answer">
-                    <div itemprop="text">text</div>
-                </div>
-            </div>
-            <div class="b-faq-block__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="b-faq-block__question" itemprop="name">Чи можна взнати приблизну суму доплати при обміні
-                    iPhone перед
-                    діагностикою?</h3>
-                <div class="b-faq-block__answer" itemscope itemprop="acceptedAnswer"
-                    itemtype="https://schema.org/Answer">
-                    <div itemprop="text">text</div>
-                </div>
-            </div>
-            <div class="b-faq-block__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 class="b-faq-block__question" itemprop="name">Які фактори негативно впливають на оцінку старого
-                    пристрою?</h3>
-                <div class="b-faq-block__answer" itemscope itemprop="acceptedAnswer"
-                    itemtype="https://schema.org/Answer">
-                    <div itemprop="text">text</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END b-faq-block -->
+    </section>
 
     <!-- START b-page-subscribe -->
     <div class="b-page-subscribe">
@@ -1059,7 +936,7 @@
             });
         }
     </script>
-    <script src="./js/repair-and-payment.js"></script>
+    <script src="./js/profile.js"></script>
 </body>
 
 </html>
