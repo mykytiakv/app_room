@@ -328,7 +328,9 @@
     margin-top: 60px; }
     .table-warranty-program-section .table-wrapper table,
     .table-warranty-insurance-section .table-wrapper table {
-      width: 100%; }
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0px; }
       .table-warranty-program-section .table-wrapper table thead th,
       .table-warranty-insurance-section .table-wrapper table thead th {
         text-align: left;
