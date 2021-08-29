@@ -19,7 +19,7 @@
       padding-bottom: 50px;
       border-bottom: 1px solid #c4c4c4;
       &:nth-child(2n + 2) {
-        padding: 50px 0;
+        padding: 40px 0;
       }
       .container {
         display: flex;
@@ -29,7 +29,7 @@
         .left-block {
           width: 100%;
           max-width: 400px;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 940px) {
             max-width: 50%;
           }
           @media screen and (max-width: 650px) {
@@ -41,7 +41,7 @@
         }
         .right-block {
           margin-left: 30px;
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 940px) {
             width: 50%;
           }
           @media screen and (max-width: 650px) {
@@ -55,17 +55,21 @@
             .shop-adress {
               a {
                 @include fontStyle("SF Pro Display", 30px, #0c0c0d, 600);
+                @media screen and (max-width: 940px) {
+                  font-size: 24px;
+                }
               }
               width: 100%;
 
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 940px) {
                 order: 1;
               }
             }
             .shop-feedbacks,
             .shop-phones {
               width: 50%;
-              @media screen and (max-width: 768px) {
+              flex-wrap: wrap;
+              @media screen and (max-width: 940px) {
                 width: 100%;
               }
             }
@@ -73,15 +77,18 @@
               margin-top: 25px;
               display: flex;
               align-items: center;
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 940px) {
                 order: 2;
+              }
+              @media screen and (max-width: 650px) {
+                margin-top: 10px;
               }
               .stars-wrapper {
                 display: flex;
               }
               .description {
                 margin-left: 10px;
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 940px) {
                   margin-left: 25px;
                 }
                 .text {
@@ -101,10 +108,13 @@
               flex-direction: column;
               justify-content: space-between;
               align-items: flex-end;
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 940px) {
                 // display: flex;
                 flex-direction: row;
                 order: 5;
+              }
+              @media screen and (max-width: 650px) {
+                margin-top: 45px;
               }
               .shop-phone-item-wrapper {
                 @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
@@ -114,15 +124,15 @@
               width: 100%;
               margin-top: 25px;
               @include fontStyle("SF Pro Display", 16px, #0c0c0d, normal);
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 940px) {
                 order: 3;
               }
             }
             .shop-time-table {
               width: 100%;
-              margin-top: 22px;
+              margin-top: 20px;
               @include fontStyle("SF Pro Display", 16px, #0c0c0d, bold);
-              @media screen and (max-width: 768px) {
+              @media screen and (max-width: 940px) {
                 order: 4;
               }
             }

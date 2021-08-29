@@ -20,7 +20,7 @@ $(document).ready(function () {
     $(layout2).show();
   };
 
-  initDefaultTab();
+  // initDefaultTab();
 
   // $("#profile-tabs-wrapper").click((event) => {
   //   const targetClickedElement = $(event.target).attr("href");
@@ -34,6 +34,8 @@ $(document).ready(function () {
   //   $(disabledTabs[0]).hide();
   //   $(disabledTabs[1]).hide();
   // });
+
+  chanheProfileTabLayout("#edit-profile-form", "#profile-content");
 
   $("#cancel-edit-profile-bth").click((event) => {
     event.stopPropagation();

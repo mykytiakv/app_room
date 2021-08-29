@@ -21,7 +21,7 @@
   .section-title {
     @include fontStyle("SF Pro Display", 82px, #0c0c0d, 600);
     @media screen and (max-width: 480px) {
-      font-size: 40px;
+      font-size: 42px;
     }
   }
 

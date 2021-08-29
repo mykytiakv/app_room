@@ -43,6 +43,7 @@
         width: max-content;
         display: inline-block;
         margin: auto;
+        border-bottom: 2px solid transparent;
         &:nth-child(n + 2) {
           margin: 25px auto 0 auto;
         }
@@ -56,6 +57,9 @@
         @media screen and (max-width: 768px) {
           font-size: 20px;
         }
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:nth-child(1) {
           padding-right: 10px;
         }

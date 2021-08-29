@@ -37,7 +37,7 @@
         @media screen and (max-width: 900px) {
           width: 50%;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           width: 100%;
           .description-item-text {
             max-width: 100%;
@@ -53,7 +53,7 @@
         @media screen and (max-width: 900px) {
           width: 50%;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           margin-top: 40px;
           width: 100%;
           padding: 0;
@@ -73,7 +73,7 @@
             max-width: 400px;
           }
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           margin-top: 40px;
           .description-item-text {
             max-width: 100%;
@@ -122,7 +122,7 @@
           margin-top: 30px;
         }
       }
-      @media screen and (max-width: 530px) {
+      @media screen and (max-width: 695px) {
         :nth-child(1) {
           order: 1;
           // width: 100%;
@@ -134,6 +134,7 @@
         :nth-child(3) {
           order: 2;
           width: 100%;
+          margin-top: 15px;
           // max-width: 100%;
           // img {
           //   width: 30px;
@@ -146,7 +147,7 @@
         }
         :nth-child(5) {
           order: 5;
-          margin-top: 30px;
+          margin-top: 15px;
         }
       }
     }
@@ -156,12 +157,12 @@
       @media screen and (max-width: 900px) {
         width: 30%;
       }
-      @media screen and (max-width: 530px) {
+      @media screen and (max-width: 695px) {
         width: 100%;
       }
       &.right {
         text-align: right;
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           text-align: left;
         }
       }
@@ -174,9 +175,12 @@
           max-width: 30px;
         }
       }
-      @media screen and (max-width: 530px) {
+      @media screen and (max-width: 695px) {
         width: 100%;
-        margin: 30px 0;
+        margin-top: 30px;
+        img {
+          transform: rotate(90deg);
+        }
       }
     }
     .select-wrapper {
@@ -186,7 +190,7 @@
       @media screen and (max-width: 900px) {
         width: 49%;
       }
-      @media screen and (max-width: 530px) {
+      @media screen and (max-width: 695px) {
         width: 100%;
         justify-content: space-between;
       }
@@ -197,19 +201,20 @@
       &.left {
         .select-preview {
           margin-left: 45px;
-          @media screen and (max-width: 530px) {
+          @media screen and (max-width: 695px) {
             margin-left: 10px;
           }
         }
       }
       &.right {
         justify-content: flex-end;
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           flex-direction: row-reverse;
+          justify-content: space-between;
         }
         .select-preview {
           margin-right: 45px;
-          @media screen and (max-width: 530px) {
+          @media screen and (max-width: 695px) {
             margin-left: 10px;
             margin-right: 0;
           }
@@ -238,7 +243,7 @@
         justify-content: space-between;
         align-items: center;
       }
-      @media screen and (max-width: 530px) {
+      @media screen and (max-width: 695px) {
         flex-wrap: wrap;
       }
       fieldset {
@@ -246,12 +251,12 @@
         @media screen and (max-width: 900px) {
           max-width: 216px;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           max-width: 100%;
         }
         &.phone-input-fieldset {
           margin: 0 30px;
-          @media screen and (max-width: 530px) {
+          @media screen and (max-width: 695px) {
             margin: 30px 0;
           }
         }
@@ -261,7 +266,7 @@
         @media screen and (max-width: 900px) {
           max-width: 216px;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           max-width: 100%;
         }
       }
@@ -274,7 +279,7 @@
         @media screen and (max-width: 900px) {
           max-width: 216px;
         }
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           max-width: 100%;
         }
       }
@@ -291,14 +296,14 @@
       }
       .label {
         @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           max-width: 128px;
         }
       }
       .value {
         margin-left: 42px;
         @include fontStyle("SF Pro Display", 36px, #fe8732, 600);
-        @media screen and (max-width: 530px) {
+        @media screen and (max-width: 695px) {
           margin-left: 5px;
         }
       }
