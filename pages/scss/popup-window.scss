@@ -39,11 +39,20 @@
       padding-bottom: 40px;
       .pop-up-container {
         align-items: center;
-        span:first-child {
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        div:first-child {
           @include fontStyle("SF Pro Display", 45px, #0c0c0d, 600);
         }
-        span:last-child {
+        div:last-child {
           margin-left: 30px;
+          margin-top: 10px;
+          @media screen and (max-width: 700px) {
+            margin-left: 0px;
+            margin-top: 0px;
+          }
           a {
             @include fontStyle("SF Pro Display", 16px, #fe8732, 600);
             text-decoration: underline;
@@ -70,6 +79,13 @@
       margin-top: 43px;
       .pop-up-container {
         justify-content: space-between;
+        .bank-item-wrapper {
+          width: 100%;
+          max-width: 205px;
+          @media screen and (max-width: 700px) {
+            max-width: 100%;
+          }
+        }
         @media screen and (max-width: 700px) {
           flex-wrap: wrap;
           .bank-item-wrapper {
