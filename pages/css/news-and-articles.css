@@ -162,6 +162,9 @@
       font-size: 30px;
       color: #ffffff;
       font-weight: 600; }
+      @media screen and (max-width: 500px) {
+        .news-wrapper .news-item-wrapper .news-item-label-wrapper {
+          position: relative; } }
       @media screen and (max-width: 600px) {
         .news-wrapper .news-item-wrapper .news-item-label-wrapper {
           padding: 31px 23px;
