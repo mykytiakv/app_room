@@ -32,6 +32,7 @@
   }
   .tab-bths-list {
     display: flex;
+    margin-bottom: 0;
     @media screen and (max-width: 480px) {
       flex-direction: column;
     }

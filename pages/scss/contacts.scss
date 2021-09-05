@@ -245,7 +245,8 @@
           left: 0;
           bottom: 0;
           padding: 25px 10px;
-          background: rgba(101, 101, 121, 1);
+          background: rgba(101, 101, 121, 0.17);
+          backdrop-filter: blur(200px);
           @include fontStyle("SF Pro Display", 17px, #ffffff, 600);
         }
       }

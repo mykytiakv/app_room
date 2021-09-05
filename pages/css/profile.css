@@ -234,7 +234,8 @@
   #profile-tabs-wrapper .tab-bths-list {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 0; }
     @media screen and (max-width: 480px) {
       #profile-tabs-wrapper .tab-bths-list {
         -webkit-box-orient: vertical;

@@ -42,7 +42,26 @@
       bottom: 0;
       padding: 52px 60px;
       width: 100%;
-      background: rgba(101, 101, 121, 1);
+      background: rgb(23, 23, 26);
+      background: -moz-linear-gradient(
+        left,
+        rgba(23, 23, 26, 1) 0%,
+        rgba(77, 77, 80, 1) 50%,
+        rgba(23, 23, 26, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(23, 23, 26, 1) 0%,
+        rgba(77, 77, 80, 1) 50%,
+        rgba(23, 23, 26, 1) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(23, 23, 26, 1) 0%,
+        rgba(77, 77, 80, 1) 50%,
+        rgba(23, 23, 26, 1) 100%
+      );
+
       @include fontStyle("SF Pro Display", 30px, #ffffff, 600);
       @media screen and (max-width: 600px) {
         padding: 31px 23px;
@@ -76,11 +95,36 @@
   }
 }
 
-.news-carousel {
-  .owl-stage {
-    // width: 100% !important;
-    .owl-item {
-      // width: 100% !important;
+.pagination-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  .prev {
+    margin-right: 24px;
+  }
+  .next {
+    margin-left: 24px;
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  .line {
+    margin: 0 10px;
+    width: 120px;
+    height: 1px;
+    background: rgba(12, 12, 13, 0.5);
+  }
+  .page-bth {
+    @include fontStyle("SF Pro Display", 16px, rgba(12, 12, 13, 0.5), normal);
+    line-height: 22px;
+    &.active {
+      color: black;
+      font-weight: bold;
     }
   }
 }
