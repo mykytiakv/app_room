@@ -154,11 +154,16 @@
   font-weight: 600;
 }
 .pop-up-wrapper .pop-up-body .duration {
-  margin-top: 20px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 970px) {
+  .pop-up-wrapper .pop-up-body .duration {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 700px) {
   .pop-up-wrapper .pop-up-body .duration {
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 700px) {
@@ -174,6 +179,9 @@
   .pop-up-wrapper .pop-up-body .duration .b-custom-checkbox {
     min-width: 100%;
     margin-top: 32px;
+  }
+  .pop-up-wrapper .pop-up-body .duration .b-custom-checkbox:first-of-type {
+    margin-top: 8px;
   }
 }
 .pop-up-wrapper .pop-up-body .duration .b-custom-checkbox:not(:last-child) {

@@ -135,9 +135,12 @@
     }
 
     .duration {
-      margin-top: 20px;
+      margin-top: 50px;
+      @media screen and (max-width: 970px) {
+        margin-top: 20px;
+      }
       @media screen and (max-width: 700px) {
-        margin-top: 10px;
+        margin-top: 0;
       }
       .pop-up-container {
         @media screen and (max-width: 700px) {
@@ -150,6 +153,9 @@
         @media screen and (max-width: 700px) {
           min-width: 100%;
           margin-top: 32px;
+          &:first-of-type {
+            margin-top: 8px;
+          }
         }
         &:not(:last-child) {
           margin-right: 12px;
