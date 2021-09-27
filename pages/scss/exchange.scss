@@ -12,7 +12,10 @@
   background: #141415;
   backdrop-filter: blur(200px);
   &.p-section {
-    padding: 50px 0;
+    padding: 120px 0;
+    @media screen and (max-width: 695px) {
+      padding: 100px 0;
+    }
   }
   .section-title {
     @include fontStyle("SF Pro Display", 45px, #ffffff, 600);
@@ -171,15 +174,16 @@
       display: flex;
       align-items: center;
       @media screen and (max-width: 900px) {
-        img {
-          max-width: 30px;
+        svg {
+          width: 30px;
         }
       }
       @media screen and (max-width: 695px) {
         width: 100%;
         margin-top: 30px;
-        img {
+        svg {
           transform: rotate(90deg);
+          margin-right: 30px;
         }
       }
     }
@@ -294,6 +298,9 @@
         padding-left: 0;
         justify-content: space-between;
       }
+      @media screen and (max-width: 695px) {
+        margin-top: 40px;
+      }
       .label {
         @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
         @media screen and (max-width: 695px) {
@@ -308,5 +315,11 @@
         }
       }
     }
+  }
+}
+
+.b-page-description.description-exchange {
+  @media screen and (max-width: 695px) {
+    padding-top: 25px;
   }
 }

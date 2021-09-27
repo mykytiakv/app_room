@@ -29,6 +29,7 @@
         onload="this.onload=null;this.rel='stylesheet'">
 
     <link rel="preload" href="libs/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="libs/rangeslider/rangeslider.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <link rel="preload" href="libs/jquery-ui/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="css/main.css?v=1.5">
@@ -111,34 +112,28 @@
                 </div>
                 <div class="duration">
                     <div class="pop-up-container">
-                        <div class="duration-item">
-                            <label class="b-custom-checkbox border-0">
-                                <span class="duration-description">До 4 місяців</span>
-                                <input type="checkbox">
-                                <span class="b-custom-checkbox__checkbox"></span>
-                            </label>
-                        </div>
-                        <div class="duration-item">
-                            <label class="b-custom-checkbox border-0">
-                                <span class="duration-description">До 10 місяців</span>
-                                <input type="checkbox">
-                                <span class="b-custom-checkbox__checkbox"></span>
-                            </label>
-                        </div>
-                        <div class="duration-item">
-                            <label class="b-custom-checkbox border-0">
-                                <span class="duration-description">До 24 місяців</span>
-                                <input type="checkbox">
-                                <span class="b-custom-checkbox__checkbox"></span>
-                            </label>
-                        </div>
+                        <label class="b-custom-checkbox">
+                            <span class="duration-description">До 4 місяців</span>
+                            <input type="radio" value="4" name="duration" checked>
+                            <span class="b-custom-checkbox__checkbox"></span>
+                        </label>
+                        <label class="b-custom-checkbox">
+                            <span class="duration-description">До 10 місяців</span>
+                            <input type="radio" value="10" name="duration">
+                            <span class="b-custom-checkbox__checkbox"></span>
+                        </label>
+                        <label class="b-custom-checkbox">
+                            <span class="duration-description">До 24 місяців</span>
+                            <input type="radio" value="24" name="duration">
+                            <span class="b-custom-checkbox__checkbox"></span>
+                        </label>
                     </div>
                 </div>
-                <!-- <div class="duration-slider-wrapper">
+                <div class="duration-slider-wrapper">
                     <div class="pop-up-container">
                         <input type="range" min="2" max="4" value="3" step="1">
                     </div>
-                </div> -->
+                </div>
                 <div class="credit-info">
                     <div class="credit-info-item">
                         <div class="pop-up-container">
@@ -187,6 +182,7 @@
             </div>
         </div>
     </div>
+    <script src="libs/rangeslider/rangeslider.min.js"></script>
     <script src="./js/popup-credit.js"></script>
 </body>
 

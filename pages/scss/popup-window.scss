@@ -82,22 +82,33 @@
         .bank-item-wrapper {
           width: 100%;
           max-width: 205px;
-          @media screen and (max-width: 700px) {
-            max-width: 100%;
-          }
         }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 970px) {
           flex-wrap: wrap;
           .bank-item-wrapper {
-            width: 50%;
             display: flex;
-
-            &.mt {
-              margin-top: 32px;
-            }
+            margin-bottom: 32px;
+            max-width: 170px;
             &.jfe {
               justify-content: flex-end;
             }
+          }
+          .bank-item {
+            max-width: 170px;
+          }
+        }
+
+        @media screen and (max-width: 767px) {
+          .bank-item-wrapper {
+            max-width: 156px;
+          }
+          .bank-item {
+            max-width: 156px;
+          }
+        }
+        @media screen and (max-width: 680px) {
+          .bank-item-wrapper {
+            max-width: 50%;
           }
         }
       }
@@ -112,6 +123,7 @@
         max-width: 205px;
         cursor: pointer;
         max-height: 50px;
+        line-height: 19px;
         &.active {
           border: 1px solid #fe8732;
         }
@@ -119,14 +131,11 @@
           margin-left: 8px;
           @include fontStyle("SF Pro Display", 16px, #0c0c0d, 600);
         }
-        @media screen and (max-width: 800px) {
-          max-width: 156px;
-        }
       }
     }
 
     .duration {
-      margin-top: 50px;
+      margin-top: 20px;
       @media screen and (max-width: 700px) {
         margin-top: 10px;
       }
@@ -135,14 +144,11 @@
           flex-direction: column;
         }
       }
-      .duration-item {
-        display: flex;
-        align-items: center;
+      .b-custom-checkbox {
         border: 1px solid #0c0c0d;
-        width: 100%;
-        max-width: 205px;
+        min-width: 205px;
         @media screen and (max-width: 700px) {
-          max-width: 100%;
+          min-width: 100%;
           margin-top: 32px;
         }
         &:not(:last-child) {
@@ -151,7 +157,6 @@
         input {
           width: 20px;
           height: 20px;
-          //   border: 1px solid #d0d0d0;
         }
         .duration-description {
           margin-left: 10px;
@@ -280,10 +285,101 @@
   }
 }
 
-.b-custom-checkbox {
-  margin-bottom: 0;
-  min-height: auto;
-  line-height: initial;
-  width: 100%;
-  padding: 13px 10px;
+/*
+Range slider
+*/
+$primary: #FE8732;
+$secondary: #C4C4C4;
+$roundness: 5px;
+
+$sliderHeight: 3px;
+$handleSize: 16px;
+$valueWidth: 90px;
+$labelMarkerHeight: 12px;
+
+.rangeslider--horizontal {
+  .rangeslider__fill {
+    height: $sliderHeight;
+    top: -1.5px;
+  }
 }
+
+.rangeslider {
+  position: relative;
+  border-radius: $roundness;
+  width: 100%;
+  background-color: $secondary;
+  height: 1px;
+
+  &__handle {
+    transition: background-color .2s;
+    box-sizing: border-box;
+    width: $handleSize;
+    height: $handleSize;
+    border-radius: 100%;
+    background-color: white;
+    touch-action: pan-y;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    top: -($handleSize/2) + ($sliderHeight/2) - 0.5 !important;
+    border: 2px solid $primary;
+
+    &:after {
+      content: none;
+    }
+  }
+
+  &__fill {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    background-color: $primary;
+    border-radius: $roundness;
+  }
+
+  &__labels {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    &__label {
+      font-size: 0.875rem;
+      position: relative;
+      padding-top: 15px;
+      width: 14px;
+      font-weight: 400;
+      color: #0C0C0D;
+      display: flex;
+      justify-content: center;
+
+      &:first-child:before,
+      &:last-child:before{
+        height: $labelMarkerHeight;
+        width: 2px;
+      }
+    }
+  }
+
+  // active state
+  &.rangeslider--active {
+    .rangeslider__handle {
+      &, *      { background-color: lighten($primary, 10%) }
+      *:before  { border-top-color: lighten($primary, 10%) }
+    }
+
+    .rangeslider__handle__value {
+      transform: translateY(-5px);
+      box-shadow: 0 -3px 2px rgba(black, .04),
+                  0 -9px 25px rgba(black, .15);
+    }
+  }
+}
+
+/*
+End Range slider
+*/
