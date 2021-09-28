@@ -142,8 +142,9 @@
   cursor: pointer;
   max-height: 50px;
   line-height: 19px;
+  transition: all 0.2s;
 }
-.pop-up-wrapper .pop-up-body .banks .bank-item.active {
+.pop-up-wrapper .pop-up-body .banks .bank-item:hover, .pop-up-wrapper .pop-up-body .banks .bank-item:focus, .pop-up-wrapper .pop-up-body .banks .bank-item.active {
   border: 1px solid #fe8732;
 }
 .pop-up-wrapper .pop-up-body .banks .bank-item .bank-name {
