@@ -1,6 +1,5 @@
 $(document).ready(function () {
   const pages = $(".news-wrapper");
-  console.log("pages", pages[0]);
   pages.hide();
   $(pages[0]).show();
   $(".page-bth").click((event) => {
