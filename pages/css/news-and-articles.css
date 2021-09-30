@@ -145,23 +145,23 @@
 .news-section {
   background: #ffffff;
 }
-.news-section .h2 {
+.news-section h2 {
   font-family: "SF Pro Display";
   font-size: 45px;
   color: #0c0c0d;
   font-weight: 600;
-  line-height: 53.7px;
+  line-height: 54px;
 }
 
 .news-wrapper {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .news-wrapper {
-    margin-top: 50px;
+    margin-top: 60px;
   }
 }
 .news-wrapper .news-item-wrapper {
